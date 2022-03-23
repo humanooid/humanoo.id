@@ -109,7 +109,6 @@
         <!-- site footer -->
         <div class="footer">
             <!-- copyright text -->
-            {{-- <span class="copyright">© 2020 Bolby Template.</span> --}}
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
                 <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"

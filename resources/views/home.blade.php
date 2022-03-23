@@ -10,6 +10,16 @@
                 <h1 class="mb-2 mt-0">Humanoo.id</h1>
                 <p class="text-light">let's talk about code!</p>
 
+                <!-- social icons -->
+                <ul class="social-icons light list-inline mb-0 mt-4">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+
+
                 <div class="mt-4">
                     <a href="#contact" class="btn btn-default">Belajar</a>
                     <a href="#contact" class="btn btn-default">Join Us</a>
@@ -342,6 +352,7 @@
 
             <!-- portfolio filter (desktop) -->
             <ul class="portfolio-filter list-inline wow fadeInUp">
+                <li class="current list-inline-item" data-filter="*">Everything</li>
                 <li class="list-inline-item" data-filter=".MySQL">MySQL</li>
                 <li class="list-inline-item" data-filter=".PHP">PHP</li>
                 <li class="list-inline-item" data-filter=".Javascript">Javascript</li>
@@ -353,6 +364,7 @@
             <!-- portfolio filter (mobile) -->
             <div class="pf-filter-wrapper">
                 <select class="portfolio-filter-mobile">
+                    <option value="*">Everything</option>
                     <option value=".MySQL">MySQL</option>
                     <option value=".PHP">PHP</option>
                     <option value=".Javascript">Javascript</option>
@@ -366,7 +378,7 @@
             <div class="row portfolio-wrapper">
 
                 <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item art">
+                <div class="col-md-4 col-sm-6 grid-item MySQL">
                     <a href="images/works/1.svg" class="work-image">
                         <div class="portfolio-item rounded shadow-dark">
                             <div class="details">
@@ -383,7 +395,7 @@
                 </div>
 
                 <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item creative design">
+                <div class="col-md-4 col-sm-6 grid-item PHP Javascript">
                     <a href="#small-dialog" class="work-content">
                         <div class="portfolio-item rounded shadow-dark">
                             <div class="details">
@@ -409,7 +421,7 @@
                 </div>
 
                 <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item branding">
+                <div class="col-md-4 col-sm-6 grid-item Linux">
                     <a href="https://www.youtube.com/watch?v=qf9z4ulfmYw" class="work-video">
                         <div class="portfolio-item rounded shadow-dark">
                             <div class="details">
@@ -426,7 +438,7 @@
                 </div>
 
                 <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item creative">
+                <div class="col-md-4 col-sm-6 grid-item PHP">
                     <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                         class="work-video">
                         <div class="portfolio-item rounded shadow-dark">
@@ -444,7 +456,7 @@
                 </div>
 
                 <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item art branding">
+                <div class="col-md-4 col-sm-6 grid-item MySQL Linux">
                     <a href="#gallery-1" class="gallery-link">
                         <div class="portfolio-item rounded shadow-dark">
                             <div class="details">
@@ -465,7 +477,7 @@
                 </div>
 
                 <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item creative design">
+                <div class="col-md-4 col-sm-6 grid-item PHP Javascript">
                     <a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">
                         <div class="portfolio-item rounded shadow-dark">
                             <div class="details">
@@ -481,16 +493,6 @@
                     </a>
                 </div>
 
-            </div>
-
-            <!-- more button -->
-            <div class="load-more text-center mt-4">
-                <a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>
-                <!-- numbered pagination (hidden for infinite scroll) -->
-                <ul class="portfolio-pagination list-inline d-none">
-                    <li class="list-inline-item">1</li>
-                    <li class="list-inline-item"><a href="works-2.html">2</a></li>
-                </ul>
             </div>
 
         </div>

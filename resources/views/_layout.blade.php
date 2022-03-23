@@ -75,7 +75,8 @@
             <!-- logo image -->
             <div class="site-logo">
                 <a href="index.html">
-                    <img src="images/logo.svg" alt="Bolby" />
+                    <img id="logoDark" style="display: none" src="images/logo-dark.svg" alt="Bolby" />
+                    <img id="logoLight" style="display: none" src="images/logo.svg" alt="Bolby" />
                 </a>
             </div>
         </div>
@@ -87,7 +88,8 @@
         <!-- logo image -->
         <div class="site-logo">
             <a href="index.html">
-                <img src="images/logo.svg" alt="Bolby" />
+                <img id="logoDarkDesktop" style="display: none" src="images/logo-dark.svg" alt="Bolby" />
+                <img id="logoLightDesktop" style="display: none" src="images/logo.svg" alt="Bolby" />
             </a>
         </div>
 
@@ -110,8 +112,10 @@
             {{-- <span class="copyright">© 2020 Bolby Template.</span> --}}
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
-                <label class="form-check-label" for="colorChanger" style="color: #FFD15C;"><i id="colorChangerMoon" style="display: none" class="fa-solid fa-moon"></i><i id="colorChangerSun" style="display: none" class="fa-solid fa-sun"></i></label>
-              </div>              
+                <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"
+                        style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun" style="display: none; color: #FF4C60;"
+                        class="fa-solid fa-sun"></i></label>
+            </div>
         </div>
 
     </header>

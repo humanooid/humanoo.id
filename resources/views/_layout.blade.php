@@ -96,13 +96,9 @@
         <!-- main menu -->
         <nav>
             <ul class="vertical-menu scrollspy">
-                <li class="active"><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#about"><i class="fa-solid fa-user-check"></i>About</a></li>
-                <li><a href="#services"><i class="fa-solid fa-briefcase"></i>Services</a></li>
-                <li><a href="#experience"><i class="fa-solid fa-graduation-cap"></i>Experience</a></li>
-                <li><a href="#works"><i class="fa-solid fa-layer-group"></i>Works</a></li>
-                <li><a href="#blog"><i class="fa-solid fa-pen-to-square"></i>Blog</a></li>
-                <li><a href="#contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
+                <li class="active"><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="/about"><i class="fa-solid fa-user-check"></i>About</a></li>
+                <li><a href="/contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
             </ul>
         </nav>
 

@@ -16,3 +16,4 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/read/{post:slug}', [HomeController::class, 'read']);

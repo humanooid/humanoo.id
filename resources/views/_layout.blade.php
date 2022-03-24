@@ -1,23 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Bolby - Portfolio/CV/Resume HTML Template</title>
-    <meta name="description" content="Bolby - Portfolio/CV/Resume HTML Template">
+    <title>{{ $title }} - Human∞.id</title>
+    <meta name="description" content="{{ $title }} - Human∞.id">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('f/images/favicon.png') }}">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/simple-line-icons.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/slick.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/custom.css?v=20220324') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/bootstrap.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/all.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/simple-line-icons.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/slick.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/animate.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/magnific-popup.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/style.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/custom.css?v=20220324') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -75,8 +76,10 @@
             <!-- logo image -->
             <div class="site-logo">
                 <a href="index.html">
-                    <img id="logoDark" style="display: none" src="images/logo-dark.svg" alt="Bolby" />
-                    <img id="logoLight" style="display: none" src="images/logo.svg" alt="Bolby" />
+                    <img id="logoDark" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
+                        alt="Main Logo" />
+                    <img id="logoLight" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                        alt="Main Logo" />
                 </a>
             </div>
         </div>
@@ -88,8 +91,10 @@
         <!-- logo image -->
         <div class="site-logo">
             <a href="index.html">
-                <img id="logoDarkDesktop" style="display: none" src="images/logo-dark.svg" alt="Bolby" />
-                <img id="logoLightDesktop" style="display: none" src="images/logo.svg" alt="Bolby" />
+                <img id="logoDarkDesktop" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
+                    alt="Main Logo" />
+                <img id="logoLightDesktop" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                    alt="Main Logo" />
             </a>
         </div>
 
@@ -103,13 +108,13 @@
         </nav>
 
         <!-- site footer -->
-        <div class="footer">
+        <div class="footer mb-5">
             <!-- copyright text -->
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
                 <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"
-                        style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun" style="display: none; color: #FF4C60;"
-                        class="fa-solid fa-sun"></i></label>
+                        style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun"
+                        style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
             </div>
         </div>
 
@@ -126,24 +131,24 @@
     <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- SCRIPTS -->
-    <script src="{{ asset('js/jquery-1.12.3.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('js/popper.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('js/infinite-scroll.min.js') }}"></script>
-    <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('js/slick.min.js') }}"></script>
-    <script src="{{ asset('js/contact.js') }}"></script>
-    <script src="{{ asset('js/validator.js') }}"></script>
-    <script src="{{ asset('js/wow.min.js') }}"></script>
-    <script src="{{ asset('js/morphext.min.js') }}"></script>
-    <script src="{{ asset('js/parallax.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
-    <script src="{{ asset('js/self.js?v=20220324') }}"></script>
+    <script src="{{ asset('f/js/jquery-1.12.3.min.js') }}"></script>
+    <script src="{{ asset('f/js/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('f/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('f/js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('f/js/popper.min.js') }}"></script>
+    <script src="{{ asset('f/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('f/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('f/js/infinite-scroll.min.js') }}"></script>
+    <script src="{{ asset('f/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('f/js/slick.min.js') }}"></script>
+    <script src="{{ asset('f/js/contact.js') }}"></script>
+    <script src="{{ asset('f/js/validator.js') }}"></script>
+    <script src="{{ asset('f/js/wow.min.js') }}"></script>
+    <script src="{{ asset('f/js/morphext.min.js') }}"></script>
+    <script src="{{ asset('f/js/parallax.min.js') }}"></script>
+    <script src="{{ asset('f/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('f/js/custom.js') }}"></script>
+    <script src="{{ asset('f/js/self.js?v=20220324') }}"></script>
 
 </body>
 

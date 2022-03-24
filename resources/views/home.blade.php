@@ -7,7 +7,7 @@
             <!-- intro -->
             <div class="intro">
                 <!-- info -->
-                <h1 class="mb-2 mt-0">Humanoo.id</h1>
+                <h1 class="mb-2 mt-0">Human∞.id</h1>
                 <p class="under-home-title">let's talk about code!</p>
 
                 <!-- social icons -->
@@ -110,152 +110,68 @@
 
             <!-- section title -->
             <h2 class="section-title wow fadeInUp">Latest Posts</h2>
-            <p class="wow fadeInUp">Apa aja sih yang baru di Humanoo.id?</p>
+            <p class="wow fadeInUp">What's new at Human∞.id?</p>
 
             <div class="spacer" data-height="60"></div>
 
             <div class="row blog-wrapper">
 
-                <div class="col-md-4 mb-5">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Reviews</span>
-                            </a>
-                            <a href="#">
-                                <img src="images/blog/1.svg" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">5 Best App Development Tool for Your Project</a>
-                            </h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">09 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-5">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Tutorial</span>
-                            </a>
-                            <a href="#">
-                                <img src="images/blog/2.svg" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">Common Misconceptions About Payment</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">07 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
+                @foreach ($posts as $post)
+                    <div class="col-md-4 mb-5">
+                        <!-- blog item -->
+                        <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+                            <div class="thumb">
+                                <a href="/read/{{ $post->slug }}">
+                                    <span class="category">{{ $post->category->name }}</span>
+                                </a>
+                                <a href="/read/{{ $post->slug }}">
+                                    <img src="{{ asset($post->image) }}" alt="{{ $post->title }}" />
+                                </a>
+                            </div>
+                            <div class="details">
+                                <h4 class="my-0 title"><a href="/read/{{ $post->slug }}">{{ $post->title }}</a>
+                                </h4>
+                                <ul class="list-inline meta mb-0 mt-2">
+                                    <li class="list-inline-item">{{ date('M d, Y', strtotime($post->published_at)) }}</li>
+                                    <li class="list-inline-item">{{ $post->author->name }}</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 mb-5">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Business</span>
-                            </a>
-                            <a href="#">
-                                <img src="images/blog/3.svg" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">3 Things To Know About Startup Business</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">06 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-5">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Reviews</span>
-                            </a>
-                            <a href="#">
-                                <img src="images/blog/1.svg" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">5 Best App Development Tool for Your Project</a>
-                            </h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">09 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-5">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Tutorial</span>
-                            </a>
-                            <a href="#">
-                                <img src="images/blog/2.svg" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">Common Misconceptions About Payment</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">07 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-5">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Business</span>
-                            </a>
-                            <a href="#">
-                                <img src="images/blog/3.svg" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">3 Things To Know About Startup Business</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">06 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
+            @if ($posts->hasPages())
+                <div class="blog-pagination text-center">
+                    <ul class="ps-0">
+                        <?php
+                        $startPage = $posts->currentPage() - 2 < 1 ? 1 : $posts->currentPage() - 2;
+                        $endPage = $posts->currentPage() + 2 > $posts->lastPage() ? $posts->lastPage() : $posts->currentPage() + 2;
+                        if ($startPage == 1 && $endPage < 5) {
+                            if ($posts->lastPage() > 5) {
+                                $endPage = 5;
+                            } else {
+                                $endPage = $posts->lastPage();
+                            }
+                        }
+                        if ($endPage - $startPage + 1 < 5) {
+                            if ($posts->lastPage() > 5) {
+                                $startPage = $endPage - 4;
+                            } else {
+                                $startPage = $endPage - $posts->lastPage() + 1;
+                            }
+                        }
+                        ?>
+                        {!! $startPage == 1 ? '' : '<li><a href="' . $posts->url(1) . '"><i class="fa fa-angle-double-left"></i></a></li>' !!}
+                        {!! $posts->onFirstPage() ? '' : '<li><a href="' . $posts->previousPageUrl() . '"><i class="fa fa-angle-left"></i></a></li>' !!}
 
-            <div class="blog-pagination text-center">
-                <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">...</a></li>
-                    <li><a href="#">10</a></li>
-                </ul>
-            </div>
-
+                        @foreach ($posts->getUrlRange($startPage, $endPage) as $key => $val)
+                            <li><a {!! $posts->currentPage() == $key ? 'class="active"' : '' !!} href='{{ $val }}'>{{ $key }}</a></li>
+                        @endforeach
+                        {!! $posts->currentPage() == $posts->lastPage() ? '' : '<li><a href="' . $posts->nextPageUrl() . '"><i class="fa fa-angle-right"></i></a></li>' !!}
+                        {!! $endPage == $posts->lastPage() ? '' : '<li><a href="' . $posts->url($posts->lastPage()) . '"><i class="fa fa-angle-double-right"></i></a></li>' !!}
+                    </ul>
+                </div>
+            @endif
 
         </div>
 
@@ -276,9 +192,8 @@
                 <div class="col-md-4">
                     <!-- contact info -->
                     <div class="contact-info">
-                        <h3 class="wow fadeInUp">Let's talk about everything!</h3>
-                        <p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:name@example.com">email</a>.
-                            👋</p>
+                        <h3 class="wow fadeInUp">Let's talk about code! 👋</h3>
+                        {{-- <p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:name@example.com">email</a>.👋</p> --}}
                     </div>
                 </div>
 
@@ -346,152 +261,50 @@
 
             <!-- section title -->
             <h2 class="section-title wow fadeInUp">Categories</h2>
-            <p class="wow fadeInUp">Baca artikel yang sesuai dengan minatmu</p>
+            <p class="wow fadeInUp">Read articles that match your interests</p>
 
             <div class="spacer" data-height="60"></div>
 
             <!-- portfolio filter (desktop) -->
             <ul class="portfolio-filter list-inline wow fadeInUp">
                 <li class="current list-inline-item" data-filter="*">Everything</li>
-                <li class="list-inline-item" data-filter=".MySQL">MySQL</li>
-                <li class="list-inline-item" data-filter=".PHP">PHP</li>
-                <li class="list-inline-item" data-filter=".Javascript">Javascript</li>
-                <li class="list-inline-item" data-filter=".HTML">HTML</li>
-                <li class="list-inline-item" data-filter=".CSS">CSS</li>
-                <li class="list-inline-item" data-filter=".Linux">Linux</li>
+                @foreach ($categories as $category)
+                    <li class="list-inline-item" data-filter=".{{ $category->slug }}">{{ $category->name }}</li>
+                @endforeach
             </ul>
 
             <!-- portfolio filter (mobile) -->
             <div class="pf-filter-wrapper">
                 <select class="portfolio-filter-mobile">
                     <option value="*">Everything</option>
-                    <option value=".MySQL">MySQL</option>
-                    <option value=".PHP">PHP</option>
-                    <option value=".Javascript">Javascript</option>
-                    <option value=".HTML">HTML</option>
-                    <option value=".CSS">CSS</option>
-                    <option value=".Linux">Linux</option>
+                    @foreach ($categories as $category)
+                        <option value=".{{ $category->slug }}">{{ $category->name }}</option>
+                    @endforeach
                 </select>
             </div>
 
             <!-- portolio wrapper -->
             <div class="row portfolio-wrapper">
-
-                <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item MySQL">
-                    <a href="images/works/1.svg" class="work-image">
-                        <div class="portfolio-item rounded shadow-dark">
-                            <div class="details">
-                                <span class="term">Art</span>
-                                <h4 class="title">Project Managment Illustration</h4>
-                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/works/1.svg" alt="Portfolio-title" />
-                                <div class="mask"></div>
-                            </div>
+                @foreach ($categories as $category)
+                    @foreach ($category->posts as $post)
+                        <!-- portfolio item -->
+                        <div class="col-md-4 col-sm-6 grid-item {{ $category->slug }}">
+                            <a href="/read/{{ $post->slug }}">
+                                <div class="portfolio-item rounded shadow-dark">
+                                    <div class="details">
+                                        <span class="term">{{ $category->name }}</span>
+                                        <h4 class="title">{{ $post->title }}</h4>
+                                        {{-- <span class="more-button"><i class="icon-link"></i></span> --}}
+                                    </div>
+                                    <div class="thumb">
+                                        <img src="{{ $post->image }}" alt="{{ $post->title }}" />
+                                        <div class="mask"></div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-
-                <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item PHP Javascript">
-                    <a href="#small-dialog" class="work-content">
-                        <div class="portfolio-item rounded shadow-dark">
-                            <div class="details">
-                                <span class="term">Creative</span>
-                                <h4 class="title">Guest App Walkthrough Screens</h4>
-                                <span class="more-button"><i class="icon-options"></i></span>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/works/2.svg" alt="Portfolio-title" />
-                                <div class="mask"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
-                        <img src="images/single-work.svg" alt="Title" />
-                        <h2>Guest App Walkthrough Screens</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-                            semper rutrum. In rhoncus eleifend mi id tempus.</p>
-                        <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-                            lectus eget ligula.</p>
-                        <a href="#" class="btn btn-default">View on Dribbble</a>
-                    </div>
-                </div>
-
-                <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item Linux">
-                    <a href="https://www.youtube.com/watch?v=qf9z4ulfmYw" class="work-video">
-                        <div class="portfolio-item rounded shadow-dark">
-                            <div class="details">
-                                <span class="term">Branding</span>
-                                <h4 class="title">Delivery App Wireframe</h4>
-                                <span class="more-button"><i class="icon-camrecorder"></i></span>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/works/3.svg" alt="Portfolio-title" />
-                                <div class="mask"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item PHP">
-                    <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                        class="work-video">
-                        <div class="portfolio-item rounded shadow-dark">
-                            <div class="details">
-                                <span class="term">Creative</span>
-                                <h4 class="title">Onboarding Motivation</h4>
-                                <span class="more-button"><i class="icon-music-tone-alt"></i></span>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/works/4.svg" alt="Portfolio-title" />
-                                <div class="mask"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item MySQL Linux">
-                    <a href="#gallery-1" class="gallery-link">
-                        <div class="portfolio-item rounded shadow-dark">
-                            <div class="details">
-                                <span class="term">Art, Branding</span>
-                                <h4 class="title">iMac Mockup Design</h4>
-                                <span class="more-button"><i class="icon-picture"></i></span>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/works/5.svg" alt="Portfolio-title" />
-                                <div class="mask"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <div id="gallery-1" class="gallery mfp-hide">
-                        <a href="images/works/5.svg"></a>
-                        <a href="images/works/4.svg"></a>
-                    </div>
-                </div>
-
-                <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item PHP Javascript">
-                    <a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">
-                        <div class="portfolio-item rounded shadow-dark">
-                            <div class="details">
-                                <span class="term">Creative, Design</span>
-                                <h4 class="title">Game Store App Concept</h4>
-                                <span class="more-button"><i class="icon-link"></i></span>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/works/6.svg" alt="Portfolio-title" />
-                                <div class="mask"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    @endforeach
+                @endforeach
 
             </div>
 

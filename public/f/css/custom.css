@@ -1,9 +1,14 @@
 .blog-page-section .blog-pagination ul li a {
     text-decoration: none;
 }
+
 .blog-page-section .blog-pagination ul li a.active {
     background-color: #FF4C60;
     color: #fff;
+}
+
+.pf-filter-wrapper:after {
+    content: "";
 }
 
 /* dark */

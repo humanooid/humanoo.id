@@ -275,7 +275,7 @@
 
             <!-- portfolio filter (mobile) -->
             <div class="pf-filter-wrapper">
-                <select class="portfolio-filter-mobile">
+                <select class="portfolio-filter-mobile form-select">
                     <option value="*">Everything</option>
                     @foreach ($categories as $category)
                         <option value=".{{ $category->slug }}">{{ $category->name }}</option>

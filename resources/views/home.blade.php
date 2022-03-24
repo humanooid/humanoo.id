@@ -1,14 +1,14 @@
 @extends('_layout')
 @section('content')
     <!-- section home -->
-    <section id="home" class="home d-flex align-items-center" style="height: 50vh; min-height: 50vh;">
+    <section id="home" class="home d-flex align-items-center light" style="height: 50vh; min-height: 50vh;">
         <div class="container">
 
             <!-- intro -->
             <div class="intro">
                 <!-- info -->
                 <h1 class="mb-2 mt-0">Humanoo.id</h1>
-                <p class="text-light">let's talk about code!</p>
+                <p class="under-home-title">let's talk about code!</p>
 
                 <!-- social icons -->
                 <ul class="social-icons light list-inline mb-0 mt-4">

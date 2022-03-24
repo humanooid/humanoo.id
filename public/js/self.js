@@ -7,14 +7,14 @@ $(document).ready(function () {
             $("i#colorChangerMoon").show();
             $("img#logoLight").show();
             $("img#logoLightDesktop").show();
+            $("div#preloader").removeClass("light");
+            $("section#home").removeClass("light");
+            $("header.mobile-header-1").removeClass("light");
+            $("header.desktop-header-1").removeClass("light");
         } else {
             $("i#colorChangerSun").show();
-            $("div#preloader").addClass("light");
-            $("header.mobile-header-1").addClass("light");
-            $("header.desktop-header-1").addClass("light");
             $("img#logoDark").show();
             $("img#logoDarkDesktop").show();
-            $("section#home").addClass("light");
         }
     } else {
         localStorage.setItem("color", "light");

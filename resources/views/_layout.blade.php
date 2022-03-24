@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('css/custom.css?v=20220324') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,7 +29,7 @@
 <body>
 
     <!-- Preloader -->
-    <div id="preloader">
+    <div id="preloader" class="light">
         <div class="outer">
             <!-- Google Chrome -->
             <div class="infinityChrome">
@@ -64,7 +64,7 @@
     </div>
 
     <!-- mobile header -->
-    <header class="mobile-header-1">
+    <header class="mobile-header-1 light">
         <div class="container">
             <!-- menu icon -->
             <div class="menu-icon d-inline-flex me-4">
@@ -83,7 +83,7 @@
     </header>
 
     <!-- desktop header -->
-    <header class="desktop-header-1 d-flex align-items-start flex-column">
+    <header class="desktop-header-1 d-flex align-items-start flex-column light">
 
         <!-- logo image -->
         <div class="site-logo">
@@ -143,7 +143,7 @@
     <script src="{{ asset('js/parallax.min.js') }}"></script>
     <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
-    <script src="{{ asset('js/self.js') }}"></script>
+    <script src="{{ asset('js/self.js?v=20220324') }}"></script>
 
 </body>
 

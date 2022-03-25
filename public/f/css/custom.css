@@ -12,6 +12,10 @@
 }
 
 /* dark */
+header.mobile-header-1 {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
 header.desktop-header-1 .form-check-input:checked {
     background-color: #353353;
     border: 1px solid #FFD15C;
@@ -32,6 +36,10 @@ section#home .intro p.under-home-title {
 }
 
 /* light */
+header.mobile-header-1.light {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.05);
+}
+
 header.desktop-header-1.light .form-check-input {
     background-color: #F9F9FF;
     border: 1px solid #FF4C60;
@@ -49,4 +57,13 @@ header.desktop-header-1.light .form-switch .form-check-input {
 
 section#home.light .intro p.under-home-title {
     color: #353353;
+}
+
+/* ####### */
+
+
+@media only screen and (max-width: 991px) {
+    main.content {
+        margin-top: 53px;
+    }
 }

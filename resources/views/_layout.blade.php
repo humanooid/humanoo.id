@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{ asset('f/css/magnific-popup.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/custom.css?v=20220324') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/custom.css?v=20220325') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -65,7 +65,7 @@
     </div>
 
     <!-- mobile header -->
-    <header class="mobile-header-1 light">
+    <header class="mobile-header-1 fixed-top light">
         <div class="container">
             <!-- menu icon -->
             <div class="menu-icon d-inline-flex me-4">
@@ -75,7 +75,7 @@
             </div>
             <!-- logo image -->
             <div class="site-logo">
-                <a href="index.html">
+                <a href="/">
                     <img id="logoDark" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
                         alt="Main Logo" />
                     <img id="logoLight" style="display: none" src="{{ asset('f/images/logo.svg') }}"
@@ -90,7 +90,7 @@
 
         <!-- logo image -->
         <div class="site-logo">
-            <a href="index.html">
+            <a href="/">
                 <img id="logoDarkDesktop" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
                     alt="Main Logo" />
                 <img id="logoLightDesktop" style="display: none" src="{{ asset('f/images/logo.svg') }}"
@@ -148,7 +148,7 @@
     <script src="{{ asset('f/js/parallax.min.js') }}"></script>
     <script src="{{ asset('f/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('f/js/custom.js') }}"></script>
-    <script src="{{ asset('f/js/self.js?v=20220324') }}"></script>
+    <script src="{{ asset('f/js/self.js?v=20220325') }}"></script>
 
 </body>
 

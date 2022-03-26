@@ -1,4 +1,4 @@
-@extends('_layout')
+@extends('f._layout')
 @section('content')
     <!-- section home -->
     <section id="home" class="home d-flex align-items-center light" style="height: 50vh; min-height: 50vh;">

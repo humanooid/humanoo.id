@@ -1,4 +1,4 @@
-@extends('_layout')
+@extends('f._layout')
 @section('content')
     <!-- Blog Page -->
     <section id="blog-page-area" class="blog-page-section">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 
 
 /*
@@ -17,3 +18,5 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/read/{post:slug}', [HomeController::class, 'read']);
+
+Route::get('/dashboard', [DashboardController::class, 'index']);

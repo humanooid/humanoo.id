@@ -19,6 +19,8 @@ function getBar($cek)
             'icon' => 'fa-solid fa-comments',
         ],
     ];
-    $bar[$cek]['active'] = true;
+    if (in_array($cek, array_keys($bar))) {
+        $bar[$cek]['active'] = true;
+    }
     return $bar;
 }

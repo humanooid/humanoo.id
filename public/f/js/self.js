@@ -12,21 +12,29 @@ $(document).ready(function () {
             $("body").addClass(color);
             $("input#colorChanger").prop("checked", true);
             $("i#colorChangerMoon").show();
-            $("img#logoLight").show();
+            $("img#horizontalLogoLight").show();
             $("img#logoLightDesktop").show();
             $("div#preloader").removeClass("light");
             $("section#home").removeClass("light");
             $("header.mobile-header-1").removeClass("light");
             $("header.desktop-header-1").removeClass("light");
-            $(".footer .form-check.form-switch").prop("title", "Want it brighter? Click here!");
+            $("header.desktop-header-3").removeClass("light");
+            $(".desktop-header-1 .form-check.form-switch.colorChanger").prop("title", "Want it brighter? Click here!");
+            $(".desktop-header-3 .form-check.form-switch.colorChanger").prop("title", "Want it brighter? Click here!");
+            $("i#changeLayoutIcon").css('color', '#FFD15C');
         } else {
             $("i#colorChangerSun").show();
             $("img#logoDark").show();
+            $("img#horizontalLogoDark").show();
             $("img#logoDarkDesktop").show();
-            $(".footer .form-check.form-switch").prop("title", "Dazzled? Smash here!");
+            $(".desktop-header-1 .form-check.form-switch.colorChanger").prop("title", "Dazzled? Smash here!");
+            $(".desktop-header-3 .form-check.form-switch.colorChanger").prop("title", "Dazzled? Smash here!");
+            $("i#changeLayoutIcon").css('color', '#FF4C60');
         }
     } else {
         localStorage.setItem("color", "light");
+        $("i#colorChangerSun").show();
+        $("i#changeLayoutIcon").css('color', '#FF4C60');
     }
 });
 function changeColor(el) {
@@ -38,12 +46,17 @@ function changeColor(el) {
         $("div#preloader").removeClass("light");
         $("header.mobile-header-1").removeClass("light");
         $("header.desktop-header-1").removeClass("light");
+        $("header.desktop-header-3").removeClass("light");
         $("img#logoLight").show();
         $("img#logoDark").hide();
+        $("img#horizontalLogoLight").show();
+        $("img#horizontalLogoDark").hide();
         $("img#logoLightDesktop").show();
         $("img#logoDarkDesktop").hide();
         $("section#home").removeClass("light");
-        $(".footer .form-check.form-switch").prop("title", "Want it brighter? Click here!");
+        $(".desktop-header-1 .form-check.form-switch.colorChanger").prop("title", "Want it brighter? Click here!");
+        $(".desktop-header-3 .form-check.form-switch.colorChanger").prop("title", "Want it brighter? Click here!");
+        $("i#changeLayoutIcon").css('color', '#FFD15C');
     } else {
         localStorage.setItem("color", "light");
         $("body").removeClass("dark");
@@ -52,11 +65,20 @@ function changeColor(el) {
         $("div#preloader").addClass("light");
         $("header.mobile-header-1").addClass("light");
         $("header.desktop-header-1").addClass("light");
+        $("header.desktop-header-3").addClass("light");
         $("img#logoLight").hide();
         $("img#logoDark").show();
+        $("img#horizontalLogoLight").hide();
+        $("img#horizontalLogoDark").show();
         $("img#logoLightDesktop").hide();
         $("img#logoDarkDesktop").show();
         $("section#home").addClass("light");
-        $(".footer .form-check.form-switch").prop("title", "Dazzled? Smash here!");
+        $(".desktop-header-1 .form-check.form-switch.colorChanger").prop("title", "Dazzled? Smash here!");
+        $(".desktop-header-3 .form-check.form-switch.colorChanger").prop("title", "Dazzled? Smash here!");
+        $("i#changeLayoutIcon").css('color', '#FF4C60');
     }
+}
+
+function changeLayout(mode){
+    window.location.href = "/changelayout/" + mode;
 }

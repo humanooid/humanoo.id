@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -18,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('f/css/magnific-popup.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/custom.css?v=20220325') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220327') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -63,65 +62,114 @@
             </svg>
         </div>
     </div>
-
-    <!-- mobile header -->
-    <header class="mobile-header-1 fixed-top light">
-        <div class="container">
-            <!-- menu icon -->
-            <div class="menu-icon d-inline-flex me-4">
-                <button>
-                    <span></span>
-                </button>
+    @if (Cookie::get('layout') == 'vertical')
+        <!-- mobile header -->
+        <header class="mobile-header-1 fixed-top light">
+            <div class="container">
+                <!-- menu icon -->
+                <div class="menu-icon d-inline-flex me-4">
+                    <button>
+                        <span></span>
+                    </button>
+                </div>
+                <!-- logo image -->
+                <div class="site-logo">
+                    <a href="/">
+                        <img id="logoDark" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
+                            alt="Main Logo" />
+                        <img id="logoLight" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                            alt="Main Logo" />
+                    </a>
+                </div>
             </div>
+        </header>
+
+        <!-- desktop header -->
+        <header class="desktop-header-1 d-flex align-items-start flex-column light">
+
             <!-- logo image -->
             <div class="site-logo">
                 <a href="/">
-                    <img id="logoDark" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
+                    <img id="logoDarkDesktop" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
                         alt="Main Logo" />
-                    <img id="logoLight" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                    <img id="logoLightDesktop" style="display: none" src="{{ asset('f/images/logo.svg') }}"
                         alt="Main Logo" />
                 </a>
             </div>
-        </div>
-    </header>
 
-    <!-- desktop header -->
-    <header class="desktop-header-1 d-flex align-items-start flex-column light">
+            <!-- main menu -->
+            <nav>
+                <ul class="vertical-menu scrollspy">
+                    <li class="active"><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="/about"><i class="fa-solid fa-user-check"></i>About</a></li>
+                    <li><a href="/contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
+                </ul>
+            </nav>
 
-        <!-- logo image -->
-        <div class="site-logo">
-            <a href="/">
-                <img id="logoDarkDesktop" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
-                    alt="Main Logo" />
-                <img id="logoLightDesktop" style="display: none" src="{{ asset('f/images/logo.svg') }}"
-                    alt="Main Logo" />
-            </a>
-        </div>
-
-        <!-- main menu -->
-        <nav>
-            <ul class="vertical-menu scrollspy">
-                <li class="active"><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="/about"><i class="fa-solid fa-user-check"></i>About</a></li>
-                <li><a href="/contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- site footer -->
-        <div class="footer mb-5">
-            <!-- copyright text -->
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
-                <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"
-                        style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun"
-                        style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
+            <!-- site footer -->
+            <div class="footer mb-5">
+                <!-- copyright text -->
+                <div class="form-check form-switch colorChanger">
+                    <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
+                    <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"
+                            style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun"
+                            style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
+                </div>
+                <div class="form-check form-switch" title="Switch to horizontal layout">
+                    <input class="form-check-input" type="checkbox" onchange="changeLayout('horizontal')" checked>
+                    <label class="form-check-label" for="colorChanger"><i id="changeLayoutIcon"
+                            class="fa-solid fa-left-right"></i></label>
+                </div>
             </div>
-        </div>
 
-    </header>
+        </header>
+    @else
+        <!-- desktop header -->
+        <header class="desktop-header-3 fixed-top light">
+
+            <div class="container-fluid px-5">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="index-3.html">
+                        <img id="horizontalLogoDark" style="display: none"
+                            src="{{ asset('f/images/logo-dark.svg') }}" alt="Main Logo" />
+                        <img id="horizontalLogoLight" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                            alt="Main Logo" />
+                    </a> <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse"
+                        type="button"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto scrollspy">
+                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                            <li class="nav-item pe-2">
+                                <div class="form-check form-switch colorChanger">
+                                    <input class="form-check-input" type="checkbox" id="colorChanger"
+                                        onchange="changeColor($(this))">
+                                    <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"
+                                            style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i
+                                            id="colorChangerSun" style="display: none; color: #FF4C60;"
+                                            class="fa-solid fa-sun"></i></label>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="form-check form-switch" title="Switch to horizontal layout">
+                                    <input class="form-check-input" type="checkbox" onchange="changeLayout('vertical')">
+                                    <label class="form-check-label" for="colorChanger"><i id="changeLayoutIcon"
+                                            class="fa-solid fa-left-right"></i></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+        </header>
+    @endif
 
     <!-- main layout -->
-    <main class="content">
+    <main class="{{ Cookie::get('layout') == 'vertical' ? 'content' : 'content-3' }}">
 
         @yield('content')
 
@@ -148,7 +196,7 @@
     <script src="{{ asset('f/js/parallax.min.js') }}"></script>
     <script src="{{ asset('f/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('f/js/custom.js') }}"></script>
-    <script src="{{ asset('f/js/self.js?v=20220325') }}"></script>
+    <script src="{{ asset('f/js/self.js?v=20220327') }}"></script>
 
 </body>
 

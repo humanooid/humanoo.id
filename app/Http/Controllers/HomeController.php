@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Category;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Request;
 
 class HomeController extends Controller
 {
@@ -30,5 +32,12 @@ class HomeController extends Controller
             'recentPost' => $recentPost,
             'categories' => $categories,
         ]);
+    }
+
+    public function changelayout($mode)
+    {
+        Cookie::forget('layout');
+        Cookie::queue('layout', $mode);
+        return back();
     }
 }

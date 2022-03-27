@@ -116,8 +116,8 @@
                             style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
                 </div>
                 <div class="form-check form-switch" title="Switch to horizontal layout">
-                    <input class="form-check-input" type="checkbox" onchange="changeLayout('horizontal')" checked>
-                    <label class="form-check-label" for="colorChanger"><i id="changeLayoutIcon"
+                    <input class="form-check-input" type="checkbox" id="layoutChanger" onchange="changeLayout('horizontal')" checked>
+                    <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon"
                             class="fa-solid fa-left-right"></i></label>
                 </div>
             </div>
@@ -154,8 +154,8 @@
                             </li>
                             <li class="nav-item">
                                 <div class="form-check form-switch" title="Switch to horizontal layout">
-                                    <input class="form-check-input" type="checkbox" onchange="changeLayout('vertical')">
-                                    <label class="form-check-label" for="colorChanger"><i id="changeLayoutIcon"
+                                    <input class="form-check-input" type="checkbox" id="layoutChanger" onchange="changeLayout('vertical')">
+                                    <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon"
                                             class="fa-solid fa-left-right"></i></label>
                                 </div>
                             </li>

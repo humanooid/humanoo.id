@@ -41,6 +41,14 @@ section#home .intro p.under-home-title {
     color: #F9F9FF;
 }
 
+.desktop-header-1 li.active a {
+    color: #FFD15C !important;
+}
+
+.desktop-header-3 .nav-item.active .nav-link {
+    color: #FFD15C !important;
+}
+
 
 
 /* light */
@@ -74,6 +82,18 @@ section#home.light .intro p.under-home-title {
 
 .desktop-header-3.light .navbar-toggler:focus {
     box-shadow: rgba(40, 38, 66, 0.25) 0 0 0 0.25rem;
+}
+
+.desktop-header-1.light li.active a {
+    color: #FF4C60 !important;
+}
+
+.desktop-header-3.light .nav-item.active .nav-link {
+    color: #FF4C60 !important;
+}
+
+.desktop-header-3.light .nav-link:hover {
+    color: #FF4C60 !important;
 }
 
 

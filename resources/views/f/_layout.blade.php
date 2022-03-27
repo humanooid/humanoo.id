@@ -100,9 +100,10 @@
             <!-- main menu -->
             <nav>
                 <ul class="vertical-menu scrollspy">
-                    <li class="active"><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href="/about"><i class="fa-solid fa-user-check"></i>About</a></li>
-                    <li><a href="/contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
+                    @foreach ($bar as $k => $v)
+                        <li class="{{ $v['active'] ? 'active' : '' }}"><a href="{{ $v['url'] }}"><i
+                                    class="{{ $v['icon'] }}"></i>{{ $k }}</a></li>
+                    @endforeach
                 </ul>
             </nav>
 
@@ -116,7 +117,8 @@
                             style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
                 </div>
                 <div class="form-check form-switch" title="Switch to horizontal layout">
-                    <input class="form-check-input" type="checkbox" id="layoutChanger" onchange="changeLayout('horizontal')" checked>
+                    <input class="form-check-input" type="checkbox" id="layoutChanger"
+                        onchange="changeLayout('horizontal')" checked>
                     <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon"
                             class="fa-solid fa-left-right"></i></label>
                 </div>
@@ -139,9 +141,9 @@
                         type="button"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto scrollspy">
-                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                            @foreach ($bar as $k => $v)
+                                <li class="nav-item {{ $v['active'] ? 'active' : '' }}"><a class="nav-link" href="{{ $v['url'] }}">{{ $k }}</a></li>
+                            @endforeach
                             <li class="nav-item pe-2">
                                 <div class="form-check form-switch colorChanger">
                                     <input class="form-check-input" type="checkbox" id="colorChanger"
@@ -154,9 +156,10 @@
                             </li>
                             <li class="nav-item">
                                 <div class="form-check form-switch" title="Switch to horizontal layout">
-                                    <input class="form-check-input" type="checkbox" id="layoutChanger" onchange="changeLayout('vertical')">
+                                    <input class="form-check-input" type="checkbox" id="layoutChanger"
+                                        onchange="changeLayout('vertical')">
                                     <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon"
-                                            class="fa-solid fa-left-right"></i></label>
+                                            class="fa-solid fa-up-down"></i></label>
                                 </div>
                             </li>
                         </ul>

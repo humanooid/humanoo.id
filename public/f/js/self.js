@@ -14,6 +14,7 @@ $(document).ready(function () {
             $("i#colorChangerMoon").show();
             $("img#horizontalLogoLight").show();
             $("img#logoLightDesktop").show();
+            $("img#logoLight").show();
             $("div#preloader").removeClass("light");
             $("section#home").removeClass("light");
             $("header.mobile-header-1").removeClass("light");
@@ -27,6 +28,7 @@ $(document).ready(function () {
             $("img#logoDark").show();
             $("img#horizontalLogoDark").show();
             $("img#logoDarkDesktop").show();
+            $("img#logoDark").show();
             $(".desktop-header-1 .form-check.form-switch.colorChanger").prop("title", "Dazzled? Smash here!");
             $(".desktop-header-3 .form-check.form-switch.colorChanger").prop("title", "Dazzled? Smash here!");
             $("i#changeLayoutIcon").css('color', '#FF4C60');

@@ -14,6 +14,7 @@ class HomeController extends Controller
     {
         return view('f.home', [
             'title' => 'Home',
+            'bar' => getBar('Home'),
             'posts' => Post::with(['author', 'category'])->orderBy('published_at', 'desc')->orderBy('id', 'desc')->paginate(9),
             'categories' => Category::with(['posts' => function ($query) {
                 return $query->orderBy('published_at', 'desc')->limit(9);
@@ -28,6 +29,7 @@ class HomeController extends Controller
         $categories = Category::orderBy('name', 'asc')->get();
         return view('f.read', [
             'title' => $post->title,
+            'bar' => getBar('Post'),
             'post' => $post,
             'recentPost' => $recentPost,
             'categories' => $categories,

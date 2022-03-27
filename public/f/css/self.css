@@ -62,6 +62,10 @@ section#home.light .intro p.under-home-title {
 /* ####### */
 
 
+main.content-3 {
+    margin-top: 76px;
+}
+
 @media only screen and (max-width: 991px) {
     main.content {
         margin-top: 53px;

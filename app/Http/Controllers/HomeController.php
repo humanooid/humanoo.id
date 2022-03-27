@@ -42,4 +42,12 @@ class HomeController extends Controller
         Cookie::queue('layout', $mode);
         return back();
     }
+
+    public function yama()
+    {
+        return view('f.yama',[
+            'title' => 'Yama',
+            'bar' => getBar('Yama'),
+        ]);
+    }
 }

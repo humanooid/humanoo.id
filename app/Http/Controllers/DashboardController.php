@@ -22,4 +22,9 @@ class DashboardController extends Controller
             'posts' => Post::with(['author', 'category'])->orderBy('published_at', 'desc')->orderBy('id', 'desc')->paginate(10),
         ]);
     }
+    public function makeapost(){
+        return view('b.makeapost', [
+            'title' => 'Make a Post',
+        ]);
+    }
 }

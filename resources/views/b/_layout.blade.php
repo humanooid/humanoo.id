@@ -26,6 +26,8 @@
     <link href="{{ asset('b/plugins/perfectscroll/perfect-scrollbar.css') }}" rel="stylesheet">
     <link href="{{ asset('b/plugins/pace/pace.css') }}" rel="stylesheet">
 
+    @yield('css')
+
 
     <!-- Theme Styles -->
     <link href="{{ asset('b/css/main.min.css') }}" rel="stylesheet">
@@ -450,7 +452,7 @@
                         </div>
                         <div class="d-flex">
                             <ul class="navbar-nav">
-                                <li class="nav-item hidden-on-mobile">
+                                {{-- <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link active" href="#">Applications</a>
                                 </li>
                                 <li class="nav-item hidden-on-mobile">
@@ -458,12 +460,12 @@
                                 </li>
                                 <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link" href="#">Projects</a>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a class="nav-link toggle-search" href="#"><i
                                             class="material-icons">search</i></a>
                                 </li>
-                                <li class="nav-item hidden-on-mobile">
+                                {{-- <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link language-dropdown-toggle" href="#" id="languageDropDown"
                                         data-bs-toggle="dropdown"><img src="{{ asset('b/images/flags/us.png') }}"
                                             alt=""></a>
@@ -479,7 +481,7 @@
                                                     src="{{ asset('b/images/flags/china.png') }}" alt="">Chinese</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link nav-notifications-toggle" id="notificationsDropDown" href="#"
                                         data-bs-toggle="dropdown">4</a>
@@ -575,9 +577,11 @@
     <script src="{{ asset('b/plugins/perfectscroll/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('b/plugins/pace/pace.min.js') }}"></script>
     <script src="{{ asset('b/plugins/apexcharts/apexcharts.min.js') }}"></script>
+    @yield('js')
     <script src="{{ asset('b/js/main.min.js') }}"></script>
     <script src="{{ asset('b/js/custom.js') }}"></script>
     <script src="{{ asset('b/js/pages/dashboard.js') }}"></script>
+    @yield('script')
 </body>
 
 </html>

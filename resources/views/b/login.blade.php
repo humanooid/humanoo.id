@@ -11,7 +11,7 @@
     <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Neptune - Responsive Admin Dashboard Template</title>
+    <title>Login - Human∞.id</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -49,11 +49,15 @@
         </div>
         <div class="app-auth-container">
             <div class="logo mb-5">
-                <a href="/">Neptune</a>
+                <a href="/">Human∞.id</a>
             </div>
-            @if (session('error'))
+            @if (session('warning'))
+                <div class="alert alert-warning">
+                    <b>Wait!</b> {{ session('warning') }}
+                </div>
+            @elseif (session('danger'))
                 <div class="alert alert-danger">
-                    <b>Opps!</b> {{ session('error') }}
+                    <b>Opps!</b> {{ session('danger') }}
                 </div>
             @endif
 
@@ -63,14 +67,20 @@
                 @csrf
                 <div class="auth-credentials m-b-xxl">
                     <label for="signInEmail" class="form-label">Email address</label>
-                    <input type="text" class="form-control {{ $errors->has('signInEmail') ? 'is-invalid' : '' }}" id="signInEmail" name="signInEmail" aria-describedby="signInEmail" placeholder="example@neptune.com">
+                    <input type="text" class="form-control {{ $errors->has('signInEmail') ? 'is-invalid' : '' }}"
+                        id="signInEmail" name="signInEmail" value="{{ old('signInEmail') }}"
+                        aria-describedby="signInEmail" placeholder="example@neptune.com">
                     @if ($errors->has('signInEmail'))
                         <span class="invalid-feedback">{{ $errors->first('signInEmail') }}</span>
                     @endif
 
 
                     <label for="signInPassword" class="form-label m-t-md">Password</label>
-                    <input type="password" class="form-control {{ $errors->has('signInPassword') ? 'is-invalid' : '' }}" id="signInPassword" name="signInPassword" aria-describedby="signInPassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                    <input type="password"
+                        class="form-control {{ $errors->has('signInPassword') ? 'is-invalid' : '' }}"
+                        id="signInPassword" name="signInPassword" value="{{ old('signInPassword') }}"
+                        aria-describedby="signInPassword"
+                        placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
                     @if ($errors->has('signInPassword'))
                         <span class="invalid-feedback">{{ $errors->first('signInPassword') }}</span>
                     @endif

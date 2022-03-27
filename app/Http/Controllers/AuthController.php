@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
-use App\Http\Middleware\EncryptCookies;
 use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
@@ -22,8 +21,8 @@ class AuthController extends Controller
     }
     public function actionlogin(Request $request)
     {
-        $validator = $request->validate([
-            'signInEmail' => 'required|email',
+        $request->validate([
+            'signInEmail' => 'required|email|exists:users,email',
             'signInPassword' => 'required',
         ]);
 
@@ -37,8 +36,8 @@ class AuthController extends Controller
             session(['user' => $user]);
             return redirect('/dashboard');
         } else {
-            Session::flash('error', 'Email atau Password Salah');
-            return redirect('/login')->withInput()->withErrors($validator);
+            Session::flash('danger', 'Wrong Password');
+            return redirect('/login');
         }
     }
     public function actionlogout()

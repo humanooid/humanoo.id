@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="page-description">
-                            <h1>Posts</h1>
+                            <h1>{{ $title }}</h1>
                         </div>
                     </div>
                 </div>
@@ -14,62 +14,61 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-title">Post Lists</h5>
+                                <h5 class="card-title float-start">
+                                    Post Lists
+                                </h5>
+                                <a href="/makeapost" class="btn btn-success btn-style-light btn-sm float-end"><i
+                                        class="material-icons">add</i>Create Post</a>
                             </div>
                             <div class="card-body">
-                                <div class="example-container">
-                                    <div class="example-content">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">Title</th>
-                                                    <th scope="col">Hero Image</th>
-                                                    <th scope="col">Date</th>
-                                                    <th scope="col">Detail</th>
-                                                    <th scope="col"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php $no = ($posts->currentPage() - 1) * 10 + 1; ?>
-                                                @foreach ($posts as $post)
-                                                    <tr>
-                                                        <th scope="row">{{ $no }}</th>
-                                                        <td>{{ $post->title }}</td>
-                                                        <td><img src="{{ asset($post->image) }}"
-                                                                alt="{{ $post->title }}" class="img-fluid"
-                                                                width="200px"></td>
-                                                        <td>
-                                                            <span class="badge rounded-pill badge-primary">C :
-                                                                {{ date('d M Y H:i', strtotime($post->created_at)) }}</span><br>
-                                                            <span class="badge rounded-pill badge-success">P :
-                                                                {{ date('d M Y H:i', strtotime($post->published_at)) }}</span><br>
-                                                            <span class="badge rounded-pill badge-warning">U :
-                                                                {{ date('d M Y H:i', strtotime($post->updated_at)) }}</span>
-                                                        </td>
-                                                        <td>
-                                                            <span
-                                                                class="badge rounded-pill badge-danger">{{ $post->category->name }}</span><br>
-                                                            <small>by : {{ $post->author->name }}</small>
-                                                        </td>
-                                                        <td>
-                                                            <a href="/read/{{ $post->slug }}" target="_blank"
-                                                                class="btn btn-sm btn-rounded btn-style-light btn-warning"><i
-                                                                    class="material-icons">visibility</i>View</a>
-                                                            <button type="button"
-                                                                class="btn btn-sm btn-rounded btn-style-light btn-primary"><i
-                                                                    class="material-icons">edit</i>Edit</button>
-                                                            <button type="button"
-                                                                class="btn btn-sm btn-rounded btn-style-light btn-danger"><i
-                                                                    class="material-icons">delete</i>Delete</button>
-                                                        </td>
-                                                    </tr>
-                                                    <?php $no++; ?>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Hero Image</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Detail</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no = ($posts->currentPage() - 1) * 10 + 1; ?>
+                                        @foreach ($posts as $post)
+                                            <tr>
+                                                <th scope="row">{{ $no }}</th>
+                                                <td>{{ $post->title }}</td>
+                                                <td><img src="{{ asset($post->image) }}" alt="{{ $post->title }}"
+                                                        class="img-fluid" width="200px"></td>
+                                                <td>
+                                                    <span class="badge rounded-pill badge-primary">C :
+                                                        {{ date('d M Y H:i', strtotime($post->created_at)) }}</span><br>
+                                                    <span class="badge rounded-pill badge-success">P :
+                                                        {{ date('d M Y H:i', strtotime($post->published_at)) }}</span><br>
+                                                    <span class="badge rounded-pill badge-warning">U :
+                                                        {{ date('d M Y H:i', strtotime($post->updated_at)) }}</span>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill badge-danger">{{ $post->category->name }}</span><br>
+                                                    <small>by : {{ $post->author->name }}</small>
+                                                </td>
+                                                <td>
+                                                    <a href="/read/{{ $post->slug }}" target="_blank"
+                                                        class="btn btn-sm btn-rounded btn-style-light btn-warning"><i
+                                                            class="material-icons">visibility</i>View</a>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-rounded btn-style-light btn-primary"><i
+                                                            class="material-icons">edit</i>Edit</button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-rounded btn-style-light btn-danger"><i
+                                                            class="material-icons">delete</i>Delete</button>
+                                                </td>
+                                            </tr>
+                                            <?php $no++; ?>
+                                        @endforeach
+                                    </tbody>
+                                </table>
                             </div>
                             <div class="card-footer">
                                 @if ($posts->hasPages())

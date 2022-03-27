@@ -64,12 +64,29 @@ section#home.light .intro p.under-home-title {
     color: #353353;
 }
 
+.desktop-header-3.light .navbar-dark .navbar-toggler {
+    border-color: rgba(40, 38, 66, 0.5);
+}
+
+.desktop-header-3.light .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2840, 38, 66, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.desktop-header-3.light .navbar-toggler:focus {
+    box-shadow: rgba(40, 38, 66, 0.25) 0 0 0 0.25rem;
+}
+
+
 
 /* ####### */
 
 
 main.content-3 {
     margin-top: 76px;
+}
+
+.navbar-toggler {
+    padding: 0 0.3rem;
 }
 
 @media only screen and (max-width: 991px) {

@@ -27,6 +27,12 @@ header.desktop-header-1 .form-switch .form-check-input:checked:focus, header.des
     box-shadow: 0 0 0 0.25rem rgba(252, 145, 132, 0.25);
 }
 
+header.desktop-header-1 .form-switch .form-check-input:focus, header.desktop-header-3 .form-switch .form-check-input:focus {
+    border-color: #FFD15C;
+    box-shadow: 0 0 0 0.25rem rgba(252, 145, 132, 0.25);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23FFD15C'/%3e%3c/svg%3e");
+}
+
 header.desktop-header-1 .form-switch .form-check-input:checked, header.desktop-header-3 .form-switch .form-check-input:checked {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23FFD15C'/%3e%3c/svg%3e");
 }

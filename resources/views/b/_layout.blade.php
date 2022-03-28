@@ -35,6 +35,9 @@
         <link href="{{ asset('b/css/darktheme.css') }}" rel="stylesheet">
     @endif
     <link href="{{ asset('b/css/custom.css') }}" rel="stylesheet">
+    @if (Cookie::get('color') == 1)
+        <link href="{{ asset('b/css/custom-dark.css') }}" rel="stylesheet">
+    @endif
 
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('b/images/neptune.png') }}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('b/images/neptune.png') }}" />
@@ -56,7 +59,8 @@
                     <a href="#">
                         <img src="{{ asset('b/images/avatars/avatar.png') }}">
                         <span class="activity-indicator"></span>
-                        <span class="user-info-text">{{ session('user')->name }}<br><span class="user-state-info">On a call</span></span>
+                        <span class="user-info-text">{{ session('user')->name }}<br><span class="user-state-info">On a
+                                call</span></span>
                     </a>
                 </div>
             </div>
@@ -384,7 +388,7 @@
                                     <a class="nav-link hide-sidebar-toggle-button" href="#"><i
                                             class="material-icons">first_page</i></a>
                                 </li>
-                                <li class="nav-item dropdown hidden-on-mobile">
+                                {{-- <li class="nav-item dropdown hidden-on-mobile">
                                     <a class="nav-link dropdown-toggle" href="#" id="addDropdownLink" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="material-icons">add</i>
@@ -434,19 +438,7 @@
                                             <button class="btn btn-primary">Create new repository</button>
                                         </li>
                                     </ul>
-                                </li>
-                                <li class="nav-item dropdown hidden-on-mobile">
-                                    <form action="/colorize" method="post" id="colorize">
-                                        @csrf
-                                        <input type="hidden" name="color"
-                                            value="{{ Cookie::get('color') == 1 ? 0 : 1 }}">
-                                    </form>
-                                    <a class="nav-link dropdown-toggle" role="button"
-                                        onclick="$('#colorize').submit()">
-                                        <i
-                                            class="material-icons-outlined">{{ Cookie::get('color') == 0 ? 'dark_mode' : 'light_mode' }}</i>
-                                    </a>
-                                </li>
+                                </li> --}}
                             </ul>
 
                         </div>
@@ -462,8 +454,18 @@
                                     <a class="nav-link" href="#">Projects</a>
                                 </li> --}}
                                 <li class="nav-item">
-                                    <a class="nav-link toggle-search" href="#"><i
-                                            class="material-icons">search</i></a>
+                                    <a class="nav-link toggle-search" href="#"><i class="material-icons">search</i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <form action="/colorize" method="post" id="colorize">
+                                        @csrf
+                                        <input type="hidden" name="color"
+                                            value="{{ Cookie::get('color') == 1 ? 0 : 1 }}">
+                                    </form>
+                                    <a class="nav-link dropdown-toggle" role="button" onclick="$('#colorize').submit()">
+                                        <i
+                                            class="material-icons-outlined">{{ Cookie::get('color') == 0 ? 'dark_mode' : 'light_mode' }}</i>
+                                    </a>
                                 </li>
                                 {{-- <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link language-dropdown-toggle" href="#" id="languageDropDown"

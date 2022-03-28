@@ -1,0 +1,106 @@
+/* Your Custom CSS Goes here */
+
+
+/* JODIT */
+.jodit-toolbar__box:not(:empty) {
+    background-color: transparent;
+}
+
+.jodit-icon {
+    fill: #C2C4D1;
+}
+
+.jodit-toolbar-button__button:hover:not([disabled]) {
+    background-color: #C2C4D1;
+}
+
+.jodit-toolbar-button__button:hover:not([disabled]) .jodit-icon {
+    fill: #1F1F2B;
+}
+
+.jodit-toolbar-button__trigger svg {
+    fill: #C2C4D1;
+}
+
+.jodit-toolbar-button__trigger:hover:not([disabled]) svg {
+    fill: #1F1F2B;
+}
+
+.jodit-popup__content {
+    background: #1F1F2B;
+}
+
+.jodit-toolbar-button__text {
+    color: #C2C4D1;
+}
+
+.jodit-container:not(.jodit_inline) {
+    border: 1px solid #2d2d3f;
+}
+
+.jodit-ui-separator {
+    border-right: 1px solid #2d2d3f;
+}
+
+.jodit-toolbar-editor-collection_size_small.jodit-toolbar-editor-collection_mode_horizontal {
+    background-image: -o-repeating-linear-gradient(transparent 0, transparent 31px, #2d2d3f 32px);
+    background-image: repeating-linear-gradient(transparent 0, transparent 31px, #2d2d3f 32px);
+}
+
+.jodit-toolbar-editor-collection_mode_horizontal:after {
+    background-color: #2d2d3f;
+}
+
+.jodit-toolbar__box:not(:empty) {
+    border-bottom: 1px solid #2d2d3f;
+}
+
+.jodit-workplace+.jodit-status-bar:not(:empty) {
+    border-top: 1px solid #2d2d3f;
+}
+
+.jodit-status-bar {
+    background-color: transparent;
+    color: #C2C4D1;
+}
+
+.jodit-status-bar a.jodit-status-bar-link {
+    color: #C2C4D1 !important;
+}
+
+
+/* SELECT2 */
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border: 1px solid #2d2d3f !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #C2C4D1;
+}
+
+.select2-selection {
+    color: #C2C4D1;
+}
+.select2-dropdown {
+    background-color: #1F1F2B;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    border: 1px solid #C2C4D1!important;
+    background: #C2C4D1;
+    color: #2d2d3f;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    color: #2269f5;
+}
+
+.select2-container--default .select2-selection--multiple {
+    background-color: transparent;
+    border: 1px solid #2d2d3f !important;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    color: #C2C4D1;
+}

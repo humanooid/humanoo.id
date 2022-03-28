@@ -25,6 +25,7 @@ class DashboardController extends Controller
     public function makeapost(){
         return view('b.makeapost', [
             'title' => 'Make a Post',
+            'categories' => \App\Models\Category::all(),
         ]);
     }
 }

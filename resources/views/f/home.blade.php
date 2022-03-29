@@ -12,7 +12,7 @@
 
                 <!-- info -->
                 <h1 class="mb-2 mt-0">Human∞.id</h1>
-                <p class="under-home-title">let's talk about code!</p>
+                <p class="under-home-title">< let's talk about code! ></p>
 
                 <!-- social icons -->
                 <ul class="social-icons light list-inline mb-0 mt-4">

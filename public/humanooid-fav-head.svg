@@ -53,7 +53,7 @@
      id="namedview201"
      showgrid="false"
      inkscape:zoom="1.3008682"
-     inkscape:cx="132.23046"
+     inkscape:cx="20.382081"
      inkscape:cy="85.129312"
      inkscape:window-x="1360"
      inkscape:window-y="0"
@@ -61,12 +61,10 @@
      inkscape:current-layer="svg199"
      inkscape:pagecheckerboard="true"
      units="px" />
-  <circle
-     style="opacity:1;fill:#454360;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
-     id="path1080"
-     cx="150"
-     cy="150"
-     r="150" />
+  <path
+     style="opacity:1;fill:#353353;fill-opacity:1;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 300,150 A 150,150 0 0 1 150,300 150,150 0 0 1 0,150 150,150 0 0 1 150,0 150,150 0 0 1 300,150 Z"
+     id="path1080" />
   <path
      d="m 149.95611,94.45967 v 1.19082 1.15409 1.11636 1.08113 1.04541 1.01217 0.97569 0.94246 0.90998 0.87725 0.84502 0.81428 0.7833 0.75332 0.72334 0.69435 0.66837 0.63763 0.61065 0.58617 0.55868 0.53369 0.50846 0.48523 0.45923 0.43875 0.41526 0.39303 0.37304 0.3503 0.33131 0.31257 0.29208 0.27684 0.25536 0.23986 0.22487 0.20738 0.19239 0.1774 0.16241 0.14991 0.13742 0.12243 0.11244 0.10244 0.0899 0.0799 0.07 0.06 0.0525 0.0475 0.04 0.0325 0.0275 0.025 0.025 0.025 0 0 0 0"
      style="fill:#ffcc00;fill-rule:evenodd;stroke-width:6.63706112"

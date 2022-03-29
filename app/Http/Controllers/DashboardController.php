@@ -30,4 +30,8 @@ class DashboardController extends Controller
             'tags' => \App\Models\Tag::all(),
         ]);
     }
+    public function createpost()
+    {
+        dd(request()->all());
+    }
 }

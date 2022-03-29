@@ -31,8 +31,8 @@
     <link href="{{ asset('b/css/main.min.css') }}" rel="stylesheet">
     <link href="{{ asset('b/css/custom.css') }}" rel="stylesheet">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('b/images/neptune.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('b/images/neptune.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('humanooid-fav-head.svg') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('humanooid-fav-head.svg') }}" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

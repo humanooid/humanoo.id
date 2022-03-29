@@ -32,3 +32,4 @@ Route::post('/colorize', [AuthController::class, 'colorize'])->middleware('auth'
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 Route::get('/posts', [DashboardController::class, 'posts'])->middleware('auth');
 Route::get('/makeapost', [DashboardController::class, 'makeapost'])->middleware('auth');
+Route::post('/createpost', [DashboardController::class, 'createpost'])->middleware('auth');

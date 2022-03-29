@@ -14,49 +14,73 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <label for="title" class="form-label">Title</label>
-                                    <input type="text" class="form-control" id="title" name="title"
-                                        aria-describedby="titleHelp">
-                                    {{-- <div id="titleHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
+                <form action="createpost" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="title" class="form-label">Title</label>
+                                        <input type="text" class="form-control" id="title" name="title"
+                                            aria-describedby="titleHelp">
+                                        {{-- <div id="titleHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea id="editor" name="body"></textarea>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <textarea id="editor"></textarea>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <label for="category" class="form-label">Category</label>
-                                    <select class="js-states form-control" tabindex="-1" name="category" id="category"
-                                        style="display: none; width: 100%">
-                                        @foreach ($categories as $category)
-                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="category" class="form-label">Tags</label>
-                                    <select class="js-example-basic-multiple-limit js-states form-control"
-                                        multiple="multiple" tabindex="-1" style="display: none; width: 100%">
-                                        @foreach ($tags as $tag)
-                                            <option value="{{ $tag->id }}">{{ $tag->name }}</option>
-                                        @endforeach
-                                    </select>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-sm btn-primary float-end"><i
+                                            class="material-icons">save</i>Save</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="mb-3">
+                                                <label for="category" class="form-label">Category</label>
+                                                <select class="js-states form-control" tabindex="-1" name="category"
+                                                    id="category" style="display: none; width: 100%">
+                                                    <option value="" selected disabled>Select Category</option>
+                                                    @foreach ($categories as $category)
+                                                        <option value="{{ $category->id }}">{{ $category->name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="category" class="form-label">Tags</label>
+                                                <select class="js-example-basic-multiple-limit js-states form-control"
+                                                    multiple="multiple" tabindex="-1" style="display: none; width: 100%"
+                                                    name="tags[]">
+                                                    @foreach ($tags as $tag)
+                                                        <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="mb-3">
+                                                <label for="heroImage" class="form-label">Hero Image</label>
+                                                <input class="form-control form-control-sm" id="heroImage" name="heroImage"
+                                                    type="file" onchange="imgPreview($(this))">
+                                            </div>
+                                            <div id="imgPreview"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -73,6 +97,15 @@
             tags: true,
             tokenSeparators: [',', ' ']
         });
+
+
+        function imgPreview(el) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#imgPreview').html('<img src="' + e.target.result + '" class="img-fluid" alt="image preview">');
+            }
+            reader.readAsDataURL(el[0].files[0]);
+        }
 
         const editor = Jodit.make("#editor", {
             "uploader": {

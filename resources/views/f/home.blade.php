@@ -1,11 +1,15 @@
 @extends('f._layout')
 @section('content')
     <!-- section home -->
-    <section id="home" class="home d-flex align-items-center light" style="height: 50vh; min-height: 50vh;">
+    <section id="home" class="home d-flex align-items-center light">
         <div class="container">
 
             <!-- intro -->
             <div class="intro">
+                <!-- avatar image -->
+                <img class="img-fluid rounded-circle mb-4" src="{{ asset('humanooid-fav-head.svg') }}" alt="Yama"
+                    width="108px">
+
                 <!-- info -->
                 <h1 class="mb-2 mt-0">Human∞.id</h1>
                 <p class="under-home-title">let's talk about code!</p>

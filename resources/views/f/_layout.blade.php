@@ -6,7 +6,7 @@
     <title>{{ $title }} - Human∞.id</title>
     <meta name="description" content="{{ $title }} - Human∞.id">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('f/images/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('humanooid-fav-head.svg') }}">
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="{{ asset('f/css/bootstrap.min.css') }}" type="text/css" media="all">
@@ -75,9 +75,9 @@
                 <!-- logo image -->
                 <div class="site-logo">
                     <a href="/">
-                        <img id="logoDark" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
+                        <img id="logoDark" style="display: none" src="{{ asset('humanooid-dark-text.svg') }}"
                             alt="Main Logo" />
-                        <img id="logoLight" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                        <img id="logoLight" style="display: none" src="{{ asset('humanooid-light-text.svg') }}"
                             alt="Main Logo" />
                     </a>
                 </div>
@@ -90,9 +90,9 @@
             <!-- logo image -->
             <div class="site-logo">
                 <a href="/">
-                    <img id="logoDarkDesktop" style="display: none" src="{{ asset('f/images/logo-dark.svg') }}"
+                    <img id="logoDarkDesktop" style="display: none" src="{{ asset('humanooid-dark-text.svg') }}"
                         alt="Main Logo" />
-                    <img id="logoLightDesktop" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                    <img id="logoLightDesktop" style="display: none" src="{{ asset('humanooid-light-text.svg') }}"
                         alt="Main Logo" />
                 </a>
             </div>
@@ -132,9 +132,9 @@
             <div class="container-fluid px-5">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="index-3.html">
-                        <img id="horizontalLogoDark" style="display: none"
-                            src="{{ asset('f/images/logo-dark.svg') }}" alt="Main Logo" />
-                        <img id="horizontalLogoLight" style="display: none" src="{{ asset('f/images/logo.svg') }}"
+                        <img id="horizontalLogoDark" style="display: none" width="200px"
+                            src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
+                        <img id="horizontalLogoLight" style="display: none" width="200px" src="{{ asset('humanooid-light-text.svg') }}"
                             alt="Main Logo" />
                     </a> <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                         class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse"

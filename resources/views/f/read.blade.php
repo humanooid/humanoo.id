@@ -2,7 +2,7 @@
 @section('content')
     <!-- Blog Page -->
     <section id="blog-page-area" class="blog-page-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
                     <div class="blog-single blog-standard shadow-dark">

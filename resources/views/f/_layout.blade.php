@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('f/css/magnific-popup.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220327') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220329') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -131,7 +131,7 @@
 
             <div class="container-fluid px-5">
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="index-3.html">
+                    <a class="navbar-brand" href="/">
                         <img id="horizontalLogoDark" style="display: none" width="200px"
                             src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
                         <img id="horizontalLogoLight" style="display: none" width="200px" src="{{ asset('humanooid-light-text.svg') }}"
@@ -199,7 +199,7 @@
     <script src="{{ asset('f/js/parallax.min.js') }}"></script>
     <script src="{{ asset('f/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('f/js/custom.js') }}"></script>
-    <script src="{{ asset('f/js/self.js?v=20220327') }}"></script>
+    <script src="{{ asset('f/js/self.js?v=20220329') }}"></script>
 
 </body>
 

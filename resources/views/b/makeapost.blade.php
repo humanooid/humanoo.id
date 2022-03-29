@@ -2,6 +2,7 @@
 @section('css')
     <link href="{{ asset('b/plugins/jodit/jodit.min.css') }}" rel="stylesheet">
     <link href="{{ asset('b/plugins/select2/css/select2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('b/css/prism.css') }}" rel="stylesheet">
 @endsection
 @section('content')
     <div class="app-content">
@@ -12,6 +13,15 @@
                         <div class="page-description">
                             <h1>{{ $title }}</h1>
                         </div>
+                        {{-- <pre><code class="language-php line-numbers">
+                            public function posts()
+                            {
+                                return view('b.posts', [
+                                    'title' => 'Posts',
+                                    'posts' => Post::with(['author', 'category'])->orderBy('published_at', 'desc')->orderBy('id', 'desc')->paginate(10),
+                                ]);
+                            }
+                        </code></pre> --}}
                     </div>
                 </div>
                 <form action="createpost" method="POST" enctype="multipart/form-data">
@@ -88,6 +98,7 @@
 @section('js')
     <script src="{{ asset('b/plugins/jodit/jodit.min.js') }}"></script>
     <script src="{{ asset('b/plugins/select2/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset('b/js/prism.js') }}"></script>
 @endsection
 @section('script')
     <script>
@@ -139,8 +150,8 @@
                 "subscript",
                 "|",
                 "image",
-                // "video",
-                // "file",
+                "video",
+                "file",
                 "|",
                 // "copyformat",
                 // "cut",
@@ -163,6 +174,16 @@
                 // "print",
                 // "about",
                 //   "\n",
+                "|",
+                {
+                    name: "Code Tag",
+                    tooltip: "Insert code tag",
+                    exec: (editor) => {
+                        editor.selection.insertHTML('<pre><code class="language-php line-numbers">' + editor
+                            .selection.html + '</code></pre>');
+                    },
+                },
+
             ],
         });
     </script>

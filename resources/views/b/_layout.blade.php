@@ -25,6 +25,7 @@
     <link href="{{ asset('b/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('b/plugins/perfectscroll/perfect-scrollbar.css') }}" rel="stylesheet">
     <link href="{{ asset('b/plugins/pace/pace.css') }}" rel="stylesheet">
+    <link href="{{ asset('b/plugins/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet">
 
     @yield('css')
 
@@ -453,7 +454,7 @@
                                 <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link" href="#">Projects</a>
                                 </li> --}}
-                                <li class="nav-item">
+                                <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link toggle-search" href="#"><i class="material-icons">search</i></a>
                                 </li>
                                 <li class="nav-item">
@@ -578,6 +579,7 @@
     <script src="{{ asset('b/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('b/plugins/perfectscroll/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('b/plugins/pace/pace.min.js') }}"></script>
+    <script src="{{ asset('b/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
     <script src="{{ asset('b/plugins/apexcharts/apexcharts.min.js') }}"></script>
     @yield('js')
     <script src="{{ asset('b/js/main.min.js') }}"></script>

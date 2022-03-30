@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
 class DashboardController extends Controller
@@ -82,6 +83,14 @@ class DashboardController extends Controller
         }
 
 
+        return redirect('/posts');
+    }
+
+    public function deletepost($id)
+    {
+        $post = Post::find($id);
+        $post->delete();
+        Session::flash('success', 'Post Deleted!');
         return redirect('/posts');
     }
 }

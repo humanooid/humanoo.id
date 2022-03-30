@@ -33,3 +33,4 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 Route::get('/posts', [DashboardController::class, 'posts'])->middleware('auth');
 Route::get('/makeapost', [DashboardController::class, 'makeapost'])->middleware('auth');
 Route::post('/createpost', [DashboardController::class, 'createpost'])->middleware('auth');
+Route::get('/deletepost/{post:id}', [DashboardController::class, 'deletepost'])->middleware('auth');

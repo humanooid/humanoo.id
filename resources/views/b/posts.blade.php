@@ -56,11 +56,11 @@
                                                 <td>
                                                     <a href="/read/{{ $post->slug }}" target="_blank"
                                                         class="btn btn-sm btn-rounded btn-style-light btn-warning"><i
-                                                            class="material-icons">visibility</i>View</a>
+                                                            class="material-icons">visibility</i>Read</a>
                                                     <button type="button"
                                                         class="btn btn-sm btn-rounded btn-style-light btn-primary"><i
                                                             class="material-icons">edit</i>Edit</button>
-                                                    <button type="button"
+                                                    <button type="button" onclick="deletePost({{ $post->id }})"
                                                         class="btn btn-sm btn-rounded btn-style-light btn-danger"><i
                                                             class="material-icons">delete</i>Delete</button>
                                                 </td>
@@ -112,4 +112,42 @@
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+    <script>
+        function deletePost(id) {
+            Swal.fire({
+                title: 'Do you want to delete the post?',
+                showCancelButton: true,
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    window.location.href = '/deletepost/' + id;
+                }
+            })
+
+        }
+        @if (session('success'))
+            const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            showCloseButton: true,
+            timer: 3000,
+            timerProgressBar: true,
+            customClass: {
+            timerProgressBar: 'success',
+            },
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+            })
+        
+            Toast.fire({
+            icon: 'success',
+            title: '{{ session('success') }}'
+            })
+        @endif
+    </script>
 @endsection

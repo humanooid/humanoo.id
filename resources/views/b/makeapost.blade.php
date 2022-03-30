@@ -8,12 +8,20 @@
     <div class="app-content">
         <div class="content-wrapper">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="page-description">
-                            <h1>{{ $title }}</h1>
-                        </div>
-                        {{-- <pre><code class="language-php line-numbers">
+                <form action="createpost" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col">
+                            <div class="page-description">
+                                <span class="float-start">
+                                    <h1>{{ $title }}</h1>
+                                </span>
+                                <span class="float-end">
+                                    <button type="submit" class="btn btn-primary float-end"><i
+                                            class="material-icons">save</i>Save</button>
+
+                                </span>
+                            </div>
+                            {{-- <pre><code class="language-php line-numbers">
                             public function posts()
                             {
                                 return view('b.posts', [
@@ -22,9 +30,8 @@
                                 ]);
                             }
                         </code></pre> --}}
+                        </div>
                     </div>
-                </div>
-                <form action="createpost" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-8">
@@ -41,8 +48,6 @@
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <button type="submit" class="btn btn-sm btn-primary float-end"><i
-                                            class="material-icons">save</i>Save</button>
                                 </div>
                             </div>
                         </div>

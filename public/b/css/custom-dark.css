@@ -104,3 +104,11 @@
 .select2-container--default .select2-search--inline .select2-search__field {
     color: #C2C4D1;
 }
+
+
+/* SWEETALERT2 */
+
+.swal2-container.swal2-top-end>.swal2-popup, .swal2-container.swal2-top-right>.swal2-popup {
+    background-color: #1F1F2B;
+    color: white;
+}

@@ -3,15 +3,31 @@
 .swal2-timer-progress-bar.success {
     background: #A5DC86;
 }
+
 .swal2-timer-progress-bar.error {
     background: #F27474;
 }
+
 .swal2-timer-progress-bar.warning {
     background: #F8BB86;
 }
+
 .swal2-timer-progress-bar.info {
     background: #3FC3EE;
 }
+
 .swal2-timer-progress-bar.question {
     background: #87ADBD;
+}
+
+
+
+
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
 }

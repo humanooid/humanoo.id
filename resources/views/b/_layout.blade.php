@@ -454,7 +454,7 @@
                                 <li class="nav-item hidden-on-mobile">
                                     <a class="nav-link" href="#">Projects</a>
                                 </li> --}}
-                                <li class="nav-item hidden-on-mobile">
+                                <li class="nav-item">
                                     <a class="nav-link toggle-search" href="#"><i class="material-icons">search</i></a>
                                 </li>
                                 <li class="nav-item">
@@ -485,7 +485,7 @@
                                         </li>
                                     </ul>
                                 </li> --}}
-                                <li class="nav-item hidden-on-mobile">
+                                <li class="nav-item">
                                     <a class="nav-link nav-notifications-toggle" id="notificationsDropDown" href="#"
                                         data-bs-toggle="dropdown">4</a>
                                     <div class="dropdown-menu dropdown-menu-end notifications-dropdown"

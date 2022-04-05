@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/read/{post:slug}', [HomeController::class, 'read']);
+Route::get('/changelayout/{any}', [HomeController::class, 'changeLayout']);
+Route::get('/yama', [HomeController::class, 'yama']);
 
-Route::get('/', function () {
-    return view('portofolio');
-});
+
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('/actionlogin', [AuthController::class, 'actionlogin'])->name('actionlogin');
+Route::get('/actionlogout', [AuthController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
+Route::post('/colorize', [AuthController::class, 'colorize'])->middleware('auth');
+
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/posts', [DashboardController::class, 'posts'])->middleware('auth');
+Route::get('/makeapost', [DashboardController::class, 'makeapost'])->middleware('auth');
+Route::post('/createpost', [DashboardController::class, 'createpost'])->middleware('auth');
+Route::get('/deletepost/{post:id}', [DashboardController::class, 'deletepost'])->middleware('auth');

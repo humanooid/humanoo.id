@@ -1325,6 +1325,11 @@ select.portfolio-filter-mobile {
 }
 .blog-item .details h4.title {
   font-size: 20px;
+  /*css one-line*/
+  width: 240px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .blog-item .details h4.title a {
   color: #353353;

@@ -26,7 +26,7 @@ class DashboardController extends Controller
     {
         return view('b.posts', [
             'title' => 'Posts',
-            'posts' => Post::with(['author', 'category'])->orderBy('published_at', 'desc')->orderBy('id', 'desc')->paginate(10),
+            'posts' => Post::with(['author', 'category'])->orderBy('created_at', 'desc')->orderBy('id', 'desc')->paginate(10),
         ]);
     }
     public function makeapost()
@@ -40,7 +40,7 @@ class DashboardController extends Controller
     public function createpost(Request $request)
     {
         $request->validate([
-            'title' => 'required',
+            'title' => 'required|unique:posts,title',
             'body' => 'required',
             'category' => 'required:exists:categories,id',
             'tags' => 'required',
@@ -59,6 +59,9 @@ class DashboardController extends Controller
         $post->image = Str::slug($request->input('title')) . '.' . $ext;
         $post->user_id = session('user')->id;
         $post->category_id = $request->input('category');
+        if ($request->input('publish')) {
+            $post->published_at = now();
+        }
         $post->save();
         $post_tags = $request->input('tags');
         foreach ($post_tags as $tag) {
@@ -81,8 +84,12 @@ class DashboardController extends Controller
                 $post_tag->save();
             }
         }
-
-        Session::flash('success', 'Post Created!');
+        if ($request->input('publish')) {
+            $notif = 'Post Created and Published!';
+        } else {
+            $notif = 'Post Created!';
+        }
+        Session::flash('success', $notif);
 
         return redirect('/posts');
     }
@@ -92,6 +99,12 @@ class DashboardController extends Controller
         $post = Post::find($id);
         Storage::delete('public/posts/' . $post->image);
         $post->delete();
+
+        $postTag = Post_tag::where('post_id', $id)->get();
+        foreach ($postTag as $tag) {
+            $tag->delete();
+        }
+
         Session::flash('success', 'Post Deleted!');
         return redirect('/posts');
     }

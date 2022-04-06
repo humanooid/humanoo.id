@@ -15,7 +15,7 @@ class HomeController extends Controller
         return view('f.home', [
             'title' => 'Home',
             'bar' => getBar('Home'),
-            'posts' => Post::with(['author', 'category'])->where('published_at', '!=', NULL)->orderBy('published_at', 'desc')->orderBy('id', 'desc')->paginate(9),
+            'posts' => Post::with(['author', 'category', 'post_tag'])->where('published_at', '!=', NULL)->orderBy('published_at', 'desc')->orderBy('id', 'desc')->paginate(9),
             'categories' => Category::with(['posts' => function ($query) {
                 return $query->orderBy('published_at', 'desc')->limit(9);
             }])->get(),
@@ -24,7 +24,8 @@ class HomeController extends Controller
 
     public function read($slug)
     {
-        $post = Post::with(['author', 'category'])->where('slug', $slug)->where('published_at', '!=', NULL)->firstOrFail();
+        $post = Post::with(['author', 'category', 'post_tag.tag'])->where('slug', $slug)->where('published_at', '!=', NULL)->firstOrFail();
+        dd($post);
         $recentPost = Post::orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(5)->get();
         $categories = Category::orderBy('name', 'asc')->get();
         return view('f.read', [

@@ -20,6 +20,6 @@ class Post extends Model
     }
     public function post_tag()
     {
-        return $this->belongsToMany(Post_tag::class);
+        return $this->hasMany(Post_tag::class);
     }
 }

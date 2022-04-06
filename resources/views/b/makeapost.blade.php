@@ -81,8 +81,6 @@
                                         @endif
                                     </div>
                                 </div>
-                                <div class="card-footer">
-                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -132,7 +130,15 @@
                                                 @if ($errors->has('tags'))
                                                     <span class="invalid-feedback">{{ $errors->first('tags') }}</span>
                                                 @endif
-
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="1" id="publish"
+                                                        name="publish" {{ old('publish') ? 'checked' : '' }}>
+                                                    <label class="form-check-label" for="publish">
+                                                        Publish
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -145,7 +151,7 @@
                                                 <input
                                                     class="form-control form-control-sm {{ $errors->has('heroImage') ? 'is-invalid' : '' }}"
                                                     id="heroImage" name="heroImage" type="file"
-                                                    onchange="imgPreview($(this))">
+                                                    onchange="imgPreview($(this))" value="{{ old('heroImage') }}">
                                                 @if ($errors->has('heroImage'))
                                                     <span
                                                         class="invalid-feedback">{{ $errors->first('heroImage') }}</span>

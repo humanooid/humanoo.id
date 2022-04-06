@@ -50,4 +50,20 @@ class HomeController extends Controller
             'bar' => getBar('Yama'),
         ]);
     }
+
+    public function marchites()
+    {
+        return view('f.marchites', [
+            'title' => 'Gilang',
+            'bar' => getBar('Gilang'),
+        ]);
+    }
+
+    public function razor()
+    {
+        return view('f.razor', [
+            'title' => 'Ilham',
+            'bar' => getBar('Ilham'),
+        ]);
+    }
 }

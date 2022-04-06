@@ -21,6 +21,8 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/read/{post:slug}', [HomeController::class, 'read']);
 Route::get('/changelayout/{any}', [HomeController::class, 'changeLayout']);
 Route::get('/yama', [HomeController::class, 'yama']);
+Route::get('/marchites', [HomeController::class, 'marchites']);
+Route::get('/razor', [HomeController::class, 'razor']);
 
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');

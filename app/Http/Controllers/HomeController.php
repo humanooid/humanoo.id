@@ -25,7 +25,6 @@ class HomeController extends Controller
     public function read($slug)
     {
         $post = Post::with(['author', 'category', 'post_tag.tag'])->where('slug', $slug)->where('published_at', '!=', NULL)->firstOrFail();
-        dd($post);
         $recentPost = Post::orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(5)->get();
         $categories = Category::orderBy('name', 'asc')->get();
         return view('f.read', [

@@ -114,3 +114,9 @@ main.content-3 {
         margin-top: 53px;
     }
 }
+
+.post-body table tbody, td, tfoot, th, thead, tr {
+    border-width: 1px;
+    padding: 10px;
+}
+

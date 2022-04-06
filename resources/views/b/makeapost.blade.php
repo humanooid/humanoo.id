@@ -129,7 +129,7 @@
             },
             //   "theme": "light",
             "toolbarButtonSize": "small",
-            "height": 500,
+            // "height": 500,
             "minHeight": 500,
             "toolbarAdaptive": false,
             "buttons": [
@@ -166,7 +166,7 @@
                 // "|",
                 "hr",
                 "table",
-                // "link",
+                "link",
                 "symbol",
                 "|",
                 "undo",
@@ -174,8 +174,8 @@
                 "find",
                 "|",
                 "source",
-                // "fullsize",
-                // "preview",
+                "fullsize",
+                "preview",
                 // "print",
                 // "about",
                 //   "\n",
@@ -183,13 +183,63 @@
                 {
                     name: "Code Tag",
                     tooltip: "Insert code tag",
-                    exec: (editor) => {
-                        editor.selection.insertHTML('<pre><code class="language-php line-numbers">' + editor
-                            .selection.html + '</code></pre>');
+                    tooltip: 'Wrap selection in tag',
+                    list: {
+                        php: 'PHP',
+                        css: 'CSS',
+                        html: 'HTML',
                     },
+
+
+                    childTemplate: (editor, key, value) =>
+                        `<span>${editor.i18n(value)}</span>`,
+
+                    exec(editor, _, {
+                        control
+                    }) {
+                        let value = control.args && control.args[0]; // h1, h2 ...
+
+                        // editor.selection.insertHTML('<pre><code class="language-' + value + ' line-numbers">' +
+                        //     escapeHtml(editor.selection.html) + '</code></pre>');
+                        if (value) {
+                            editor.selection.insertHTML('<pre><code class="language-' + value +
+                                ' line-numbers"> </code></pre>');
+                            editor
+                                .setEditorValue(); // Synchronizing the state of the WYSIWYG editor and the source textarea
+                        }
+                        return false;
+                    }
                 },
 
             ],
+            hotkeys: {
+                redo: 'ctrl+z',
+                undo: 'ctrl+y,ctrl+shift+z',
+                indent: 'ctrl+]',
+                outdent: 'ctrl+[',
+                bold: 'ctrl+b',
+                italic: 'ctrl+i',
+                removeFormat: 'ctrl+shift+m',
+                insertOrderedList: 'ctrl+shift+7',
+                insertUnorderedList: 'ctrl+shift+8',
+                openSearchDialog: 'ctrl+f',
+                openReplaceDialog: 'ctrl+r',
+            },
+            events: {
+                processPaste: function(event, html) {
+                    jodit_editor.selection.insertHTML(html);
+                    jodit_editor.tempContent = jodit_editor.getEditorValue();
+                },
+                afterPaste: function(event) {
+                    let el = $('<div></div>');
+                    el.html(jodit_editor.tempContent ? jodit_editor.tempContent : jodit_editor
+                        .getEditorValue());
+                    jodit_editor.setEditorValue(el.html());
+                    jodit_editor.tempContent = null;
+                },
+            },
+            askBeforePasteFromWord: false,
+            askBeforePasteHTML: false
         });
     </script>
 @endsection

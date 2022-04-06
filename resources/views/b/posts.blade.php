@@ -39,7 +39,7 @@
                                                 <th scope="row">{{ $no }}</th>
                                                 <td>{{ $post->title }}</td>
                                                 <td><img src="{{ asset(Storage::url('posts/' . $post->image)) }}"
-                                                        alt="{{ $post->title }}" class="img-fluid" width="200px">
+                                                        alt="{{ $post->title }}" class="img-fluid" width="100px">
                                                 </td>
                                                 <td>
                                                     <span class="badge rounded-pill badge-primary">C :
@@ -54,20 +54,29 @@
                                                         class="badge rounded-pill badge-danger">{{ $post->category->name }}</span><br>
                                                     <small>by : {{ $post->author->name }}</small>
                                                 </td>
-                                                <td>
-                                                    <a href="/read/{{ $post->slug }}" target="_blank"
-                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-warning"><i
-                                                            class="material-icons">visibility</i>Read</a>
-                                                    <button type="button"
-                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-primary"><i
-                                                            class="material-icons">edit</i>Edit</button>
-                                                    <button type="button" onclick="deletePost({{ $post->id }})"
-                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-danger"><i
-                                                            class="material-icons">delete</i>Delete</button>
-                                                    <button type="button"
-                                                        onclick="publishPost({{ $post->id }}, {{ $post->published_at ? 'false' : 'true' }})"
-                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-success"><i
-                                                            class="material-icons">{{ $post->published_at ? 'download' : 'publish' }}</i>{{ $post->published_at ? 'Unpublish' : 'Publish' }}</button>
+                                                <td class="text-end">
+                                                    <div class="dropdown">
+                                                        <button
+                                                            class="btn btn-primary btn-rounded btn-style-light btn-sm dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            Option
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            @if ($post->published_at)
+                                                                <li><a class="dropdown-item"
+                                                                        href="/read/{{ $post->slug }}"
+                                                                        target="_blank">Read</a></li>
+                                                            @endif
+                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item" href="#"
+                                                                    onclick="deletePost({{ $post->id }})">Delete</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#"
+                                                                    onclick="publishPost({{ $post->id }}, {{ $post->published_at ? 'false' : 'true' }})">{{ $post->published_at ? 'Unpublish' : 'Publish' }}</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <?php $no++; ?>
@@ -134,27 +143,21 @@
         }
 
         function publishPost(id, mode) {
+            let action;
             if (mode) {
-                Swal.fire({
-                    title: 'Do you want to publish the post?',
-                    showCancelButton: true,
-                }).then((result) => {
-                    /* Read more about isConfirmed, isDenied below */
-                    if (result.isConfirmed) {
-                        window.location.href = '/publishpost/' + id;
-                    }
-                })
+                action = 'publish';
             } else {
-                Swal.fire({
-                    title: 'Do you want to unpublish the post?',
-                    showCancelButton: true,
-                }).then((result) => {
-                    /* Read more about isConfirmed, isDenied below */
-                    if (result.isConfirmed) {
-                        window.location.href = '/unpublishpost/' + id;
-                    }
-                })
+                action = 'unpublish';
             }
+            Swal.fire({
+                title: `Do you want to ${action} the post?`,
+                showCancelButton: true,
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    window.location.href = `/${action}post/${id}`;
+                }
+            })
         }
         @if (session('success'))
             const Toast = Swal.mixin({

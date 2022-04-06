@@ -82,6 +82,7 @@ class DashboardController extends Controller
             }
         }
 
+        Session::flash('success', 'Post Created!');
 
         return redirect('/posts');
     }

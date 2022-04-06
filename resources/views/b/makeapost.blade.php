@@ -5,6 +5,30 @@
     <link href="{{ asset('b/css/prism.css') }}" rel="stylesheet">
 @endsection
 @section('content')
+    @if ($errors->has('body'))
+        <style>
+            .jodit-container:not(.jodit_inline) {
+                border: 1px solid #ff4857;
+            }
+
+        </style>
+    @endif
+    @if ($errors->has('category'))
+        <style>
+            .select2-container--default .select2-selection--single {
+                border: 1px solid #ff4857 !important;
+            }
+
+        </style>
+    @endif
+    @if ($errors->has('tags'))
+        <style>
+            .select2-container--default .select2-selection--multiple {
+                border: 1px solid #ff4857 !important;
+            }
+
+        </style>
+    @endif
     <div class="app-content">
         <div class="content-wrapper">
             <div class="container">
@@ -39,12 +63,22 @@
                                 <div class="card-body">
                                     <div class="mb-3">
                                         <label for="title" class="form-label">Title</label>
-                                        <input type="text" class="form-control" id="title" name="title"
-                                            aria-describedby="titleHelp">
+                                        <input type="text"
+                                            class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}"
+                                            id="title" name="title" aria-describedby="titleHelp"
+                                            value="{{ old('title') }}">
+                                        @if ($errors->has('title'))
+                                            <span class="invalid-feedback">{{ $errors->first('title') }}</span>
+                                        @endif
+
                                         {{-- <div id="titleHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
                                     </div>
                                     <div class="mb-3">
-                                        <textarea id="editor" name="body"></textarea>
+                                        <textarea id="editor" class="form-control {{ $errors->has('body') ? 'is-invalid' : '' }}"
+                                            name="body">{{ old('body') }}</textarea>
+                                        @if ($errors->has('body'))
+                                            <span class="invalid-feedback">{{ $errors->first('body') }}</span>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="card-footer">
@@ -58,24 +92,47 @@
                                         <div class="card-body">
                                             <div class="mb-3">
                                                 <label for="category" class="form-label">Category</label>
-                                                <select class="js-states form-control" tabindex="-1" name="category"
-                                                    id="category" style="display: none; width: 100%">
-                                                    <option value="" selected disabled>Select Category</option>
+                                                <select
+                                                    class="js-states form-control {{ $errors->has('category') ? 'is-invalid' : '' }}"
+                                                    tabindex="-1" name="category" id="category"
+                                                    style="display: none; width: 100%">
+                                                    <option value="" {{ old('category') ? '' : 'selected' }} disabled>
+                                                        Select Category</option>
                                                     @foreach ($categories as $category)
-                                                        <option value="{{ $category->id }}">{{ $category->name }}
+                                                        <option value="{{ $category->id }}"
+                                                            {{ old('category') == $category->id ? 'selected' : '' }}>
+                                                            {{ $category->name }}
                                                         </option>
                                                     @endforeach
                                                 </select>
+                                                @if ($errors->has('category'))
+                                                    <span
+                                                        class="invalid-feedback">{{ $errors->first('category') }}</span>
+                                                @endif
                                             </div>
                                             <div class="mb-3">
                                                 <label for="category" class="form-label">Tags</label>
-                                                <select class="js-example-basic-multiple-limit js-states form-control"
+                                                <select
+                                                    class="js-example-basic-multiple-limit js-states form-control {{ $errors->has('tags') ? 'is-invalid' : '' }}"
                                                     multiple="multiple" tabindex="-1" style="display: none; width: 100%"
                                                     name="tags[]">
+                                                    <?php
+                                                    if (old('tags')):
+                                                        $tagsList = old('tags');
+                                                    else:
+                                                        $tagsList = [];
+                                                    endif;
+                                                    ?>
                                                     @foreach ($tags as $tag)
-                                                        <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                                                        <option value="{{ $tag->id }}"
+                                                            {{ in_array($tag->id, $tagsList) ? 'selected' : '' }}>
+                                                            {{ $tag->name }}</option>
                                                     @endforeach
                                                 </select>
+                                                @if ($errors->has('tags'))
+                                                    <span class="invalid-feedback">{{ $errors->first('tags') }}</span>
+                                                @endif
+
                                             </div>
                                         </div>
                                     </div>
@@ -85,8 +142,15 @@
                                         <div class="card-body">
                                             <div class="mb-3">
                                                 <label for="heroImage" class="form-label">Hero Image</label>
-                                                <input class="form-control form-control-sm" id="heroImage" name="heroImage"
-                                                    type="file" onchange="imgPreview($(this))">
+                                                <input
+                                                    class="form-control form-control-sm {{ $errors->has('heroImage') ? 'is-invalid' : '' }}"
+                                                    id="heroImage" name="heroImage" type="file"
+                                                    onchange="imgPreview($(this))">
+                                                @if ($errors->has('heroImage'))
+                                                    <span
+                                                        class="invalid-feedback">{{ $errors->first('heroImage') }}</span>
+                                                @endif
+
                                             </div>
                                             <div id="imgPreview"></div>
                                         </div>

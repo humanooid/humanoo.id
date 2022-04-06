@@ -38,13 +38,14 @@
                                             <tr>
                                                 <th scope="row">{{ $no }}</th>
                                                 <td>{{ $post->title }}</td>
-                                                <td><img src="{{ asset($post->image) }}" alt="{{ $post->title }}"
-                                                        class="img-fluid" width="200px"></td>
+                                                <td><img src="{{ asset(Storage::url('posts/' . $post->image)) }}"
+                                                        alt="{{ $post->title }}" class="img-fluid" width="200px">
+                                                </td>
                                                 <td>
                                                     <span class="badge rounded-pill badge-primary">C :
                                                         {{ date('d M Y H:i', strtotime($post->created_at)) }}</span><br>
                                                     <span class="badge rounded-pill badge-success">P :
-                                                        {{ date('d M Y H:i', strtotime($post->published_at)) }}</span><br>
+                                                        {{ $post->published_at ? date('d M Y H:i', strtotime($post->published_at)) : 'Not published yet' }}</span><br>
                                                     <span class="badge rounded-pill badge-warning">U :
                                                         {{ date('d M Y H:i', strtotime($post->updated_at)) }}</span>
                                                 </td>
@@ -55,14 +56,18 @@
                                                 </td>
                                                 <td>
                                                     <a href="/read/{{ $post->slug }}" target="_blank"
-                                                        class="btn btn-sm btn-rounded btn-style-light btn-warning"><i
+                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-warning"><i
                                                             class="material-icons">visibility</i>Read</a>
                                                     <button type="button"
-                                                        class="btn btn-sm btn-rounded btn-style-light btn-primary"><i
+                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-primary"><i
                                                             class="material-icons">edit</i>Edit</button>
                                                     <button type="button" onclick="deletePost({{ $post->id }})"
-                                                        class="btn btn-sm btn-rounded btn-style-light btn-danger"><i
+                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-danger"><i
                                                             class="material-icons">delete</i>Delete</button>
+                                                    <button type="button"
+                                                        onclick="publishPost({{ $post->id }}, {{ $post->published_at ? 'false' : 'true' }})"
+                                                        class="mb-1 btn btn-sm btn-rounded btn-style-light btn-success"><i
+                                                            class="material-icons">{{ $post->published_at ? 'download' : 'publish' }}</i>{{ $post->published_at ? 'Unpublish' : 'Publish' }}</button>
                                                 </td>
                                             </tr>
                                             <?php $no++; ?>
@@ -126,6 +131,30 @@
                 }
             })
 
+        }
+
+        function publishPost(id, mode) {
+            if (mode) {
+                Swal.fire({
+                    title: 'Do you want to publish the post?',
+                    showCancelButton: true,
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        window.location.href = '/publishpost/' + id;
+                    }
+                })
+            } else {
+                Swal.fire({
+                    title: 'Do you want to unpublish the post?',
+                    showCancelButton: true,
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        window.location.href = '/unpublishpost/' + id;
+                    }
+                })
+            }
         }
         @if (session('success'))
             const Toast = Swal.mixin({

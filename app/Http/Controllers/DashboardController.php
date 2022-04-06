@@ -56,7 +56,7 @@ class DashboardController extends Controller
         $post->title = $request->input('title');
         $post->slug = Str::slug($request->input('title'));
         $post->body = $request->input('body');
-        $post->image = Storage::url('posts/' . Str::slug($request->input('title')) . '.' . $ext);
+        $post->image = Str::slug($request->input('title')) . '.' . $ext;
         $post->user_id = session('user')->id;
         $post->category_id = $request->input('category');
         $post->save();
@@ -89,8 +89,26 @@ class DashboardController extends Controller
     public function deletepost($id)
     {
         $post = Post::find($id);
+        Storage::delete('public/posts/' . $post->image);
         $post->delete();
         Session::flash('success', 'Post Deleted!');
+        return redirect('/posts');
+    }
+
+    public function publishpost($id)
+    {
+        $post = Post::find($id);
+        $post->published_at = now();
+        $post->save();
+        Session::flash('success', 'Post Published!');
+        return redirect('/posts');
+    }
+    public function unpublishpost($id)
+    {
+        $post = Post::find($id);
+        $post->published_at = NULL;
+        $post->save();
+        Session::flash('success', 'Post Published!');
         return redirect('/posts');
     }
 }

@@ -2,6 +2,10 @@
     text-decoration: none;
 }
 
+.blog-page-section .blog-pagination ul li a:hover {
+    color: #fff;
+}
+
 .blog-page-section .blog-pagination ul li a.active {
     background-color: #FF4C60;
     color: #fff;
@@ -119,4 +123,3 @@ main.content-3 {
     border-width: 1px;
     padding: 10px;
 }
-

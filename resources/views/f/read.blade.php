@@ -12,12 +12,7 @@
                             <li class="list-inline-item"><a href="#" title="Posts by {{ $post->author->name }}"
                                     rel="author">{{ $post->author->name }}</a></li>
                             <li class="list-inline-item"><a href="#">{{ $post->category->name }}</a></li>
-                            <li class="list-inline-item">
-                                <?php
-                                    echo strip_tags("74<li> min read</li>");
-                                ?>
-                            </li>
-                            <!-- <li class="list-inline-item">{{ ceil(str_word_count($post->body)/200) }} min read</li> -->
+                            <li class="list-inline-item">{{ ceil(str_word_count(strip_tags($post->body))/200) }} min read</li>
                         </ul>
                         <div class="thumb-wrapper mt-4"><img src="{{ asset($post->image) }}" alt="{{ $post->title }}">
                         </div>

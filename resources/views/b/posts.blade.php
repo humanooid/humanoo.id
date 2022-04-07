@@ -68,7 +68,8 @@
                                                                         href="/read/{{ $post->slug }}"
                                                                         target="_blank">Read</a></li>
                                                             @endif
-                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                    href="/editapost/{{ $post->id }}">Edit</a></li>
                                                             <li><a class="dropdown-item" href="#"
                                                                     onclick="deletePost({{ $post->id }})">Delete</a>
                                                             </li>

@@ -32,7 +32,8 @@
     <div class="app-content">
         <div class="content-wrapper">
             <div class="container">
-                <form action="createpost" method="POST" enctype="multipart/form-data">
+                <form action="{{ $title == 'Edit a Post' ? "/updatepost/$post->id" : '/createpost' }}" method="POST"
+                    enctype="multipart/form-data">
                     <div class="row">
                         <div class="col">
                             <div class="page-description">
@@ -66,7 +67,7 @@
                                         <input type="text"
                                             class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}"
                                             id="title" name="title" aria-describedby="titleHelp"
-                                            value="{{ old('title') }}">
+                                            value="{{ $title == 'Edit a Post' ? $post->title : old('title') }}">
                                         @if ($errors->has('title'))
                                             <span class="invalid-feedback">{{ $errors->first('title') }}</span>
                                         @endif
@@ -75,7 +76,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <textarea id="editor" class="form-control {{ $errors->has('body') ? 'is-invalid' : '' }}"
-                                            name="body">{{ old('body') }}</textarea>
+                                            name="body">{{ $title == 'Edit a Post' ? $post->body : old('body') }}</textarea>
                                         @if ($errors->has('body'))
                                             <span class="invalid-feedback">{{ $errors->first('body') }}</span>
                                         @endif
@@ -98,7 +99,7 @@
                                                         Select Category</option>
                                                     @foreach ($categories as $category)
                                                         <option value="{{ $category->id }}"
-                                                            {{ old('category') == $category->id ? 'selected' : '' }}>
+                                                            {{ $title == 'Edit a Post'? ($post->category_id == $category->id? 'selected': ''): (old('category') == $category->id? 'selected': '') }}>
                                                             {{ $category->name }}
                                                         </option>
                                                     @endforeach
@@ -115,10 +116,16 @@
                                                     multiple="multiple" tabindex="-1" style="display: none; width: 100%"
                                                     name="tags[]">
                                                     <?php
-                                                    if (old('tags')):
-                                                        $tagsList = old('tags');
+                                                    $tagsList = [];
+                                                    if ($title == 'Edit a Post'):
+                                                        $pluckTag = $post->post_tag->pluck('tag');
+                                                        foreach ($pluckTag as $p) {
+                                                            $tagsList[] = $p->id;
+                                                        }
                                                     else:
-                                                        $tagsList = [];
+                                                        if (old('tags')):
+                                                            $tagsList = old('tags');
+                                                        endif;
                                                     endif;
                                                     ?>
                                                     @foreach ($tags as $tag)
@@ -134,7 +141,8 @@
                                             <div class="mb-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="1" id="publish"
-                                                        name="publish" {{ old('publish') ? 'checked' : '' }}>
+                                                        name="publish"
+                                                        {{ $title == 'Edit a Post' ? ($post->published_at ? 'checked' : '') : (old('publish') ? 'checked' : '') }}>
                                                     <label class="form-check-label" for="publish">
                                                         Publish
                                                     </label>
@@ -158,7 +166,9 @@
                                                 @endif
 
                                             </div>
-                                            <div id="imgPreview"></div>
+                                            <div id="imgPreview">
+                                                {!! $title == 'Edit a Post' ? '<img src="' . asset(Storage::url('posts/' . $post->image)) . '" class="img-fluid" alt="image preview">' : '' !!}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

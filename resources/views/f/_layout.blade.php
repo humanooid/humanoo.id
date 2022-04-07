@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="{{ asset('f/css/animate.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/css/magnific-popup.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('f/plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
+
+    @yield('css')
+
     <link rel="stylesheet" href="{{ asset('f/css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220329') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220406') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -134,15 +137,16 @@
                     <a class="navbar-brand" href="/">
                         <img id="horizontalLogoDark" style="display: none" width="200px"
                             src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
-                        <img id="horizontalLogoLight" style="display: none" width="200px" src="{{ asset('humanooid-light-text.svg') }}"
-                            alt="Main Logo" />
+                        <img id="horizontalLogoLight" style="display: none" width="200px"
+                            src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" />
                     </a> <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                         class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse"
                         type="button"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto scrollspy">
                             @foreach ($bar as $k => $v)
-                                <li class="nav-item {{ $v['active'] ? 'active' : '' }}"><a class="nav-link" href="{{ $v['url'] }}">{{ $k }}</a></li>
+                                <li class="nav-item {{ $v['active'] ? 'active' : '' }}"><a class="nav-link"
+                                        href="{{ $v['url'] }}">{{ $k }}</a></li>
                             @endforeach
                             <li class="nav-item pe-2">
                                 <div class="form-check form-switch colorChanger">
@@ -198,8 +202,10 @@
     <script src="{{ asset('f/js/morphext.min.js') }}"></script>
     <script src="{{ asset('f/js/parallax.min.js') }}"></script>
     <script src="{{ asset('f/js/jquery.magnific-popup.min.js') }}"></script>
+    @yield('js')
     <script src="{{ asset('f/js/custom.js') }}"></script>
-    <script src="{{ asset('f/js/self.js?v=20220329') }}"></script>
+    <script src="{{ asset('f/js/self.js?v=20220406') }}"></script>
+    @yield('script')
 
 </body>
 

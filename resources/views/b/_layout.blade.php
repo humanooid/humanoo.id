@@ -576,6 +576,7 @@
 
     <!-- Javascripts -->
     <script src="{{ asset('b/plugins/jquery/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ asset('b/plugins/bootstrap/js/popper.min.js') }}"></script>
     <script src="{{ asset('b/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('b/plugins/perfectscroll/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('b/plugins/pace/pace.min.js') }}"></script>
@@ -584,7 +585,6 @@
     @yield('js')
     <script src="{{ asset('b/js/main.min.js') }}"></script>
     <script src="{{ asset('b/js/custom.js') }}"></script>
-    <script src="{{ asset('b/js/pages/dashboard.js') }}"></script>
     @yield('script')
 </body>
 

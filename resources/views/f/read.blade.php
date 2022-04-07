@@ -1,4 +1,7 @@
 @extends('f._layout')
+@section('css')
+    <link href="{{ asset('b/css/prism.css') }}" rel="stylesheet">
+@endsection
 @section('content')
     <!-- Blog Page -->
     <section id="blog-page-area" class="blog-page-section">
@@ -14,11 +17,13 @@
                             <li class="list-inline-item"><a href="#">{{ $post->category->name }}</a></li>
                             <li class="list-inline-item">{{ ceil(str_word_count(strip_tags($post->body))/200) }} min read</li>
                         </ul>
-                        <div class="thumb-wrapper mt-4"><img src="{{ asset($post->image) }}" alt="{{ $post->title }}">
+                        <div class="thumb-wrapper mt-4"><img src="{{ asset(Storage::url('posts/' . $post->image)) }}" alt="{{ $post->title }}">
                         </div>
                         <article>
                             <div class="clearfix my-4">
-                                {!! $post->body !!}
+                                <div class="post-body">
+                                    {!! $post->body !!}
+                                </div>
                             </div>
                         </article>
                         <div class="comment-area-section clearfix">
@@ -141,4 +146,9 @@
             </div>
         </div>
     </section>
+@endsection
+@section('js')
+    <script src="{{ asset('b/js/prism.js') }}"></script>
+@endsection
+@section('script')
 @endsection

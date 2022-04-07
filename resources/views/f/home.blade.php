@@ -129,7 +129,7 @@
                                     <span class="category">{{ $post->category->name }}</span>
                                 </a>
                                 <a href="/read/{{ $post->slug }}">
-                                    <img src="{{ asset($post->image) }}" alt="{{ $post->title }}" />
+                                    <img src="{{ asset(Storage::url('posts/' . $post->image)) }}" alt="{{ $post->title }}" />
                                 </a>
                             </div>
                             <div class="details">
@@ -301,7 +301,7 @@
                                         {{-- <span class="more-button"><i class="icon-link"></i></span> --}}
                                     </div>
                                     <div class="thumb">
-                                        <img src="{{ $post->image }}" alt="{{ $post->title }}" />
+                                        <img src="{{ asset(Storage::url('posts/' . $post->image)) }}" alt="{{ $post->title }}" />
                                         <div class="mask"></div>
                                     </div>
                                 </div>

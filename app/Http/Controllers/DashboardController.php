@@ -9,12 +9,20 @@ use App\Models\Post_tag;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Cookie;
+use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
 class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        // Debugbar::info($object);
+        // Debugbar::error('Error!');
+        // Debugbar::warning('Watch out…');
+        Debugbar::addMessage('Cookie set for 12 months', 'Colorize');
+    }
+
     public function index()
     {
         return view('b.dashboard', [
@@ -24,9 +32,20 @@ class DashboardController extends Controller
 
     public function posts()
     {
+        $search = request('search');
+        $post = Post::with(['author', 'category']);
+        if ($search) {
+
+            $post = $post->where('title', 'like', "%$search%");
+            $category = Category::where('name', 'like', "%$search%")->first();
+            if ($category) {
+                $post = $post->orWhere('category_id', $category->id);
+            }
+        }
+        $post = $post->orderBy('created_at', 'desc')->orderBy('id', 'desc')->paginate(10);
         return view('b.posts', [
             'title' => 'Posts',
-            'posts' => Post::with(['author', 'category'])->orderBy('created_at', 'desc')->orderBy('id', 'desc')->paginate(10),
+            'posts' => $post,
         ]);
     }
     public function makeapost()
@@ -138,7 +157,7 @@ class DashboardController extends Controller
         $post_tags_data = Post_tag::where('post_id', $post->id)->get();
         foreach ($post_tags_data as $post_tag) {
             $post_tag->delete();
-        } 
+        }
         $post_tags = $request->input('tags');
         foreach ($post_tags as $tag) {
             if (is_numeric($tag)) {

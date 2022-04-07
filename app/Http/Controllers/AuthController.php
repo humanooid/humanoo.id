@@ -49,7 +49,7 @@ class AuthController extends Controller
     {
         $color = $request->input('color');
         Cookie::forget('color');
-        Cookie::queue('color', $color);
+        Cookie::queue('color', $color, 60 * 24 * 30 * 12); // 12 months
         return back();
     }
 }

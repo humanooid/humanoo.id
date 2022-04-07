@@ -6,7 +6,6 @@ use App\Models\Post;
 use App\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
-use Illuminate\Support\Facades\Request;
 
 class HomeController extends Controller
 {

@@ -21,10 +21,13 @@
                                 class="fab fa-instagram"></i></a></li>
                     <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/abuyama24"><i
                                 class="fab fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/yayan-maulana-836883212/"><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="https://github.com/yama24"><i class="fab fa-github"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="https://t.me/yama24"><i class="fab fa-telegram"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank"
+                            href="https://www.linkedin.com/in/yayan-maulana-836883212/"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/yama24"><i
+                                class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://t.me/yama24"><i
+                                class="fab fa-telegram"></i></a></li>
                 </ul>
 
                 <!-- buttons -->
@@ -206,7 +209,7 @@
             </div>
             <!-- row end -->
 
-            <div class="spacer" data-height="70"></div>
+            {{-- <div class="spacer" data-height="70"></div>
 
             <div class="row">
 
@@ -257,7 +260,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
 
         </div>
 
@@ -839,7 +842,23 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
+                            <img src="{{ asset('f/images/yama/bootstrap.svg') }}" width="70px" alt="Bootstrap" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
                             <img src="{{ asset('f/images/yama/php.svg') }}" width="70px" alt="PHP" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/composer.svg') }}" width="50px" alt="Composer" />
                         </div>
                     </div>
                 </div>
@@ -871,7 +890,23 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
+                            <img src="{{ asset('f/images/yama/apache.svg') }}" width="60px" alt="Apache" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
                             <img src="{{ asset('f/images/yama/node-js.svg') }}" width="50px" alt="NodeJS" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/npm.svg') }}" width="50px" alt="npm" />
                         </div>
                     </div>
                 </div>
@@ -903,7 +938,23 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
+                            <img src="{{ asset('f/images/yama/debian.svg') }}" width="40px" alt="Debian" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
                             <img src="{{ asset('f/images/yama/linux.svg') }}" width="50px" alt="Linux" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/git.svg') }}" width="50px" alt="Git" />
                         </div>
                     </div>
                 </div>
@@ -953,16 +1004,17 @@
                         <!-- blog item -->
                         <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
                             <div class="thumb">
-                                <a href="#">
+                                <a href="/read/{{ $post->slug }}" target="_blank">
                                     <span class="category">{{ $post->category->name }}</span>
                                 </a>
-                                <a href="#">
+                                <a href="/read/{{ $post->slug }}" target="_blank">
                                     <img src="{{ asset(Storage::url('posts/' . $post->image)) }}"
                                         alt="{{ $post->title }}" />
                                 </a>
                             </div>
                             <div class="details">
-                                <h4 class="my-0 title"><a href="/read/{{ $post->slug }}">{{ $post->title }}</a>
+                                <h4 class="my-0 title"><a href="/read/{{ $post->slug }}"
+                                        target="_blank">{{ $post->title }}</a>
                                 </h4>
                                 <ul class="list-inline meta mb-0 mt-2">
                                     <li class="list-inline-item">{{ date('M d, Y', strtotime($post->published_at)) }}

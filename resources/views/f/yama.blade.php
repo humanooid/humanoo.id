@@ -356,7 +356,7 @@
                         <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
                             <div class="content">
                                 <span class="time">Mar 2019 - May 2021</span>
-                                <h3 class="title">Full Stack Developer & PRODUCT MANAGER</h3>
+                                <h3 class="title">Full Stack Developer & Product Manager</h3>
                                 <p>CREATIVE PRODUCTION</p>
                                 <ul>
                                     <li>Design products</li>

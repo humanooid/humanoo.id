@@ -13,7 +13,7 @@
                 <!-- info -->
                 <h1 class="mb-2 mt-0">Yayan Maulana (Yama)</h1>
                 <span>I'm a <span class="text-rotating">Fast Learner, Back-end developer, Front-end developer, PHP
-                        programmer, Javascript programmer, MySQL programmer</span></span>
+                        programmer, Javascript programmer, MySQL programmer, Linux user</span></span>
 
                 <!-- social icons -->
                 <ul class="social-icons light list-inline mb-0 mt-4">

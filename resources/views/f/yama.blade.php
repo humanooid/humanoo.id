@@ -510,7 +510,7 @@
                             hassles is making, printing, and distributing paper invitations.</p>
                         <p>With Goestowedding you don't need to feel that, because everything only needs to be done in front
                             of your screen.</p>
-                        <a href="https://goestowedding.com/" target="_blank" class="btn btn-default">Goewstowedding.com</a>
+                        <a href="https://goestowedding.com/" target="_blank" class="btn btn-default">Goestowedding.com</a>
                     </div>
                 </div>
 
@@ -532,9 +532,9 @@
                     <div id="wa" class="white-popup zoom-anim-dialog mfp-hide">
                         <img src="{{ asset('f/images/yama/wa.png') }}" alt="WhatsApp Web API" />
                         <h2>WhatsApp Web API</h2>
-                        <p>this is an API to send notifications to the user.</p>
+                        <p>This is an API to send notifications to the user.</p>
                         <p>This API is already implemented on <a href="https://goestowedding.com/"
-                                target="_blank">Goewstowedding.com</a>.
+                                target="_blank">Goestowedding.com</a>.
                         </p>
                     </div>
                 </div>

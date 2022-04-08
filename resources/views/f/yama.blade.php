@@ -208,7 +208,7 @@
 
             <div class="spacer" data-height="70"></div>
 
-            {{-- <div class="row">
+            <div class="row">
 
                 <div class="col-md-3 col-sm-6">
                     <!-- fact item -->
@@ -257,7 +257,7 @@
                     </div>
                 </div>
 
-            </div> --}}
+            </div>
 
         </div>
 

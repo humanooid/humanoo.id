@@ -39,7 +39,7 @@ class HomeController extends Controller
     public function changelayout($mode)
     {
         Cookie::forget('layout');
-        Cookie::queue('layout', $mode);
+        Cookie::queue('layout', $mode, 60 * 24 * 30 * 12); // 12 months
         return back();
     }
 

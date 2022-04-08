@@ -7,24 +7,29 @@
             <!-- intro -->
             <div class="intro">
                 <!-- avatar image -->
-                <img class="img-fluid rounded-circle mb-4" src="{{ asset('f/images/yama.jpeg') }}" alt="Yama" width="108px">
+                <img class="img-fluid rounded-circle mb-4" src="{{ asset('f/images/yama/yama.jpeg') }}" alt="Yama"
+                    width="108px">
 
                 <!-- info -->
                 <h1 class="mb-2 mt-0">Yayan Maulana (Yama)</h1>
-                <span>I'm a <span class="text-rotating">Fast Learner, Back-end developer, Front-end developer, PHP programmer, Javascript programmer, MySQL programmer</span></span>
+                <span>I'm a <span class="text-rotating">Fast Learner, Back-end developer, Front-end developer, PHP
+                        programmer, Javascript programmer, MySQL programmer</span></span>
 
                 <!-- social icons -->
                 <ul class="social-icons light list-inline mb-0 mt-4">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/abuyama24/"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/abuyama24"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/yayan-maulana-836883212/"><i
+                                class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/yama24"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://t.me/yama24"><i class="fab fa-telegram"></i></a></li>
                 </ul>
 
                 <!-- buttons -->
                 <div class="mt-4">
-                    <a href="#contact" class="btn btn-default">Hire me</a>
+                    <a href="https://wa.me/628986182128" class="btn btn-default">Contact me</a>
                 </div>
             </div>
 
@@ -129,7 +134,8 @@
                 <div class="col-md-3">
                     <div class="text-center text-md-left">
                         <!-- avatar image -->
-                        <img class="img-fluid rounded-circle" src="{{ asset('f/images/yama.jpeg') }}" alt="Yama" width="150px">
+                        <img class="img-fluid rounded-circle" src="{{ asset('f/images/yama/yama2.jpg') }}" alt="Yama"
+                            width="150px">
                     </div>
                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                 </div>
@@ -140,10 +146,14 @@
                             <div class="col-md-6">
                                 <!-- about text -->
                                 <p style="text-align: justify">
-                                    I am Yayan Maulana, Web Developer from Bandung, Indonesia. I have a lot of experience in building web-based application systems. I am also a fast learner. Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.
+                                    I am Yayan Maulana, Web Developer from Bandung, Indonesia. I have a lot of experience in
+                                    building web-based application systems. I am also a fast learner. Everything can be
+                                    learned except for something I don't want to learn. Give me space, time and internet
+                                    access so I can be anything.
                                 </p>
                                 <div class="mt-3">
-                                    <a href="#" class="btn btn-default">Download CV</a>
+                                    <a href="https://www.canva.com/design/DAE76bwHBGA/Jr-QDyh3pY6qipOMCIK-DQ/view?utm_content=DAE76bwHBGA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                        target="_blank" class="btn btn-default">Download CV</a>
                                 </div>
                                 <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                             </div>
@@ -151,8 +161,8 @@
                                 <!-- skill item -->
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
-                                        <h4 class="float-left mb-3 mt-0">Development</h4>
-                                        <span class="float-right">85%</span>
+                                        <h4 class="float-left mb-3 mt-0">Programming</h4>
+                                        <span class="float-right">90%</span>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar data-background" role="progressbar" aria-valuemin="0"
@@ -166,11 +176,11 @@
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
                                         <h4 class="float-left mb-3 mt-0">UI/UX design</h4>
-                                        <span class="float-right">95%</span>
+                                        <span class="float-right">50%</span>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar data-background" role="progressbar" aria-valuemin="0"
-                                            aria-valuemax="100" aria-valuenow="95" data-color="#FF4C60">
+                                            aria-valuemax="100" aria-valuenow="50" data-color="#FF4C60">
                                         </div>
                                     </div>
                                     <div class="spacer" data-height="20"></div>
@@ -179,12 +189,12 @@
                                 <!-- skill item -->
                                 <div class="skill-item">
                                     <div class="skill-info clearfix">
-                                        <h4 class="float-left mb-3 mt-0">Photography</h4>
-                                        <span class="float-right">70%</span>
+                                        <h4 class="float-left mb-3 mt-0">Database</h4>
+                                        <span class="float-right">80%</span>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar data-background" role="progressbar" aria-valuemin="0"
-                                            aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5">
+                                            aria-valuemax="100" aria-valuenow="80" data-color="#6C6CE5">
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +208,7 @@
 
             <div class="spacer" data-height="70"></div>
 
-            <div class="row">
+            {{-- <div class="row">
 
                 <div class="col-md-3 col-sm-6">
                     <!-- fact item -->
@@ -247,14 +257,14 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
 
         </div>
 
     </section>
 
     <!-- section services -->
-    <section id="services">
+    {{-- <section id="services">
 
         <div class="container">
 
@@ -308,7 +318,7 @@
 
         </div>
 
-    </section>
+    </section> --}}
 
     <!-- section experience -->
     <section id="experience">
@@ -322,38 +332,51 @@
 
             <div class="row">
 
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <!-- timeline wrapper -->
-                    <div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+                    <div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
 
                         <!-- timeline item -->
                         <div class="timeline-container wow fadeInUp">
                             <div class="content">
-                                <span class="time">2019 - Present</span>
-                                <h3 class="title">Academic Degree</h3>
-                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                </p>
+                                <span class="time">May 2021 - Present</span>
+                                <h3 class="title">Full Stack Developer</h3>
+                                <p>PT. VAN AROMA</p>
+                                <ul>
+                                    <li>Develop existing web apps</li>
+                                    <li>Build Supplier Portal</li>
+                                    <li>Build Customer Portal</li>
+                                    <li>Migrate from native PHP to Codeigniter 4</li>
+                                </ul>
                             </div>
                         </div>
 
                         <!-- timeline item -->
                         <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
                             <div class="content">
-                                <span class="time">2017 - 2013</span>
-                                <h3 class="title">Bachelor’s Degree</h3>
-                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                </p>
+                                <span class="time">Mar 2019 - May 2021</span>
+                                <h3 class="title">Full Stack Developer & PRODUCT MANAGER</h3>
+                                <p>CREATIVE PRODUCTION</p>
+                                <ul>
+                                    <li>Design products</li>
+                                    <li>Build landing page</li>
+                                    <li>Build and maintenance e-commerce</li>
+                                    <li>Manage ads</li>
+                                </ul>
                             </div>
                         </div>
 
                         <!-- timeline item -->
                         <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
                             <div class="content">
-                                <span class="time">2013 - 2009</span>
-                                <h3 class="title">Honours Degree</h3>
-                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-                                </p>
+                                <span class="time">Jan 2018 - Mar 2019</span>
+                                <h3 class="title">Full Stack Developer</h3>
+                                <p>INTERNUSA</p>
+                                <ul>
+                                    <li>Manage Web</li>
+                                    <li>Build a Attendace and Payroll App</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -364,13 +387,13 @@
 
                 </div>
 
-                <div class="col-md-6">
+                {{-- <div class="col-md-6">
 
                     <!-- responsive spacer -->
                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
 
                     <!-- timeline wrapper -->
-                    <div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
+                    <div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
 
                         <!-- timeline item -->
                         <div class="timeline-container wow fadeInUp">
@@ -407,7 +430,7 @@
 
                     </div>
 
-                </div>
+                </div> --}}
 
             </div>
 
@@ -425,7 +448,7 @@
 
             <div class="spacer" data-height="60"></div>
 
-            <!-- portfolio filter (desktop) -->
+            {{-- <!-- portfolio filter (desktop) -->
             <ul class="portfolio-filter list-inline wow fadeInUp">
                 <li class="current list-inline-item" data-filter="*">Everything</li>
                 <li class="list-inline-item" data-filter=".creative">Creative</li>
@@ -443,12 +466,12 @@
                     <option value=".design">Design</option>
                     <option value=".branding">Branding</option>
                 </select>
-            </div>
+            </div> --}}
 
             <!-- portolio wrapper -->
             <div class="row portfolio-wrapper">
 
-                <!-- portfolio item -->
+                {{-- <!-- portfolio item -->
                 <div class="col-md-4 col-sm-6 grid-item art">
                     <a href="images/works/1.svg" class="work-image">
                         <div class="portfolio-item rounded shadow-dark">
@@ -463,35 +486,136 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
                 <!-- portfolio item -->
-                <div class="col-md-4 col-sm-6 grid-item creative design">
-                    <a href="#small-dialog" class="work-content">
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="#gtw" class="work-content">
                         <div class="portfolio-item rounded shadow-dark">
                             <div class="details">
-                                <span class="term">Creative</span>
-                                <h4 class="title">Guest App Walkthrough Screens</h4>
+                                <span class="term">Codeigniter</span>
+                                <h4 class="title">Goestowedding.com</h4>
                                 <span class="more-button"><i class="icon-options"></i></span>
                             </div>
                             <div class="thumb">
-                                <img src="{{ asset('f/images/works/2.svg') }}" alt="Portfolio-title" />
+                                <img src="{{ asset('f/images/yama/gtw.png') }}" alt="Portfolio-title" />
                                 <div class="mask"></div>
                             </div>
                         </div>
                     </a>
-                    <div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
-                        <img src="{{ asset('f/images/single-work.svg') }}" alt="Title" />
-                        <h2>Guest App Walkthrough Screens</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-                            semper rutrum. In rhoncus eleifend mi id tempus.</p>
-                        <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-                            lectus eget ligula.</p>
-                        <a href="#" class="btn btn-default">View on Dribbble</a>
+                    <div id="gtw" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{ asset('f/images/yama/gtw.png') }}" alt="Goestowedding.com" />
+                        <h2>Goestowedding.com</h2>
+                        <p>This is a project with friends and is a digital wedding invitation. One of the pre-wedding
+                            hassles is making, printing, and distributing paper invitations.</p>
+                        <p>With Goestowedding you don't need to feel that, because everything only needs to be done in front
+                            of your screen.</p>
+                        <a href="https://goestowedding.com/" target="_blank" class="btn btn-default">Goewstowedding.com</a>
                     </div>
                 </div>
 
                 <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="#wa" class="work-content">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">NodeJs</span>
+                                <h4 class="title">WhatsApp Web API</h4>
+                                <span class="more-button"><i class="icon-options"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/wa.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="wa" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{ asset('f/images/yama/wa.png') }}" alt="WhatsApp Web API" />
+                        <h2>WhatsApp Web API</h2>
+                        <p>this is an API to send notifications to the user.</p>
+                        <p>This API is already implemented on <a href="https://goestowedding.com/"
+                                target="_blank">Goewstowedding.com</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="#alqi" class="work-content">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Laravel</span>
+                                <h4 class="title">Alifaqiqahcatering.com</h4>
+                                <span class="more-button"><i class="icon-options"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/alqi.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="alqi" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{ asset('f/images/yama/alqi.png') }}" alt="Alifaqiqahcatering.com" />
+                        <h2>Alifaqiqahcatering.com</h2>
+                        <p>A website to market aqiqah services.</p>
+                        <p class="text-danger"><b>*Under development</b></p>
+                        <a href="https://alifaqiqahcatering.com/" target="_blank"
+                            class="btn btn-default">Alifaqiqahcatering.com</a>
+                    </div>
+                </div>
+
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="#humanoo" class="work-content">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Laravel</span>
+                                <h4 class="title">Humanoo.id</h4>
+                                <span class="more-button"><i class="icon-options"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/humanoo.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="humanoo" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{ asset('f/images/yama/humanoo.png') }}" alt="Humanoo.id" />
+                        <h2>Humanoo.id</h2>
+                        <p>This is a blog to write whatever we know about programming, we hope this blog is useful for
+                            everyone who wants to learn programming.</p>
+                        <p>In the future maybe we will develop this into a free learning platform.</p>
+                        <p class="text-danger"><b>*Under development</b></p>
+                        <a href="/" target="_blank" class="btn btn-default">Humanoo.id</a>
+                    </div>
+                </div>
+
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="#purnamalab" class="work-content">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Statamic</span>
+                                <h4 class="title">Purnamalab.com</h4>
+                                <span class="more-button"><i class="icon-options"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/purnamalab.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="purnamalab" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{ asset('f/images/yama/purnamalab.png') }}" alt="Purnamalab.com" />
+                        <h2>Purnamalab.com</h2>
+                        <p>This is a product catalog website from a company that provides chemical test kits.</p>
+                        <p>I rebuilt this website using static framework</p>
+                        <a href="https://purnamalab.com/" target="_blank" class="btn btn-default">Purnamalab.com</a>
+                    </div>
+                </div>
+
+
+                {{-- <!-- portfolio item -->
                 <div class="col-md-4 col-sm-6 grid-item branding">
                     <a href="https://www.youtube.com/watch?v=qf9z4ulfmYw" class="work-video">
                         <div class="portfolio-item rounded shadow-dark">
@@ -562,26 +686,26 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
             </div>
 
             <!-- more button -->
-            <div class="load-more text-center mt-4">
+            {{-- <div class="load-more text-center mt-4">
                 <a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>
                 <!-- numbered pagination (hidden for infinite scroll) -->
                 <ul class="portfolio-pagination list-inline d-none">
                     <li class="list-inline-item">1</li>
                     <li class="list-inline-item"><a href="works-2.html">2</a></li>
                 </ul>
-            </div>
+            </div> --}}
 
         </div>
 
     </section>
 
     <!-- section prices -->
-    <section id="prices">
+    {{-- <section id="prices">
 
         <div class="container">
 
@@ -633,7 +757,7 @@
 
         </div>
 
-    </section>
+    </section> --}}
 
     <!-- section testimonials -->
     <section id="testimonials">
@@ -641,12 +765,12 @@
         <div class="container">
 
             <!-- section title -->
-            <h2 class="section-title wow fadeInUp">Clients & Reviews</h2>
+            <h2 class="section-title wow fadeInUp">The Tech</h2>
 
-            <div class="spacer" data-height="60"></div>
+            {{-- <div class="spacer" data-height="60"></div> --}}
 
             <!-- testimonials wrapper -->
-            <div class="testimonials-wrapper">
+            {{-- <div class="testimonials-wrapper">
 
                 <!-- testimonial item -->
                 <div class="testimonial-item text-center mx-auto">
@@ -676,14 +800,14 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
 
             <div class="row">
                 <div class="col-md-3 col-6">
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-1.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/html.svg') }}" width="50px" alt="HTML" />
                         </div>
                     </div>
                 </div>
@@ -691,7 +815,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-2.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/css3.svg') }}" width="70px" alt="CSS3" />
                         </div>
                     </div>
                 </div>
@@ -699,7 +823,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-3.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/javascript.svg') }}" width="60px" alt="Javascript" />
                         </div>
                     </div>
                 </div>
@@ -707,7 +831,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-4.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/jquery.svg') }}" width="70px" alt="jQuery" />
                         </div>
                     </div>
                 </div>
@@ -715,7 +839,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-5.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/php.svg') }}" width="70px" alt="PHP" />
                         </div>
                     </div>
                 </div>
@@ -723,7 +847,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-6.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/codeigniter.svg') }}" width="50px" alt="Codeigniter" />
                         </div>
                     </div>
                 </div>
@@ -731,7 +855,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-7.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/laravel.svg') }}" width="50px" alt="Laravel" />
                         </div>
                     </div>
                 </div>
@@ -739,7 +863,71 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/client-8.svg') }}" alt="client-name" />
+                            <img src="{{ asset('f/images/yama/statamic.svg') }}" width="70px" alt="Statamic" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/node-js.svg') }}" width="50px" alt="NodeJS" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/mysql.svg') }}" width="70px" alt="MySQL" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/postman.svg') }}" width="50px" alt="Postman" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/ubuntu.svg') }}" width="80px" alt="Ubuntu" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/linux.svg') }}" width="50px" alt="Linux" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/github.svg') }}" width="60px" alt="Github" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/linode.svg') }}" width="80px" alt="Linode" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img src="{{ asset('f/images/yama/visual-studio-code.svg') }}" width="50px" alt="VSCode" />
                         </div>
                     </div>
                 </div>
@@ -760,70 +948,31 @@
             <div class="spacer" data-height="60"></div>
 
             <div class="row blog-wrapper">
-
-                <div class="col-md-4">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Reviews</span>
-                            </a>
-                            <a href="#">
-                                <img src="{{ asset('f/images/blog/1.svg') }}" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">5 Best App Development Tool for Your Project</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">09 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Tutorial</span>
-                            </a>
-                            <a href="#">
-                                <img src="{{ asset('f/images/blog/2.svg') }}" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">Common Misconceptions About Payment</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">07 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
+                @foreach ($posts as $post)
+                    <div class="col-md-4">
+                        <!-- blog item -->
+                        <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+                            <div class="thumb">
+                                <a href="#">
+                                    <span class="category">{{ $post->category->name }}</span>
+                                </a>
+                                <a href="#">
+                                    <img src="{{ asset(Storage::url('posts/' . $post->image)) }}"
+                                        alt="{{ $post->title }}" />
+                                </a>
+                            </div>
+                            <div class="details">
+                                <h4 class="my-0 title"><a href="/read/{{ $post->slug }}">{{ $post->title }}</a>
+                                </h4>
+                                <ul class="list-inline meta mb-0 mt-2">
+                                    <li class="list-inline-item">{{ date('M d, Y', strtotime($post->published_at)) }}
+                                    </li>
+                                    <li class="list-inline-item">{{ $post->author->name }}</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4">
-                    <!-- blog item -->
-                    <div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-                        <div class="thumb">
-                            <a href="#">
-                                <span class="category">Business</span>
-                            </a>
-                            <a href="#">
-                                <img src="{{ asset('f/images/blog/3.svg') }}" alt="blog-title" />
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h4 class="my-0 title"><a href="#">3 Things To Know About Startup Business</a></h4>
-                            <ul class="list-inline meta mb-0 mt-2">
-                                <li class="list-inline-item">06 February, 2020</li>
-                                <li class="list-inline-item">Bolby</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
 
         </div>
@@ -831,7 +980,7 @@
     </section>
 
     <!-- section contact -->
-    <section id="contact">
+    {{-- <section id="contact">
 
         <div class="container">
 
@@ -906,7 +1055,7 @@
 
         </div>
 
-    </section>
+    </section> --}}
 
     <div class="spacer" data-height="96"></div>
 @endsection

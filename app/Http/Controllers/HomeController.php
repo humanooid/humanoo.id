@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\User;
 use App\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
@@ -44,8 +45,11 @@ class HomeController extends Controller
 
     public function yama()
     {
+        $user = User::where('email', 'maulana24@live.com')->firstOrFail();
+        $posts = Post::with(['author', 'category', 'post_tag'])->where('published_at', '!=', NULL)->where('user_id', $user->id)->orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(3)->get();
         return view('f.yama', [
             'title' => 'Yama',
+            'posts' => $posts,
             'bar' => getBar('Yama'),
         ]);
     }

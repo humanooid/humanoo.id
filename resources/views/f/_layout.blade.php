@@ -20,7 +20,7 @@
     @yield('css')
 
     <link rel="stylesheet" href="{{ asset('f/css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220407') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220409') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -204,7 +204,7 @@
     <script src="{{ asset('f/js/jquery.magnific-popup.min.js') }}"></script>
     @yield('js')
     <script src="{{ asset('f/js/custom.js') }}"></script>
-    <script src="{{ asset('f/js/self.js?v=20220407') }}"></script>
+    <script src="{{ asset('f/js/self.js?v=20220409') }}"></script>
     @yield('script')
 
 </body>

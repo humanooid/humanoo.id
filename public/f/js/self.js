@@ -16,7 +16,7 @@ $(document).ready(function () {
             $("img#logoLightDesktop").show();
             $("img#logoLight").show();
             $("div#preloader").removeClass("light");
-            $("div#scroll-down").removeClass("light");
+            $("div.scroll-down").removeClass("light");
             $("section#home").removeClass("light");
             $("header.mobile-header-1").removeClass("light");
             $("header.desktop-header-1").removeClass("light");
@@ -59,7 +59,7 @@ function changeColor(el) {
         $("i#colorChangerSun").hide();
         $("i#colorChangerMoon").show();
         $("div#preloader").removeClass("light");
-        $("div#scroll-down").removeClass("light");
+        $("div.scroll-down").removeClass("light");
         $("header.mobile-header-1").removeClass("light");
         $("header.desktop-header-1").removeClass("light");
         $("header.desktop-header-3").removeClass("light");
@@ -85,7 +85,7 @@ function changeColor(el) {
         $("i#colorChangerSun").show();
         $("i#colorChangerMoon").hide();
         $("div#preloader").addClass("light");
-        $("div#scroll-down").addClass("light");
+        $("div.scroll-down").addClass("light");
         $("header.mobile-header-1").addClass("light");
         $("header.desktop-header-1").addClass("light");
         $("header.desktop-header-3").addClass("light");

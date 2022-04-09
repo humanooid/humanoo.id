@@ -37,7 +37,7 @@
             </div>
 
             <!-- scroll down mouse wheel -->
-            <div class="scroll-down">
+            <div class="scroll-down light">
                 <a href="#about" class="mouse-wrapper">
                     <span>Scroll Down</span>
                     <span class="mouse">

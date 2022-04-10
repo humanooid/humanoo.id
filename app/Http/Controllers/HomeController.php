@@ -35,10 +35,10 @@ class HomeController extends Controller
             $os = Browser::platformFamily();
             $os_version = Browser::platformVersion();
 
-            if (Browser::isMobile()) {
-                $device = 'Mobile';
-            } elseif (Browser::isTablet()) {
+            if (Browser::isTablet()) {
                 $device = 'Tablet';
+            } elseif (Browser::isMobile()) {
+                $device = 'Mobile';
             } elseif (Browser::isDesktop()) {
                 $device = 'Desktop';
             } else {

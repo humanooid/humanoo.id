@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Reader;
 use App\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
+use hisorange\BrowserDetect\Parser as Browser;
 
 class HomeController extends Controller
 {
@@ -25,6 +27,42 @@ class HomeController extends Controller
     public function read($slug)
     {
         $post = Post::with(['author', 'category', 'post_tag.tag'])->where('slug', $slug)->where('published_at', '!=', NULL)->firstOrFail();
+
+        if (!Cookie::get($slug) && !Browser::isBot()) {
+            $ip = request()->ip();
+            $browser = Browser::browserFamily();
+            $browser_version = Browser::browserVersion();
+            $os = Browser::platformFamily();
+            $os_version = Browser::platformVersion();
+
+            if (Browser::isMobile()) {
+                $device = 'Mobile';
+            } elseif (Browser::isTablet()) {
+                $device = 'Tablet';
+            } elseif (Browser::isDesktop()) {
+                $device = 'Desktop';
+            } else {
+                $device = 'Unknown';
+            }
+
+            $device_vendor = Browser::deviceFamily();
+            $device_brand = Browser::deviceModel();
+
+            $reader = new Reader;
+            $reader->post_id = $post->id;
+            $reader->ip = $ip;
+            $reader->browser = $browser;
+            $reader->browser_version = $browser_version;
+            $reader->os = $os;
+            $reader->os_version = $os_version;
+            $reader->device = $device;
+            $reader->device_vendor = $device_vendor;
+            $reader->device_brand = $device_brand;
+            $reader->save();
+
+            Cookie::queue($slug, $slug, 60 * 24 * 30); // 30 days
+        }
+
         $recentPost = Post::orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(5)->get();
         $categories = Category::orderBy('name', 'asc')->get();
         return view('f.read', [

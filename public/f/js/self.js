@@ -32,7 +32,6 @@ $(document).ready(function () {
             $("i#changeLayoutIcon").css("color", "#FFD15C");
         } else {
             $("i#colorChangerSun").show();
-            $("img#logoDark").show();
             $("img#horizontalLogoDark").show();
             $("img#logoDarkDesktop").show();
             $("img#logoDark").show();
@@ -48,6 +47,7 @@ $(document).ready(function () {
         }
     } else {
         localStorage.setItem("color", "light");
+        $("img#horizontalLogoDark").show();
         $("i#colorChangerSun").show();
         $("i#changeLayoutIcon").css("color", "#FF4C60");
     }

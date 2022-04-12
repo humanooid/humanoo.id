@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <link rel="preload" as="font">
+    {{-- <link rel="preload" as="font"> --}}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ $title }} - Human∞.id</title>
     <meta name="description" content="{{ $title }} - Human∞.id">
@@ -10,11 +10,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('humanooid-fav-head.svg') }}">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="{{ asset('f/css/fstyle.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ mix('/f/css/fstyle.css') }}" type="text/css" media="all">
 
     @yield('css')
 
-    <link rel="stylesheet" href="{{ asset('f/css/fcustomstyle.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ mix('f/css/fcustomstyle.css') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -180,9 +180,9 @@
     <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- SCRIPTS -->
-    <script src="{{ asset('f/js/fscript.js') }}"></script>
+    <script src="{{ mix('f/js/fscript.js') }}"></script>
     @yield('js')
-    <script src="{{ asset('f/js/fcustomscript.js') }}"></script>
+    <script src="{{ mix('f/js/fcustomscript.js') }}"></script>
     @yield('script')
 
 </body>

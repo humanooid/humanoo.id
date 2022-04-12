@@ -1,6 +1,6 @@
 @extends('f._layout')
 @section('css')
-    <link href="{{ asset('b/css/prism.css') }}" rel="stylesheet">
+    <link href="{{ mix('/f/css/freadstyle.css') }}" rel="stylesheet">
 @endsection
 @section('content')
     <!-- Blog Page -->
@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                         </article>
-                        <div class="comment-area-section clearfix">
+                        {{-- <div class="comment-area-section clearfix">
                             <h3>3 Comment Found</h3>
                             <div class="comment-inner-box">
                                 <div class="comment-author-img float-left">
@@ -97,7 +97,7 @@
                                 <p class="form-submit"><input name="submit" type="submit" id="submit"
                                         class="submit" value="Post Comment"></p>
                             </form>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <!-- /blog-post-content -->
@@ -148,7 +148,7 @@
     </section>
 @endsection
 @section('js')
-    <script src="{{ asset('b/js/prism.js') }}"></script>
+    <script src="{{ mix('/f/js/freadscript.js') }}"></script>
 @endsection
 @section('script')
 @endsection

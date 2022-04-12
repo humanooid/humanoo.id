@@ -27,12 +27,17 @@ mix.styles(
         "public/f/plugin/fontawesome/css/all.min.css",
     ],
     "public/f/css/fstyle.css"
-).version('20220413');
+).version();
 
 mix.styles(
     ["public/f/css/style.css", "public/f/css/self.css"],
     "public/f/css/fcustomstyle.css"
-).version('20220413');
+).version();
+
+mix.styles(
+    ["public/b/css/prism.css"],
+    "public/f/css/freadstyle.css"
+).version();
 
 mix.scripts(
     [
@@ -54,8 +59,12 @@ mix.scripts(
         "public/f/js/jquery.magnific-popup.min.js",
     ],
     "public/f/js/fscript.js"
-).version('20220413');
+).version();
 mix.scripts(
     ["public/f/js/custom.js", "public/f/js/self.js"],
     "public/f/js/fcustomscript.js"
-).version('20220413');
+).version();
+mix.scripts(
+    ["public/b/js/prism.js"],
+    "public/f/js/freadscript.js"
+).version();

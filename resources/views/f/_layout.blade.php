@@ -2,6 +2,7 @@
 <html lang="en-US">
 
 <head>
+    <link rel="preload" as="font">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ $title }} - Human∞.id</title>
     <meta name="description" content="{{ $title }} - Human∞.id">
@@ -9,18 +10,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('humanooid-fav-head.svg') }}">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="{{ asset('f/css/bootstrap.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/all.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/simple-line-icons.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/slick.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/animate.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/magnific-popup.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/plugin/fontawesome/css/all.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/fstyle.css') }}" type="text/css" media="all">
 
     @yield('css')
 
-    <link rel="stylesheet" href="{{ asset('f/css/style.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('f/css/self.css?v=20220410') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('f/css/fcustomstyle.css') }}" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -186,25 +180,9 @@
     <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- SCRIPTS -->
-    <script src="{{ asset('f/js/jquery-1.12.3.min.js') }}"></script>
-    <script src="{{ asset('f/js/jquery.easing.min.js') }}"></script>
-    <script src="{{ asset('f/js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('f/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('f/js/popper.min.js') }}"></script>
-    <script src="{{ asset('f/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('f/js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('f/js/infinite-scroll.min.js') }}"></script>
-    <script src="{{ asset('f/js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('f/js/slick.min.js') }}"></script>
-    <script src="{{ asset('f/js/contact.js') }}"></script>
-    <script src="{{ asset('f/js/validator.js') }}"></script>
-    <script src="{{ asset('f/js/wow.min.js') }}"></script>
-    <script src="{{ asset('f/js/morphext.min.js') }}"></script>
-    <script src="{{ asset('f/js/parallax.min.js') }}"></script>
-    <script src="{{ asset('f/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('f/js/fscript.js') }}"></script>
     @yield('js')
-    <script src="{{ asset('f/js/custom.js') }}"></script>
-    <script src="{{ asset('f/js/self.js?v=20220410') }}"></script>
+    <script src="{{ asset('f/js/fcustomscript.js') }}"></script>
     @yield('script')
 
 </body>

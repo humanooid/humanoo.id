@@ -73,7 +73,7 @@ class HomeController extends Controller
         
         return view('f.read', [
             'title' => $post->title,
-            'keywords' => $keywords,
+            'keywords' => rtrim($keywords, ','),
             'bar' => getBar('Post'),
             'post' => $post,
             'recentPost' => $recentPost,

@@ -1,22 +1,33 @@
 @extends('f._layout')
 @section('meta')
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="{{ $title }} - Human∞.id">
-    <meta name="description" content="< let's talk about code! >">
+    <!-- HTML Meta Tags -->
+    <title>{{ $title }} - Human∞.id</title>
+    <meta name="description" content="{{ Str::limit(strip_tags($post->body), 150, '...') }}">
 
-    <!-- Open Graph / Facebook -->
+    <meta name="keywords"
+        content="{{ $keywords }}">
+    <meta name="author" content="{{ $post->author->name }}">
+
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="{{ $title }} - Human∞.id">
+    <meta itemprop="description" content="{{ Str::limit(strip_tags($post->body), 150, '...') }}">
+    <meta itemprop="image" content="{{ asset(Storage::url('posts/' . $post->image)) }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://humanoo.id/">
     <meta property="og:title" content="{{ $title }} - Human∞.id">
-    <meta property="og:description" content="< let's talk about code! >">
-    <meta property="og:image" content="{{ asset('humanooid-fav-head.svg') }}">
+    <meta property="og:description" content="{{ Str::limit(strip_tags($post->body), 150, '...') }}">
+    <meta property="og:image" content="{{ asset(Storage::url('posts/' . $post->image)) }}">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://humanoo.id/">
-    <meta property="twitter:title" content="{{ $title }} - Human∞.id">
-    <meta property="twitter:description" content="< let's talk about code! >">
-    <meta property="twitter:image" content="{{ asset('humanooid-fav-head.svg') }}">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title }} - Human∞.id">
+    <meta name="twitter:description" content="{{ Str::limit(strip_tags($post->body), 150, '...') }}">
+    <meta name="twitter:image" content="{{ asset(Storage::url('posts/' . $post->image)) }}">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
 @section('css')
     <link href="{{ mix('/f/css/freadstyle.css') }}" rel="stylesheet">
@@ -34,9 +45,12 @@
                             <li class="list-inline-item"><a href="#" title="Posts by {{ $post->author->name }}"
                                     rel="author">{{ $post->author->name }}</a></li>
                             <li class="list-inline-item"><a href="#">{{ $post->category->name }}</a></li>
-                            <li class="list-inline-item">{{ ceil(str_word_count(strip_tags($post->body))/200) }} min read</li>
+                            <li class="list-inline-item">{{ ceil(str_word_count(strip_tags($post->body)) / 200) }} min
+                                read
+                            </li>
                         </ul>
-                        <div class="thumb-wrapper mt-4"><img src="{{ asset(Storage::url('posts/' . $post->image)) }}" alt="{{ $post->title }}">
+                        <div class="thumb-wrapper mt-4"><img src="{{ asset(Storage::url('posts/' . $post->image)) }}"
+                                alt="{{ $post->title }}">
                         </div>
                         <article>
                             <div class="clearfix my-4">
@@ -147,7 +161,8 @@
                             <h3 class="widget-header">Categories</h3>
                             <ul>
                                 @foreach ($categories as $category)
-                                    <li class="cat-item cat-item-4"><a href="/category/{{ $category->slug }}">{{ $category->name }}</a></li>
+                                    <li class="cat-item cat-item-4"><a
+                                            href="/category/{{ $category->slug }}">{{ $category->name }}</a></li>
                                 @endforeach
                             </ul>
                         </div>

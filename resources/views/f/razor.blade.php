@@ -1,22 +1,34 @@
 @extends('f._layout')
 @section('meta')
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="{{ $title }} - Human∞.id">
+    <!-- HTML Meta Tags -->
+    <title>{{ $title }} - Human∞.id</title>
     <meta name="description" content="< let's talk about code! >">
 
-    <!-- Open Graph / Facebook -->
+    {{-- <meta name="keywords"
+        content="HTML, CSS, JavaScript, PHP, MySQL, Laravel, Codeigniter, Ubuntu, Linux, jQuery, Bootstrap, NodeJS">
+    <meta name="author" content="Yayan Maulana"> --}}
+
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="{{ $title }} - Human∞.id">
+    <meta itemprop="description" content="< let's talk about code! >">
+    <meta itemprop="image" content="{{ asset('humanooid-fav-head.svg') }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://humanoo.id/">
     <meta property="og:title" content="{{ $title }} - Human∞.id">
     <meta property="og:description" content="< let's talk about code! >">
     <meta property="og:image" content="{{ asset('humanooid-fav-head.svg') }}">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://humanoo.id/">
-    <meta property="twitter:title" content="{{ $title }} - Human∞.id">
-    <meta property="twitter:description" content="< let's talk about code! >">
-    <meta property="twitter:image" content="{{ asset('humanooid-fav-head.svg') }}">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title }} - Human∞.id">
+    <meta name="twitter:description"
+        content="< let's talk about code! >">
+    <meta name="twitter:image" content="{{ asset('humanooid-fav-head.svg') }}">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
 @section('content')
 <!-- section home -->

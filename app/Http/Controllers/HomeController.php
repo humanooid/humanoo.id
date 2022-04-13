@@ -65,8 +65,15 @@ class HomeController extends Controller
 
         $recentPost = Post::orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(5)->get();
         $categories = Category::orderBy('name', 'asc')->get();
+
+        $keywords = '';
+        foreach ($post->post_tag as $tag) {
+            $keywords .= $tag->tag->name . ',';
+        }
+        
         return view('f.read', [
             'title' => $post->title,
+            'keywords' => $keywords,
             'bar' => getBar('Post'),
             'post' => $post,
             'recentPost' => $recentPost,

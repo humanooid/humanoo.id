@@ -1,22 +1,36 @@
 @extends('f._layout')
 @section('meta')
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="{{ $title }} - Human∞.id">
-    <meta name="description" content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
+    <!-- HTML Meta Tags -->
+    <title>{{ $title }} - Human∞.id</title>
+    <meta name="description"
+        content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
 
-    <!-- Open Graph / Facebook -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP, MySQL, Laravel, Codeigniter, Ubuntu, Linux, jQuery, Bootstrap, NodeJS">
+    <meta name="author" content="Yayan Maulana">
+
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="{{ $title }} - Human∞.id">
+    <meta itemprop="description"
+        content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
+    <meta itemprop="image" content="{{ asset('f/images/yama/yama.jpeg') }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://humanoo.id/">
     <meta property="og:title" content="{{ $title }} - Human∞.id">
-    <meta property="og:description" content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
-    <meta property="og:image" content="{{ asset('f/images/yama/yama2.jpg') }}">
+    <meta property="og:description"
+        content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
+    <meta property="og:image" content="{{ asset('f/images/yama/yama.jpeg') }}">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://humanoo.id/">
-    <meta property="twitter:title" content="{{ $title }} - Human∞.id">
-    <meta property="twitter:description" content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
-    <meta property="twitter:image" content="{{ asset('f/images/yama/yama2.jpg') }}">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title }} - Human∞.id">
+    <meta name="twitter:description"
+        content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
+    <meta name="twitter:image" content="{{ asset('f/images/yama/yama.jpeg') }}">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
 @section('content')
     <!-- section home -->

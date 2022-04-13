@@ -1,4 +1,23 @@
 @extends('f._layout')
+@section('meta')
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ $title }} - Human∞.id">
+    <meta name="description" content="< let's talk about code! >">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://humanoo.id/">
+    <meta property="og:title" content="{{ $title }} - Human∞.id">
+    <meta property="og:description" content="< let's talk about code! >">
+    <meta property="og:image" content="{{ asset('humanooid-fav-head.svg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://humanoo.id/">
+    <meta property="twitter:title" content="{{ $title }} - Human∞.id">
+    <meta property="twitter:description" content="< let's talk about code! >">
+    <meta property="twitter:image" content="{{ asset('humanooid-fav-head.svg') }}">
+@endsection
 @section('content')
     <!-- section home -->
     @if (request('page') < 2)
@@ -14,7 +33,7 @@
                     <!-- info -->
                     <h1 class="mb-2 mt-0">Human∞.id</h1>
                     <p class="under-home-title">
-                        < let's talk about code!>
+                        < let's talk about code! >
                     </p>
 
                     <!-- social icons -->
@@ -141,7 +160,8 @@
                                 <h4 class="my-0 title"><a href="/read/{{ $post->slug }}">{{ $post->title }}</a>
                                 </h4>
                                 <ul class="list-inline meta mb-0 mt-2">
-                                    <li class="list-inline-item">{{ date('M d, Y', strtotime($post->published_at)) }}</li>
+                                    <li class="list-inline-item">{{ date('M d, Y', strtotime($post->published_at)) }}
+                                    </li>
                                     <li class="list-inline-item">{{ $post->author->name }}</li>
                                 </ul>
                             </div>

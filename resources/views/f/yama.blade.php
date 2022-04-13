@@ -1,4 +1,23 @@
 @extends('f._layout')
+@section('meta')
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ $title }} - Human∞.id">
+    <meta name="description" content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://humanoo.id/">
+    <meta property="og:title" content="{{ $title }} - Human∞.id">
+    <meta property="og:description" content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
+    <meta property="og:image" content="{{ asset('f/images/yama/yama2.jpg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://humanoo.id/">
+    <meta property="twitter:title" content="{{ $title }} - Human∞.id">
+    <meta property="twitter:description" content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
+    <meta property="twitter:image" content="{{ asset('f/images/yama/yama2.jpg') }}">
+@endsection
 @section('content')
     <!-- section home -->
     <section id="home" class="home d-flex align-items-center light">

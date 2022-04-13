@@ -30,6 +30,7 @@ $(document).ready(function () {
                 "Want it brighter? Click here!"
             );
             $("i#changeLayoutIcon").css("color", "#FFD15C");
+            $("link#scrollbar").attr("href", "/f/css/scrollbarDark.css");
         } else {
             $("i#colorChangerSun").show();
             $("img#horizontalLogoDark").show();
@@ -44,12 +45,14 @@ $(document).ready(function () {
                 "Dazzled? Smash here!"
             );
             $("i#changeLayoutIcon").css("color", "#FF4C60");
+            $("link#scrollbar").attr("href", "/f/css/scrollbarLight.css");
         }
     } else {
         localStorage.setItem("color", "light");
         $("img#horizontalLogoDark").show();
         $("i#colorChangerSun").show();
         $("i#changeLayoutIcon").css("color", "#FF4C60");
+        $("link#scrollbar").attr("href", "/f/css/scrollbarLight.css");
     }
 });
 function changeColor(el) {
@@ -79,6 +82,7 @@ function changeColor(el) {
             "Want it brighter? Click here!"
         );
         $("i#changeLayoutIcon").css("color", "#FFD15C");
+        $("link#scrollbar").attr("href", "/f/css/scrollbarDark.css");
     } else {
         localStorage.setItem("color", "light");
         $("body").removeClass("dark");
@@ -105,6 +109,7 @@ function changeColor(el) {
             "Dazzled? Smash here!"
         );
         $("i#changeLayoutIcon").css("color", "#FF4C60");
+        $("link#scrollbar").attr("href", "/f/css/scrollbarLight.css");
     }
 }
 

@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ $title }} - Human∞.id</title>
     <meta name="description" content="{{ $title }} - Human∞.id">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('humanooid-fav-head.svg') }}">
 
     <!-- STYLESHEETS -->
@@ -15,6 +15,7 @@
     @yield('css')
 
     <link rel="stylesheet" href="{{ mix('f/css/fcustomstyle.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="scrollbar" href="" type="text/css" media="all">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

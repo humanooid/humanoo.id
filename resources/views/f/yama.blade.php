@@ -5,7 +5,8 @@
     <meta name="description"
         content="Everything can be learned except for something I don't want to learn. Give me space, time and internet access so I can be anything.">
 
-    <meta name="keywords" content="HTML, CSS, JavaScript, PHP, MySQL, Laravel, Codeigniter, Ubuntu, Linux, jQuery, Bootstrap, NodeJS">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, PHP, MySQL, Laravel, Codeigniter, Ubuntu, Linux, jQuery, Bootstrap, NodeJS">
     <meta name="author" content="Yayan Maulana">
 
 
@@ -740,63 +741,8 @@
 
     </section>
 
-    <!-- section prices -->
-    {{-- <section id="prices">
-
-        <div class="container">
-
-            <!-- section title -->
-            <h2 class="section-title wow fadeIn">Pricing Plans</h2>
-
-            <div class="spacer" data-height="60"></div>
-
-            <div class="row">
-
-                <div class="col-md-4 pe-md-0 mt-md-4 mt-0">
-                    <!-- price item -->
-                    <div class="price-item bg-white rounded shadow-dark text-center">
-                        <img src="{{ asset('f/images/price-1.svg') }}" alt="Regular" />
-                        <h2 class="plan">Basic</h2>
-                        <p>A Simple option but powerful to manage your business</p>
-                        <p>Email support</p>
-                        <h3 class="price"><em>$</em>9<span>Month</span></h3>
-                        <a href="#" class="btn btn-default">Get Started</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 px-md-0 my-4 my-md-0">
-                    <!-- price item recommended-->
-                    <div class="price-item bg-white rounded shadow-dark text-center best">
-                        <span class="badge">Recommended</span>
-                        <img src="{{ asset('f/images/price-2.svg') }}" alt="Premium" />
-                        <h2 class="plan">Premium</h2>
-                        <p>Unlimited product including apps integrations and more features</p>
-                        <p>Mon-Fri support</p>
-                        <h3 class="price"><em>$</em>49<span>Month</span></h3>
-                        <a href="#" class="btn btn-default">Get Started</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ps-md-0 mt-md-4 mt-0">
-                    <!-- price item -->
-                    <div class="price-item bg-white rounded shadow-dark text-center">
-                        <img src="{{ asset('f/images/price-3.svg') }}" alt="Ultimate" />
-                        <h2 class="plan">Ultimate</h2>
-                        <p>A wise option for large companies and individuals</p>
-                        <p>24/7 support</p>
-                        <h3 class="price"><em>$</em>99<span>Month</span></h3>
-                        <a href="#" class="btn btn-default">Get Started</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section> --}}
-
-    <!-- section testimonials -->
-    <section id="testimonials">
+    <!-- section tech -->
+    <section id="tech">
 
         <div class="container">
 
@@ -1015,6 +961,138 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section certification -->
+    <section id="certification">
+
+        <div class="container">
+
+            <!-- section title -->
+            <h2 class="section-title wow fadeInUp">Certification</h2>
+
+            <div class="spacer" data-height="60"></div>
+
+            <!-- portolio wrapper -->
+            <div class="row portfolio-wrapper">
+
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="{{ asset('f/images/yama/html.jpg') }}" class="work-image">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Certificate</span>
+                                <h4 class="title">HTML</h4>
+                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/html.jpg') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="{{ asset('f/images/yama/sql.png') }}" class="work-image">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Certificate</span>
+                                <h4 class="title">SQL</h4>
+                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/sql.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="{{ asset('f/images/yama/css.jpg') }}" class="work-image">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Certificate</span>
+                                <h4 class="title">CSS</h4>
+                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/css.jpg') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="{{ asset('f/images/yama/php.jpg') }}" class="work-image">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Certificate</span>
+                                <h4 class="title">PHP</h4>
+                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/php.jpg') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="{{ asset('f/images/yama/javascript.png') }}" class="work-image">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Certificate</span>
+                                <h4 class="title">javaScript</h4>
+                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/javascript.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="{{ asset('f/images/yama/jquery.jpg') }}" class="work-image">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Certificate</span>
+                                <h4 class="title">jQuery</h4>
+                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/jquery.jpg') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="{{ asset('f/images/yama/python.png') }}" class="work-image">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Certificate</span>
+                                <h4 class="title">Python</h4>
+                                <span class="more-button"><i class="icon-magnifier-add"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/python.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
 
         </div>

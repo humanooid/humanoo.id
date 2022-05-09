@@ -573,6 +573,7 @@
                         <p>This API is already implemented on <a href="https://goestowedding.com/"
                                 target="_blank">Goestowedding.com</a>.
                         </p>
+                        <a href="https://github.com/yama24/mywaapi" target="_blank" class="btn btn-default">mywaapi</a>
                     </div>
                 </div>
 

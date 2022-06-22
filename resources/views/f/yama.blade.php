@@ -381,10 +381,14 @@
                                 <h3 class="title">Full Stack Developer</h3>
                                 <p>PT. VAN AROMA</p>
                                 <ul>
-                                    <li>Develop existing web apps</li>
-                                    <li>Build Supplier Portal</li>
-                                    <li>Build Customer Portal</li>
-                                    <li>Migrate from native PHP to Codeigniter 4</li>
+                                    <li>Planning, designing, building, testing and releasing new features by request (ERP systems)</li>
+                                    <li>Planning, designing, building, testing and releasing new applications needed (Vendor Portal, Customer Portal, etc)</li>
+                                    <li>ERP system migration from native to Codeigniter 4</li>
+                                    <li>Create on-demand report pages such as sales reports, purchase reports etc</li>
+                                    <li>Improve existing features to improve application performance</li>
+                                    <li>Develop front-end functionality using HTML, CSS, Javascript, jQuery and Bootstrap</li>
+                                    <li>Develop relasional database Query using MySql</li>
+                                    <li>integrates third party APIs like chat-api for WhatsApp notifications</li>
                                 </ul>
                             </div>
                         </div>
@@ -397,8 +401,8 @@
                                 <p>CREATIVE PRODUCTION</p>
                                 <ul>
                                     <li>Design products</li>
-                                    <li>Build landing page</li>
-                                    <li>Build and maintenance e-commerce</li>
+                                    <li>Build landing page for marketing and advertising needs</li>
+                                    <li>Build and maintenance e-commerce (blindo.id)</li>
                                     <li>Manage ads</li>
                                 </ul>
                             </div>
@@ -411,8 +415,10 @@
                                 <h3 class="title">Full Stack Developer</h3>
                                 <p>INTERNUSA</p>
                                 <ul>
-                                    <li>Manage Web</li>
-                                    <li>Build a Attendace and Payroll App</li>
+                                    <li>Build and manage Web Profile</li>
+                                    <li>Build and manage Attendace and Payroll App</li>
+                                    <li>Build and manage fundraising app</li>
+                                    <li>Build and manage Warehouse App</li>
                                 </ul>
                             </div>
                         </div>

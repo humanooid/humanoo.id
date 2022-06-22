@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
-use App\Models\User;
-use App\Models\Reader;
-use App\Models\Category;
+use App\Models\{Post, User, Reader, Category};
+// use App\Models\User;
+// use App\Models\Reader;
+// use App\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
 use hisorange\BrowserDetect\Parser as Browser;

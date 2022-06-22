@@ -796,7 +796,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/html.svg') }}" width="50px" alt="HTML" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" src="{{ asset('f/images/yama/html.svg') }}" width="50px" alt="HTML" />
                         </div>
                     </div>
                 </div>
@@ -804,7 +804,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/css3.svg') }}" width="70px" alt="CSS3" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3" src="{{ asset('f/images/yama/css3.svg') }}" width="70px" alt="CSS3" />
                         </div>
                     </div>
                 </div>
@@ -812,7 +812,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/javascript.svg') }}" width="60px" alt="Javascript" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript" src="{{ asset('f/images/yama/javascript.svg') }}" width="60px" alt="Javascript" />
                         </div>
                     </div>
                 </div>
@@ -820,7 +820,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/jquery.svg') }}" width="70px" alt="jQuery" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="jQuery" src="{{ asset('f/images/yama/jquery.svg') }}" width="70px" alt="jQuery" />
                         </div>
                     </div>
                 </div>
@@ -828,7 +828,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/bootstrap.svg') }}" width="70px" alt="Bootstrap" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" src="{{ asset('f/images/yama/bootstrap.svg') }}" width="70px" alt="Bootstrap" />
                         </div>
                     </div>
                 </div>
@@ -836,7 +836,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/php.svg') }}" width="70px" alt="PHP" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="PHP" src="{{ asset('f/images/yama/php.svg') }}" width="70px" alt="PHP" />
                         </div>
                     </div>
                 </div>
@@ -844,7 +844,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/composer.svg') }}" width="50px" alt="Composer" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Composer" src="{{ asset('f/images/yama/composer.svg') }}" width="50px" alt="Composer" />
                         </div>
                     </div>
                 </div>
@@ -852,7 +852,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/codeigniter.svg') }}" width="50px" alt="Codeigniter" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Codeigniter" src="{{ asset('f/images/yama/codeigniter.svg') }}" width="50px" alt="Codeigniter" />
                         </div>
                     </div>
                 </div>
@@ -860,7 +860,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/laravel.svg') }}" width="50px" alt="Laravel" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel" src="{{ asset('f/images/yama/laravel.svg') }}" width="50px" alt="Laravel" />
                         </div>
                     </div>
                 </div>
@@ -868,7 +868,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/statamic.svg') }}" width="70px" alt="Statamic" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Statamic" src="{{ asset('f/images/yama/statamic.svg') }}" width="70px" alt="Statamic" />
                         </div>
                     </div>
                 </div>
@@ -876,7 +876,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/apache.svg') }}" width="60px" alt="Apache" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Apache" src="{{ asset('f/images/yama/apache.svg') }}" width="60px" alt="Apache" />
                         </div>
                     </div>
                 </div>
@@ -884,7 +884,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/node-js.svg') }}" width="50px" alt="NodeJS" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="NodeJS" src="{{ asset('f/images/yama/node-js.svg') }}" width="50px" alt="NodeJS" />
                         </div>
                     </div>
                 </div>
@@ -892,7 +892,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/npm.svg') }}" width="50px" alt="npm" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="npm" src="{{ asset('f/images/yama/npm.svg') }}" width="50px" alt="npm" />
                         </div>
                     </div>
                 </div>
@@ -900,7 +900,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/mysql.svg') }}" width="70px" alt="MySQL" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL" src="{{ asset('f/images/yama/mysql.svg') }}" width="70px" alt="MySQL" />
                         </div>
                     </div>
                 </div>
@@ -908,7 +908,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/postman.svg') }}" width="50px" alt="Postman" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Postman" src="{{ asset('f/images/yama/postman.svg') }}" width="50px" alt="Postman" />
                         </div>
                     </div>
                 </div>
@@ -916,7 +916,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/ubuntu.svg') }}" width="80px" alt="Ubuntu" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Ubuntu" src="{{ asset('f/images/yama/ubuntu.svg') }}" width="80px" alt="Ubuntu" />
                         </div>
                     </div>
                 </div>
@@ -924,7 +924,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/debian.svg') }}" width="40px" alt="Debian" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Debian" src="{{ asset('f/images/yama/debian.svg') }}" width="40px" alt="Debian" />
                         </div>
                     </div>
                 </div>
@@ -932,7 +932,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/linux.svg') }}" width="50px" alt="Linux" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Linux" src="{{ asset('f/images/yama/linux.svg') }}" width="50px" alt="Linux" />
                         </div>
                     </div>
                 </div>
@@ -940,7 +940,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/git.svg') }}" width="50px" alt="Git" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Git" src="{{ asset('f/images/yama/git.svg') }}" width="50px" alt="Git" />
                         </div>
                     </div>
                 </div>
@@ -948,7 +948,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/github.svg') }}" width="60px" alt="Github" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Github" src="{{ asset('f/images/yama/github.svg') }}" width="60px" alt="Github" />
                         </div>
                     </div>
                 </div>
@@ -956,7 +956,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/linode.svg') }}" width="80px" alt="Linode" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Linode" src="{{ asset('f/images/yama/linode.svg') }}" width="80px" alt="Linode" />
                         </div>
                     </div>
                 </div>
@@ -964,7 +964,7 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img src="{{ asset('f/images/yama/visual-studio-code.svg') }}" width="50px" alt="VSCode" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="VSCode" src="{{ asset('f/images/yama/visual-studio-code.svg') }}" width="50px" alt="VSCode" />
                         </div>
                     </div>
                 </div>

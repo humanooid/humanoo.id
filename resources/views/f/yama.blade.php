@@ -101,16 +101,18 @@
                 </svg>
 
                 <svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg">
-                    <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C"
-                        fill-rule="evenodd" />
+                    <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25"
+                        rx="1.5" fill="#FFD15C" fill-rule="evenodd" />
                 </svg>
 
-                <svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg">
-                    <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5"
-                        fill-rule="evenodd" />
+                <svg width="15" height="23" data-depth="0.2" class="layer p5"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25"
+                        rx="1.5" fill="#6C6CE5" fill-rule="evenodd" />
                 </svg>
 
-                <svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg">
+                <svg width="49" height="17" data-depth="0.5" class="layer p6"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g fill="#FF4C60" fill-rule="evenodd">
                         <path
                             d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z" />
@@ -119,14 +121,16 @@
                     </g>
                 </svg>
 
-                <svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none"
-                        fill-rule="evenodd" />
+                <svg width="26" height="26" data-depth="0.4" class="layer p7"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3"
+                        fill="none" fill-rule="evenodd" />
                 </svg>
 
-                <svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg">
-                    <rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5"
-                        fill-rule="evenodd" />
+                <svg width="19" height="21" data-depth="0.3" class="layer p8"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25"
+                        rx="1.5" fill="#6C6CE5" fill-rule="evenodd" />
                 </svg>
 
                 <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9"
@@ -136,7 +140,8 @@
                         fill="#6C6CE5" fill-rule="evenodd" />
                 </svg>
 
-                <svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
+                <svg width="47" height="29" data-depth="0.2" class="layer p10"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g fill="#44D7B6" fill-rule="evenodd">
                         <path
                             d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
@@ -145,7 +150,8 @@
                     </g>
                 </svg>
 
-                <svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg">
+                <svg width="33" height="20" data-depth="0.5" class="layer p11"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
                         fill="#FFD15C" fill-rule="evenodd" />
@@ -171,8 +177,8 @@
                 <div class="col-md-3">
                     <div class="text-center text-md-left">
                         <!-- avatar image -->
-                        <img class="img-fluid rounded-circle" src="{{ asset('f/images/yama/yama2.jpg') }}" alt="Yama"
-                            width="150px">
+                        <img class="img-fluid rounded-circle" src="{{ asset('f/images/yama/yama2.jpg') }}"
+                            alt="Yama" width="150px">
                     </div>
                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                 </div>
@@ -184,9 +190,10 @@
                                 <!-- about text -->
                                 <p style="text-align: justify">
                                     I am Yayan Maulana, Web Developer from Bogor, Indonesia. I have a lot of experience in
-                                    building web-based application systems. I am also a fast learner. Everything can be
-                                    learned except for something I don't want to learn. Give me space, time and internet
-                                    access so I can be anything.
+                                    building web-based application systems like ERP, CRM. E-Commerce, etc. I am also a fast
+                                    learner. Everything can be learned except for something I don't want to learn. Give me
+                                    space, time and internet access so I can be anything.
+
                                 </p>
                                 <div class="mt-3">
                                     <a href="https://www.canva.com/design/DAE76bwHBGA/Jr-QDyh3pY6qipOMCIK-DQ/view?utm_content=DAE76bwHBGA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
@@ -381,12 +388,15 @@
                                 <h3 class="title">Full Stack Developer</h3>
                                 <p>PT. VAN AROMA</p>
                                 <ul>
-                                    <li>Planning, designing, building, testing and releasing new features by request (ERP systems)</li>
-                                    <li>Planning, designing, building, testing and releasing new applications needed (Vendor Portal, Customer Portal, etc)</li>
+                                    <li>Planning, designing, building, testing and releasing new features by request (ERP
+                                        systems)</li>
+                                    <li>Planning, designing, building, testing and releasing new applications needed (Vendor
+                                        Portal, Customer Portal, etc)</li>
                                     <li>ERP system migration from native to Codeigniter 4</li>
                                     <li>Create on-demand report pages such as sales reports, purchase reports etc</li>
                                     <li>Improve existing features to improve application performance</li>
-                                    <li>Develop front-end functionality using HTML, CSS, Javascript, jQuery and Bootstrap</li>
+                                    <li>Develop front-end functionality using HTML, CSS, Javascript, jQuery and Bootstrap
+                                    </li>
                                     <li>Develop relasional database Query using MySql</li>
                                     <li>integrates third party APIs like chat-api for WhatsApp notifications</li>
                                 </ul>
@@ -553,7 +563,8 @@
                             hassles is making, printing, and distributing paper invitations.</p>
                         <p>With Goestowedding you don't need to feel that, because everything only needs to be done in front
                             of your screen.</p>
-                        <a href="https://goestowedding.com/" target="_blank" class="btn btn-default">Goestowedding.com</a>
+                        <a href="https://goestowedding.com/" target="_blank"
+                            class="btn btn-default">Goestowedding.com</a>
                     </div>
                 </div>
 
@@ -796,7 +807,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" src="{{ asset('f/images/yama/html.svg') }}" width="50px" alt="HTML" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="HTML"
+                                src="{{ asset('f/images/yama/html.svg') }}" width="50px" alt="HTML" />
                         </div>
                     </div>
                 </div>
@@ -804,7 +816,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3" src="{{ asset('f/images/yama/css3.svg') }}" width="70px" alt="CSS3" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3"
+                                src="{{ asset('f/images/yama/css3.svg') }}" width="70px" alt="CSS3" />
                         </div>
                     </div>
                 </div>
@@ -812,7 +825,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript" src="{{ asset('f/images/yama/javascript.svg') }}" width="60px" alt="Javascript" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript"
+                                src="{{ asset('f/images/yama/javascript.svg') }}" width="60px" alt="Javascript" />
                         </div>
                     </div>
                 </div>
@@ -820,7 +834,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="jQuery" src="{{ asset('f/images/yama/jquery.svg') }}" width="70px" alt="jQuery" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="jQuery"
+                                src="{{ asset('f/images/yama/jquery.svg') }}" width="70px" alt="jQuery" />
                         </div>
                     </div>
                 </div>
@@ -828,7 +843,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" src="{{ asset('f/images/yama/bootstrap.svg') }}" width="70px" alt="Bootstrap" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap"
+                                src="{{ asset('f/images/yama/bootstrap.svg') }}" width="70px" alt="Bootstrap" />
                         </div>
                     </div>
                 </div>
@@ -836,7 +852,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="PHP" src="{{ asset('f/images/yama/php.svg') }}" width="70px" alt="PHP" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"
+                                src="{{ asset('f/images/yama/php.svg') }}" width="70px" alt="PHP" />
                         </div>
                     </div>
                 </div>
@@ -844,7 +861,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Composer" src="{{ asset('f/images/yama/composer.svg') }}" width="50px" alt="Composer" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Composer"
+                                src="{{ asset('f/images/yama/composer.svg') }}" width="50px" alt="Composer" />
                         </div>
                     </div>
                 </div>
@@ -852,7 +870,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Codeigniter" src="{{ asset('f/images/yama/codeigniter.svg') }}" width="50px" alt="Codeigniter" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Codeigniter"
+                                src="{{ asset('f/images/yama/codeigniter.svg') }}" width="50px" alt="Codeigniter" />
                         </div>
                     </div>
                 </div>
@@ -860,7 +879,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel" src="{{ asset('f/images/yama/laravel.svg') }}" width="50px" alt="Laravel" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel"
+                                src="{{ asset('f/images/yama/laravel.svg') }}" width="50px" alt="Laravel" />
                         </div>
                     </div>
                 </div>
@@ -868,7 +888,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Statamic" src="{{ asset('f/images/yama/statamic.svg') }}" width="70px" alt="Statamic" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Statamic"
+                                src="{{ asset('f/images/yama/statamic.svg') }}" width="70px" alt="Statamic" />
                         </div>
                     </div>
                 </div>
@@ -876,7 +897,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Apache" src="{{ asset('f/images/yama/apache.svg') }}" width="60px" alt="Apache" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Apache"
+                                src="{{ asset('f/images/yama/apache.svg') }}" width="60px" alt="Apache" />
                         </div>
                     </div>
                 </div>
@@ -884,7 +906,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="NodeJS" src="{{ asset('f/images/yama/node-js.svg') }}" width="50px" alt="NodeJS" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="NodeJS"
+                                src="{{ asset('f/images/yama/node-js.svg') }}" width="50px" alt="NodeJS" />
                         </div>
                     </div>
                 </div>
@@ -892,7 +915,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="npm" src="{{ asset('f/images/yama/npm.svg') }}" width="50px" alt="npm" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="npm"
+                                src="{{ asset('f/images/yama/npm.svg') }}" width="50px" alt="npm" />
                         </div>
                     </div>
                 </div>
@@ -900,7 +924,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL" src="{{ asset('f/images/yama/mysql.svg') }}" width="70px" alt="MySQL" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL"
+                                src="{{ asset('f/images/yama/mysql.svg') }}" width="70px" alt="MySQL" />
                         </div>
                     </div>
                 </div>
@@ -908,7 +933,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Postman" src="{{ asset('f/images/yama/postman.svg') }}" width="50px" alt="Postman" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Postman"
+                                src="{{ asset('f/images/yama/postman.svg') }}" width="50px" alt="Postman" />
                         </div>
                     </div>
                 </div>
@@ -916,7 +942,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Ubuntu" src="{{ asset('f/images/yama/ubuntu.svg') }}" width="80px" alt="Ubuntu" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Ubuntu"
+                                src="{{ asset('f/images/yama/ubuntu.svg') }}" width="80px" alt="Ubuntu" />
                         </div>
                     </div>
                 </div>
@@ -924,7 +951,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Debian" src="{{ asset('f/images/yama/debian.svg') }}" width="40px" alt="Debian" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Debian"
+                                src="{{ asset('f/images/yama/debian.svg') }}" width="40px" alt="Debian" />
                         </div>
                     </div>
                 </div>
@@ -932,7 +960,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Linux" src="{{ asset('f/images/yama/linux.svg') }}" width="50px" alt="Linux" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Linux"
+                                src="{{ asset('f/images/yama/linux.svg') }}" width="50px" alt="Linux" />
                         </div>
                     </div>
                 </div>
@@ -940,7 +969,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Git" src="{{ asset('f/images/yama/git.svg') }}" width="50px" alt="Git" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Git"
+                                src="{{ asset('f/images/yama/git.svg') }}" width="50px" alt="Git" />
                         </div>
                     </div>
                 </div>
@@ -948,7 +978,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Github" src="{{ asset('f/images/yama/github.svg') }}" width="60px" alt="Github" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Github"
+                                src="{{ asset('f/images/yama/github.svg') }}" width="60px" alt="Github" />
                         </div>
                     </div>
                 </div>
@@ -956,7 +987,8 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Linode" src="{{ asset('f/images/yama/linode.svg') }}" width="80px" alt="Linode" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Linode"
+                                src="{{ asset('f/images/yama/linode.svg') }}" width="80px" alt="Linode" />
                         </div>
                     </div>
                 </div>
@@ -964,7 +996,9 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
-                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="VSCode" src="{{ asset('f/images/yama/visual-studio-code.svg') }}" width="50px" alt="VSCode" />
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="VSCode"
+                                src="{{ asset('f/images/yama/visual-studio-code.svg') }}" width="50px"
+                                alt="VSCode" />
                         </div>
                     </div>
                 </div>

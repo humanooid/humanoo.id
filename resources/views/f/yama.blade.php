@@ -183,7 +183,7 @@
                             <div class="col-md-6">
                                 <!-- about text -->
                                 <p style="text-align: justify">
-                                    I am Yayan Maulana, Web Developer from Bandung, Indonesia. I have a lot of experience in
+                                    I am Yayan Maulana, Web Developer from Bogor, Indonesia. I have a lot of experience in
                                     building web-based application systems. I am also a fast learner. Everything can be
                                     learned except for something I don't want to learn. Give me space, time and internet
                                     access so I can be anything.

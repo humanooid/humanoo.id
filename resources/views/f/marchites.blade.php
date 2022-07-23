@@ -483,119 +483,51 @@
 		<div class="row portfolio-wrapper">
 
 			<!-- portfolio item -->
-			<div class="col-md-4 col-sm-6 grid-item art">
-				<a href="images/works/1.svg" class="work-image">
-					<div class="portfolio-item rounded shadow-dark">
-						<div class="details">
-							<span class="term">Art</span>
-							<h4 class="title">Project Managment Illustration</h4>
-							<span class="more-button"><i class="icon-magnifier-add"></i></span>
-						</div>
-						<div class="thumb">
-							<img src="{{ asset('f/images/works/1.svg') }}" alt="Portfolio-title" />
-							<div class="mask"></div>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<!-- portfolio item -->
 			<div class="col-md-4 col-sm-6 grid-item creative design">
-				<a href="#small-dialog" class="work-content">
+				<a href="#portfolio_1" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
 							<span class="term">Creative</span>
-							<h4 class="title">Guest App Walkthrough Screens</h4>
+							<h4 class="title">Humanoo.id - Let's talk about code</h4>
 							<span class="more-button"><i class="icon-options"></i></span>
 						</div>
 						<div class="thumb">
-							<img src="{{ asset('f/images/works/2.svg') }}" alt="Portfolio-title" />
+							<img src="{{ asset('f/images/marchites/humanoo.id.png') }}" alt="Portfolio-title" />
 							<div class="mask"></div>
 						</div>
 					</div>
 				</a>
-				<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
-					<img src="{{ asset('f/images/single-work.svg') }}" alt="Title" />
-					<h2>Guest App Walkthrough Screens</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa
-						semper rutrum. In rhoncus eleifend mi id tempus.</p>
-					<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl
-						lectus eget ligula.</p>
-					<a href="#" class="btn btn-default">View on Dribbble</a>
-				</div>
-			</div>
-
-			<!-- portfolio item -->
-			<div class="col-md-4 col-sm-6 grid-item branding">
-				<a href="https://www.youtube.com/watch?v=qf9z4ulfmYw" class="work-video">
-					<div class="portfolio-item rounded shadow-dark">
-						<div class="details">
-							<span class="term">Branding</span>
-							<h4 class="title">Delivery App Wireframe</h4>
-							<span class="more-button"><i class="icon-camrecorder"></i></span>
-						</div>
-						<div class="thumb">
-							<img src="{{ asset('f/images/works/3.svg') }}" alt="Portfolio-title" />
-							<div class="mask"></div>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<!-- portfolio item -->
-			<div class="col-md-4 col-sm-6 grid-item creative">
-				<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-					class="work-video">
-					<div class="portfolio-item rounded shadow-dark">
-						<div class="details">
-							<span class="term">Creative</span>
-							<h4 class="title">Onboarding Motivation</h4>
-							<span class="more-button"><i class="icon-music-tone-alt"></i></span>
-						</div>
-						<div class="thumb">
-							<img src="{{ asset('f/images/works/4.svg') }}" alt="Portfolio-title" />
-							<div class="mask"></div>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<!-- portfolio item -->
-			<div class="col-md-4 col-sm-6 grid-item art branding">
-				<a href="#gallery-1" class="gallery-link">
-					<div class="portfolio-item rounded shadow-dark">
-						<div class="details">
-							<span class="term">Art, Branding</span>
-							<h4 class="title">iMac Mockup Design</h4>
-							<span class="more-button"><i class="icon-picture"></i></span>
-						</div>
-						<div class="thumb">
-							<img src="{{ asset('f/images/works/5.svg') }}" alt="Portfolio-title" />
-							<div class="mask"></div>
-						</div>
-					</div>
-				</a>
-				<div id="gallery-1" class="gallery mfp-hide">
-					<a href="images/works/5.svg"></a>
-					<a href="images/works/4.svg"></a>
+				<div id="portfolio_1" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/humanoo.id.png') }}" alt="Title" />
+					<h2>Humanoo.id - Let's talk about code</h2>
+					<p>This is a blog to write whatever we know about programming, we hope this blog is useful for everyone who wants to learn programming.
+					In the future maybe we will develop this into a free learning platform.
+					*Under development</p>
+					<a href="https://www.humanoo.id" class="btn btn-default">visit</a>
 				</div>
 			</div>
 
 			<!-- portfolio item -->
 			<div class="col-md-4 col-sm-6 grid-item creative design">
-				<a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">
+				<a href="#portfolio_2" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
-							<span class="term">Creative, Design</span>
-							<h4 class="title">Game Store App Concept</h4>
-							<span class="more-button"><i class="icon-link"></i></span>
+							<span class="term">Creative</span>
+							<h4 class="title">Alif Aqiqah & Catering - Aqiqah Website</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
 						</div>
 						<div class="thumb">
-							<img src="{{ asset('f/images/works/6.svg') }}" alt="Portfolio-title" />
+							<img src="{{ asset('f/images/marchites/alifaqiqahcatering.com.png') }}" alt="Portfolio-title" />
 							<div class="mask"></div>
 						</div>
 					</div>
 				</a>
+				<div id="portfolio_2" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/alifaqiqahcatering.com.png') }}" alt="Title" />
+					<h2>Alif Aqiqah & Catering - Catering Website</h2>
+					<p>This is a website to serve Aqiqah order process and branding</p>
+					<a href="https://www.alifaqiqahcatering.com" class="btn btn-default">visit</a>
+				</div>
 			</div>
 
 		</div>

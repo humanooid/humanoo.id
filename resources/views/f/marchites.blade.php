@@ -364,29 +364,13 @@
 					<!-- timeline item -->
 					<div class="timeline-container wow fadeInUp">
 						<div class="content">
-							<span class="time">2019 - Present</span>
-							<h3 class="title">Academic Degree</h3>
-							<p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-							</p>
-						</div>
-					</div>
-
-					<!-- timeline item -->
-					<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
-						<div class="content">
-							<span class="time">2017 - 2013</span>
-							<h3 class="title">Bachelor’s Degree</h3>
-							<p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
-							</p>
-						</div>
-					</div>
-
-					<!-- timeline item -->
-					<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
-						<div class="content">
-							<span class="time">2013 - 2009</span>
-							<h3 class="title">Honours Degree</h3>
-							<p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+							<span class="time">2022 - Present</span>
+							<h3 class="title">Program Beasiswa IDCamp 2022 by Indosat Ooredo Hutchison</h3>
+							<p>
+								<p class="sub-title">DICODING.COM</p>
+								<uL>
+									<li> Front-End Web, React Learning
+								</ul>
 							</p>
 						</div>
 					</div>
@@ -409,9 +393,14 @@
 					<!-- timeline item -->
 					<div class="timeline-container wow fadeInUp">
 						<div class="content">
-							<span class="time">2019 - Present</span>
-							<h3 class="title">Web Designer</h3>
-							<p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+							<span class="time">2022 - Present</span>
+							<h3 class="title">Web Designer (UI Designer)</h3>
+							<p class="subtitle">MEDIA BERBAGI<p>
+							<p>
+								<ul>
+									<li> Designing UI Dashboard
+									<li> Designing wireframing Dashboard (Lo-fi and Mi-fi)
+								</ul>
 							</p>
 						</div>
 					</div>
@@ -419,9 +408,14 @@
 					<!-- timeline item -->
 					<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
 						<div class="content">
-							<span class="time">2017 - 2013</span>
-							<h3 class="title">Front-End Developer</h3>
-							<p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+							<span class="time">2021 - 2022</span>
+							<h3 class="title">Front-End Web Developer Junior</h3>
+							<p class="subtitle">PT. DIGITAL AGENSI NUSANTARA<p>
+							<p>
+								<ul>
+									<li> Slice the view in UI Design into lines of code
+									<li> Build and develop websites using the Laravel framework
+								</ul>
 							</p>
 						</div>
 					</div>
@@ -429,9 +423,14 @@
 					<!-- timeline item -->
 					<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
 						<div class="content">
-							<span class="time">2013 - 2009</span>
-							<h3 class="title">Back-End Developer</h3>
-							<p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+							<span class="time">2019 - 2021</span>
+							<h3 class="title">Front-End Web Developer Junior</h3>
+							<p class="subtitle">INTERNUSA BANDUNG<p>
+							<p>
+								<ul>
+									<li> Build and develop websites
+									<li> Help senior programmers to build website
+								</ul>
 							</p>
 						</div>
 					</div>

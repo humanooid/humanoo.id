@@ -42,8 +42,8 @@
 
 			<!-- info -->
 			<h1 class="mb-2 mt-0">Gilang Aryadi Mahardika (Marchites)</h1>
-			<span>I'm a <span class="text-rotating">Fast Learner, Back-end developer, Front-end developer, PHP
-					programmer, Javascript programmer, MySQL programmer</span></span>
+			<span>I'm a <span class="text-rotating">Front-end developer, PHP
+					programmer, Javascript programmer, MySQL programmer, UI/X Designer, Logos Designer, Branding Designer</span></span>
 
 			<!-- social icons -->
 			<ul class="social-icons light list-inline mb-0 mt-4">
@@ -199,7 +199,7 @@
 							<!-- skill item -->
 							<div class="skill-item">
 								<div class="skill-info clearfix">
-									<h4 class="float-left mb-3 mt-0">UI/UX design</h4>
+									<h4 class="float-left mb-3 mt-0">UI Design</h4>
 									<span class="float-right">95%</span>
 								</div>
 								<div class="progress">
@@ -213,7 +213,7 @@
 							<!-- skill item -->
 							<div class="skill-item">
 								<div class="skill-info clearfix">
-									<h4 class="float-left mb-3 mt-0">Photography</h4>
+									<h4 class="float-left mb-3 mt-0">Design Branding & Logos</h4>
 									<span class="float-right">60%</span>
 								</div>
 								<div class="progress">
@@ -229,60 +229,7 @@
 
 		</div>
 		<!-- row end -->
-
-		<div class="spacer" data-height="70"></div>
-
-		<div class="row">
-
-			<div class="col-md-3 col-sm-6">
-				<!-- fact item -->
-				<div class="fact-item">
-					<span class="icon icon-fire"></span>
-					<div class="details">
-						<h3 class="mb-0 mt-0 number"><em class="count">198</em></h3>
-						<p class="mb-0">Projects completed</p>
-					</div>
-				</div>
-				<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-			</div>
-
-			<div class="col-md-3 col-sm-6">
-				<!-- fact item -->
-				<div class="fact-item">
-					<span class="icon icon-cup"></span>
-					<div class="details">
-						<h3 class="mb-0 mt-0 number"><em class="count">5670</em></h3>
-						<p class="mb-0">Cup of coffee</p>
-					</div>
-				</div>
-				<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-			</div>
-
-			<div class="col-md-3 col-sm-6">
-				<!-- fact item -->
-				<div class="fact-item">
-					<span class="icon icon-people"></span>
-					<div class="details">
-						<h3 class="mb-0 mt-0 number"><em class="count">427</em></h3>
-						<p class="mb-0">Satisfied clients</p>
-					</div>
-				</div>
-				<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-			</div>
-
-			<div class="col-md-3 col-sm-6">
-				<!-- fact item -->
-				<div class="fact-item">
-					<span class="icon icon-badge"></span>
-					<div class="details">
-						<h3 class="mb-0 mt-0 number"><em class="count">35</em></h3>
-						<p class="mb-0">Nominees winner</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
+	
 	</div>
 
 </section>
@@ -304,9 +251,8 @@
 				<div class="service-box rounded data-background padding-30 text-center text-light shadow-blue"
 					data-color="#6C6CE5">
 					<img src="{{ asset('f/images/service-1.svg') }}" alt="UI/UX design" />
-					<h3 class="mb-3 mt-0">UI/UX design</h3>
-					<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo
-						ligula eget.</p>
+					<h3 class="mb-3 mt-0">UI Design</h3>
+					<p class="mb-0">We help your web design, according to your wishes and needs/p>
 				</div>
 				<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 			</div>
@@ -315,10 +261,9 @@
 				<!-- service box -->
 				<div class="service-box rounded data-background padding-30 text-center shadow-yellow"
 					data-color="#F9D74C">
-					<img src="{{ asset('f/images/service-2.svg') }}" alt="UI/UX design" />
+					<img src="{{ asset('f/images/service-2.svg') }}" alt="UI Design" />
 					<h3 class="mb-3 mt-0">Web Development</h3>
-					<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo
-						ligula eget.</p>
+					<p class="mb-0">We Develop your website with technology that is constantly updated</p>
 				</div>
 				<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 			</div>
@@ -327,17 +272,16 @@
 				<!-- service box -->
 				<div class="service-box rounded data-background padding-30 text-center text-light shadow-pink"
 					data-color="#F97B8B">
-					<img src="{{ asset('f/images/service-3.svg') }}" alt="UI/UX design" />
-					<h3 class="mb-3 mt-0">Photography</h3>
-					<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo
-						ligula eget.</p>
+					<img src="{{ asset('f/images/service-4.svg') }}" alt="UI Design" />
+					<h3 class="mb-3 mt-0">Design Branding & Logos</h3>
+					<p class="mb-0">We help you to introduce your product to the world</p>
 				</div>
 			</div>
 
 		</div>
 
 		<div class="mt-5 text-center">
-			<p class="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋</p>
+			<p class="mb-0">Looking for a custom job? <a href="https://wa.me/089628274162">Click here</a> to contact me! 👋</p>
 		</div>
 
 	</div>
@@ -461,20 +405,20 @@
 		<!-- portfolio filter (desktop) -->
 		<ul class="portfolio-filter list-inline wow fadeInUp">
 			<li class="current list-inline-item" data-filter="*">Everything</li>
-			<li class="list-inline-item" data-filter=".creative">Creative</li>
-			<li class="list-inline-item" data-filter=".art">Art</li>
-			<li class="list-inline-item" data-filter=".design">Design</li>
-			<li class="list-inline-item" data-filter=".branding">Branding</li>
+			<li class="list-inline-item" data-filter=".front-end">Front-End Web</li>
+			<li class="list-inline-item" data-filter=".uix">UI Designs</li>
+			<li class="list-inline-item" data-filter=".design">Design Branding & Logos</li>
+			<!-- <li class="list-inline-item" data-filter=".branding">Branding</li> -->
 		</ul>
 
 		<!-- portfolio filter (mobile) -->
 		<div class="pf-filter-wrapper">
 			<select class="portfolio-filter-mobile">
 				<option value="*">Everything</option>
-				<option value=".creative">Creative</option>
-				<option value=".art">Art</option>
-				<option value=".design">Design</option>
-				<option value=".branding">Branding</option>
+				<option value=".front-end">Front-End Web</option>
+				<option value=".uix">UI Designs</option>
+				<!-- <option value=".design">Design</option>
+				<option value=".branding">Branding</option> -->
 			</select>
 		</div>
 
@@ -482,7 +426,7 @@
 		<div class="row portfolio-wrapper">
 
 			<!-- portfolio item -->
-			<div class="col-md-4 col-sm-6 grid-item creative design">
+			<div class="col-md-4 col-sm-6 grid-item front-end">
 				<a href="#portfolio_1" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
@@ -507,7 +451,7 @@
 			</div>
 
 			<!-- portfolio item -->
-			<div class="col-md-4 col-sm-6 grid-item creative design">
+			<div class="col-md-4 col-sm-6 grid-item front-end">
 				<a href="#portfolio_2" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
@@ -545,60 +489,6 @@
 
 </section>
 
-<!-- section prices -->
-<section id="prices">
-
-	<div class="container">
-
-		<!-- section title -->
-		<h2 class="section-title wow fadeIn">Pricing Plans</h2>
-
-		<div class="spacer" data-height="60"></div>
-
-		<div class="row">
-
-			<div class="col-md-4 pe-md-0 mt-md-4 mt-0">
-				<!-- price item -->
-				<div class="price-item bg-white rounded shadow-dark text-center">
-					<img src="{{ asset('f/images/price-1.svg') }}" alt="Regular" />
-					<h2 class="plan">Basic</h2>
-					<p>A Simple option but powerful to manage your business</p>
-					<p>Email support</p>
-					<h3 class="price"><em>$</em>9<span>Month</span></h3>
-					<a href="#" class="btn btn-default">Get Started</a>
-				</div>
-			</div>
-
-			<div class="col-md-4 px-md-0 my-4 my-md-0">
-				<!-- price item recommended-->
-				<div class="price-item bg-white rounded shadow-dark text-center best">
-					<span class="badge">Recommended</span>
-					<img src="{{ asset('f/images/price-2.svg') }}" alt="Premium" />
-					<h2 class="plan">Premium</h2>
-					<p>Unlimited product including apps integrations and more features</p>
-					<p>Mon-Fri support</p>
-					<h3 class="price"><em>$</em>49<span>Month</span></h3>
-					<a href="#" class="btn btn-default">Get Started</a>
-				</div>
-			</div>
-
-			<div class="col-md-4 ps-md-0 mt-md-4 mt-0">
-				<!-- price item -->
-				<div class="price-item bg-white rounded shadow-dark text-center">
-					<img src="{{ asset('f/images/price-3.svg') }}" alt="Ultimate" />
-					<h2 class="plan">Ultimate</h2>
-					<p>A wise option for large companies and individuals</p>
-					<p>24/7 support</p>
-					<h3 class="price"><em>$</em>99<span>Month</span></h3>
-					<a href="#" class="btn btn-default">Get Started</a>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
 
 <!-- section testimonials -->
 <section id="testimonials">

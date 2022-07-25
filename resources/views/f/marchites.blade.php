@@ -421,8 +421,8 @@
 				<option value="*">Everything</option>
 				<option value=".front-end">Front-End Web</option>
 				<option value=".uix">UI Designs</option>
-				<!-- <option value=".design">Design</option>
-				<option value=".branding">Branding</option> -->
+				<option value=".design">Design Branding & Logos</option>
+				<!-- <option value=".branding">Branding</option> -->
 			</select>
 		</div>
 
@@ -434,7 +434,7 @@
 				<a href="#portfolio_1" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
-							<span class="term">Creative</span>
+							<span class="term">Front-end Web</span>
 							<h4 class="title">Humanoo.id - Let's talk about code</h4>
 							<span class="more-button"><i class="icon-options"></i></span>
 						</div>
@@ -459,7 +459,7 @@
 				<a href="#portfolio_2" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
-							<span class="term">Creative</span>
+							<span class="term">Front-end Web</span>
 							<h4 class="title">Alif Aqiqah & Catering - Aqiqah Website</h4>
 							<span class="more-button"><i class="icon-options"></i></span>
 						</div>
@@ -474,6 +474,52 @@
 					<h2>Alif Aqiqah & Catering - Catering Website</h2>
 					<p>This is a website to serve Aqiqah order process and branding</p>
 					<a href="https://www.alifaqiqahcatering.com" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
+			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item design">
+				<a href="#portfolio_2" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">Design Branding & Logos</span>
+							<h4 class="title">Logo Ichi Mochi</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/ichi-mochi.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_2" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/ichi-mochi.png') }}" alt="Title" />
+					<h2>Alif Aqiqah & Catering - Catering Website</h2>
+					<p>This is a website to serve Aqiqah order process and branding</p>
+					<a href="#" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
+			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item design">
+				<a href="#portfolio_2" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">Design Branding & Logos</span>
+							<h4 class="title">Logo Humanoo.id</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/humanoo.id-logo.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_2" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/humanoo.id-logo.png') }}" alt="Title" />
+					<h2>Alif Aqiqah & Catering - Catering Website</h2>
+					<p>This is a website to serve Aqiqah order process and branding</p>
+					<a href="#" class="btn btn-default">visit</a>
 				</div>
 			</div>
 

@@ -127,7 +127,7 @@
         <!-- desktop header -->
         <header class="desktop-header-3 fixed-top light">
 
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-4">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="/">
                         <img id="horizontalLogoDark" style="display: none" width="200px"

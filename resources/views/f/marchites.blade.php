@@ -26,6 +26,13 @@
     <meta name="twitter:image" content="{{ asset('humanooid-fav-head.svg') }}">
 
     <!-- Meta Tags Generated via http://heymeta.com -->
+
+	<style>
+		.client-item .inner img{
+			max-width: 92px;
+			height: 48px;
+		}
+	</style>
 @endsection
 @section('content')
 <!-- section home -->
@@ -158,7 +165,7 @@
 			<div class="col-md-3">
 				<div class="text-center text-md-left">
 					<!-- avatar image -->
-					<img class="img-fluid rounded-circle" src="{{ asset('f/images/gilang.webp') }}" alt="Yama"
+					<img class="img-fluid rounded-circle" src="{{ asset('f/images/gilang_black.jpg') }}" alt="Yama"
 						width="150px">
 				</div>
 				<div class="spacer d-md-none d-lg-none" data-height="30"></div>
@@ -249,7 +256,7 @@
 					data-color="#6C6CE5">
 					<img src="{{ asset('f/images/service-1.svg') }}" alt="UI/UX design" />
 					<h3 class="mb-3 mt-0">UI Design</h3>
-					<p class="mb-0">We help your web design, according to your wishes and needs/p>
+					<p class="mb-0">We help your web design, according to your wishes and needs</p>
 				</div>
 				<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 			</div>
@@ -414,8 +421,8 @@
 				<option value="*">Everything</option>
 				<option value=".front-end">Front-End Web</option>
 				<option value=".uix">UI Designs</option>
-				<!-- <option value=".design">Design</option>
-				<option value=".branding">Branding</option> -->
+				<option value=".design">Design Branding & Logos</option>
+				<!-- <option value=".branding">Branding</option> -->
 			</select>
 		</div>
 
@@ -427,7 +434,7 @@
 				<a href="#portfolio_1" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
-							<span class="term">Creative</span>
+							<span class="term">Front-end Web</span>
 							<h4 class="title">Humanoo.id - Let's talk about code</h4>
 							<span class="more-button"><i class="icon-options"></i></span>
 						</div>
@@ -452,7 +459,7 @@
 				<a href="#portfolio_2" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
-							<span class="term">Creative</span>
+							<span class="term">Front-end Web</span>
 							<h4 class="title">Alif Aqiqah & Catering - Aqiqah Website</h4>
 							<span class="more-button"><i class="icon-options"></i></span>
 						</div>
@@ -467,6 +474,52 @@
 					<h2>Alif Aqiqah & Catering - Catering Website</h2>
 					<p>This is a website to serve Aqiqah order process and branding</p>
 					<a href="https://www.alifaqiqahcatering.com" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
+			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item design">
+				<a href="#portfolio_2" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">Design Branding & Logos</span>
+							<h4 class="title">Logo Ichi Mochi</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/ichi-mochi.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_2" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/ichi-mochi.png') }}" alt="Title" />
+					<h2>Alif Aqiqah & Catering - Catering Website</h2>
+					<p>This is a website to serve Aqiqah order process and branding</p>
+					<a href="#" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
+			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item design">
+				<a href="#portfolio_2" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">Design Branding & Logos</span>
+							<h4 class="title">Logo Humanoo.id</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/humanoo.id-logo.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_2" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/humanoo.id-logo.png') }}" alt="Title" />
+					<h2>Alif Aqiqah & Catering - Catering Website</h2>
+					<p>This is a website to serve Aqiqah order process and branding</p>
+					<a href="#" class="btn btn-default">visit</a>
 				</div>
 			</div>
 
@@ -493,49 +546,17 @@
 	<div class="container">
 
 		<!-- section title -->
-		<h2 class="section-title wow fadeInUp">Clients & Reviews</h2>
+		<h2 class="section-title wow fadeInUp">The Technology</h2>
 
 		<div class="spacer" data-height="60"></div>
 
-		<!-- testimonials wrapper -->
-		<div class="testimonials-wrapper">
-
-			<!-- testimonial item -->
-			<div class="testimonial-item text-center mx-auto">
-				<div class="thumb mb-3 mx-auto">
-					<img src="{{ asset('f/images/avatar-3.svg') }}" alt="customer-name" />
-				</div>
-				<h4 class="mt-3 mb-0">John Doe</h4>
-				<span class="subtitle">Product designer at Dribbble</span>
-				<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-					<p class="mb-0">I enjoy working with the theme and learn so much. You guys make the
-						process
-						fun and interesting. Good luck! 👍</p>
-				</div>
-			</div>
-
-			<!-- testimonial item -->
-			<div class="testimonial-item text-center mx-auto">
-				<div class="thumb mb-3 mx-auto">
-					<img src="{{ asset('f/images/avatar-1.svg') }}" alt="customer-name" />
-				</div>
-				<h4 class="mt-3 mb-0">John Doe</h4>
-				<span class="subtitle">Product designer at Dribbble</span>
-				<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-					<p class="mb-0">I enjoy working with the theme and learn so much. You guys make the
-						process
-						fun and interesting. Good luck! 🔥</p>
-				</div>
-			</div>
-
-		</div>
-
+		<!-- the technology wrapper -->
 		<div class="row">
 			<div class="col-md-3 col-6">
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-1.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-1.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>
@@ -543,7 +564,7 @@
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-2.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-2.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>
@@ -551,7 +572,7 @@
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-3.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-3.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>
@@ -559,7 +580,7 @@
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-4.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-4.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>
@@ -567,7 +588,7 @@
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-5.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-5.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>
@@ -575,7 +596,7 @@
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-6.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-6.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>
@@ -583,7 +604,7 @@
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-7.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-7.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>
@@ -591,7 +612,36 @@
 				<!-- client item -->
 				<div class="client-item">
 					<div class="inner">
-						<img src="{{ asset('f/images/client-8.svg') }}" alt="client-name" />
+						<img src="{{ asset('f/images/brand-8.svg') }}" alt="client-name" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<!-- client item -->
+				<div class="client-item">
+					<div class="inner">
+						<img src="{{ asset('f/images/brand-9.svg') }}" alt="client-name" />
+					</div>
+				</div>
+			</div><div class="col-md-3 col-6">
+				<!-- client item -->
+				<div class="client-item">
+					<div class="inner">
+						<img src="{{ asset('f/images/brand-10.svg') }}" alt="client-name" />
+					</div>
+				</div>
+			</div><div class="col-md-3 col-6">
+				<!-- client item -->
+				<div class="client-item">
+					<div class="inner">
+						<img src="{{ asset('f/images/brand-11.svg') }}" alt="client-name" />
+					</div>
+				</div>
+			</div><div class="col-md-3 col-6">
+				<!-- client item -->
+				<div class="client-item">
+					<div class="inner">
+						<img src="{{ asset('f/images/brand-12.svg') }}" alt="client-name" />
 					</div>
 				</div>
 			</div>

@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\{Post, User, Reader, Category};
-// use App\Models\User;
-// use App\Models\Reader;
-// use App\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
 use hisorange\BrowserDetect\Parser as Browser;
+use Yama\MywaapiPhpLib\Mywaapi;
+
 
 class HomeController extends Controller
 {
@@ -34,17 +33,7 @@ class HomeController extends Controller
             $browser_version = Browser::browserVersion();
             $os = Browser::platformFamily();
             $os_version = Browser::platformVersion();
-
-            if (Browser::isTablet()) {
-                $device = 'Tablet';
-            } elseif (Browser::isMobile()) {
-                $device = 'Mobile';
-            } elseif (Browser::isDesktop()) {
-                $device = 'Desktop';
-            } else {
-                $device = 'Unknown';
-            }
-
+            $device = Browser::deviceType();
             $device_vendor = Browser::deviceFamily();
             $device_brand = Browser::deviceModel();
 
@@ -70,7 +59,7 @@ class HomeController extends Controller
         foreach ($post->post_tag as $tag) {
             $keywords .= $tag->tag->name . ',';
         }
-        
+
         return view('f.read', [
             'title' => $post->title,
             'keywords' => rtrim($keywords, ','),
@@ -90,6 +79,31 @@ class HomeController extends Controller
 
     public function yama()
     {
+        if (!Cookie::get('visited')) {
+
+            $ip = request()->ip();
+            $browser = Browser::browserFamily();
+            $browser_version = Browser::browserVersion();
+            $os = Browser::platformFamily();
+            $os_version = Browser::platformVersion();
+            $device = Browser::deviceType();
+            $device_vendor = Browser::deviceFamily();
+            $device_brand = Browser::deviceModel();
+
+            $message = <<<message
+            *New Visitor*
+            
+            Ip Address : *$ip*
+            Browser : *$browser ($browser_version)*
+            OS : *$os ($os_version)*
+            Device : *$device ($device_vendor | $device_brand)*
+
+            _Thanks_
+            message;
+            $wa = new Mywaapi("http://goestowedding.com:8000/");
+            $wa->sendMessage('628986182128', $message);
+            Cookie::queue('visited', true, 60 * 24); // 24 hours
+        }
         $user = User::where('email', 'maulana24@live.com')->firstOrFail();
         $posts = Post::with(['author', 'category', 'post_tag'])->where('published_at', '!=', NULL)->where('user_id', $user->id)->orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(3)->get();
         return view('f.yama', [

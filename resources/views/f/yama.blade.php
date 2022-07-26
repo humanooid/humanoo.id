@@ -843,6 +843,15 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Vue.js"
+                                src="{{ asset('f/images/yama/vuejs.svg') }}" width="70px" alt="Vue.js" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
                             <img data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap"
                                 src="{{ asset('f/images/yama/bootstrap.svg') }}" width="70px" alt="Bootstrap" />
                         </div>
@@ -926,6 +935,15 @@
                         <div class="inner">
                             <img data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL"
                                 src="{{ asset('f/images/yama/mysql.svg') }}" width="70px" alt="MySQL" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="mongoDB"
+                                src="{{ asset('f/images/yama/mongodb.svg') }}" width="70px" alt="mongoDB" />
                         </div>
                     </div>
                 </div>

@@ -100,7 +100,7 @@ class HomeController extends Controller
 
             _Thanks_
             message;
-            $wa = new Mywaapi("http://goestowedding.com:8000/");
+            $wa = new Mywaapi("htt://localhost:8000/");
             $wa->sendMessage('628986182128', $message);
             Cookie::queue('visited', true, 60 * 24); // 24 hours
         }

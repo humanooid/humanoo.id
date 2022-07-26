@@ -56,7 +56,7 @@
                     <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/abuyama24"><i
                                 class="fab fa-facebook"></i></a></li>
                     <li class="list-inline-item"><a target="_blank"
-                            href="https://www.linkedin.com/in/yayan-maulana-836883212/"><i class="fab fa-linkedin"></i></a>
+                            href="https://www.linkedin.com/in/abuyama/"><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li class="list-inline-item"><a target="_blank" href="https://github.com/yama24"><i
                                 class="fab fa-github"></i></a></li>

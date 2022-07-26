@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
 use hisorange\BrowserDetect\Parser as Browser;
 use Yama\MywaapiPhpLib\Mywaapi;
-
+use Stevebauman\Location\Facades\Location;
 
 class HomeController extends Controller
 {
@@ -80,7 +80,6 @@ class HomeController extends Controller
     public function yama()
     {
         if (!Cookie::get('visited')) {
-
             $ip = request()->ip();
             $browser = Browser::browserFamily();
             $browser_version = Browser::browserVersion();
@@ -90,17 +89,24 @@ class HomeController extends Controller
             $device_vendor = Browser::deviceFamily();
             $device_brand = Browser::deviceModel();
 
+            $locations = Location::get($ip);
+            $location = "$locations->cityName $locations->regionName $locations->countryName";
+            $coordinate = "$locations->latitude,$locations->longitude";
+
             $message = <<<message
-            *New Visitor*
+            *New Visitor Yama*
             
             Ip Address : *$ip*
             Browser : *$browser ($browser_version)*
             OS : *$os ($os_version)*
             Device : *$device ($device_vendor | $device_brand)*
+            Location : *$location*
+            Coordinate : *$coordinate*
 
             _Thanks_
             message;
-            $wa = new Mywaapi("http://localhost:8000/");
+
+            $wa = new Mywaapi(env('MYWAAPI_URL'));
             $wa->sendMessage('628986182128', $message);
             Cookie::queue('visited', true, 60 * 24); // 24 hours
         }

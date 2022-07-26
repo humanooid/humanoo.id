@@ -478,8 +478,31 @@
 			</div>
 
 			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item front-end">
+				<a href="#portfolio_3" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">Front-end Web</span>
+							<h4 class="title">Forfund.asia</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/forfund.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_3" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/forfund.png') }}" alt="Title" />
+					<h2>Forfund.asia</h2>
+					<p>This is a website for funding, usable for NGO and funding instation</p>
+					<a href="https://www.alifaqiqahcatering.com" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
+			<!-- portfolio item -->
 			<div class="col-md-4 col-sm-6 grid-item design">
-				<a href="#portfolio_2" class="work-content">
+				<a href="#portfolio_4" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
 							<span class="term">Design Branding & Logos</span>
@@ -492,17 +515,17 @@
 						</div>
 					</div>
 				</a>
-				<div id="portfolio_2" class="white-popup zoom-anim-dialog mfp-hide">
+				<div id="portfolio_4" class="white-popup zoom-anim-dialog mfp-hide">
 					<img src="{{ asset('f/images/marchites/ichi-mochi.png') }}" alt="Title" />
-					<h2>Alif Aqiqah & Catering - Catering Website</h2>
-					<p>This is a website to serve Aqiqah order process and branding</p>
+					<h2>logo Ichi Mochi</h2>
+					<p>This is a logo of food Brand in Bandung build with CorelDraw</p>
 					<a href="#" class="btn btn-default">visit</a>
 				</div>
 			</div>
 
 			<!-- portfolio item -->
 			<div class="col-md-4 col-sm-6 grid-item design">
-				<a href="#portfolio_2" class="work-content">
+				<a href="#portfolio_5" class="work-content">
 					<div class="portfolio-item rounded shadow-dark">
 						<div class="details">
 							<span class="term">Design Branding & Logos</span>
@@ -515,10 +538,57 @@
 						</div>
 					</div>
 				</a>
-				<div id="portfolio_2" class="white-popup zoom-anim-dialog mfp-hide">
+				<div id="portfolio_5" class="white-popup zoom-anim-dialog mfp-hide">
 					<img src="{{ asset('f/images/marchites/humanoo.id-logo.png') }}" alt="Title" />
-					<h2>Alif Aqiqah & Catering - Catering Website</h2>
-					<p>This is a website to serve Aqiqah order process and branding</p>
+					<h2>Logo Humanoo.id</h2>
+					<p>This is the humanoo.id logos build with CorelDraw</p>
+					<a href="#" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
+			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item design">
+				<a href="#portfolio_6" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">Design Branding & Logos</span>
+							<h4 class="title">Logo UNO Production</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/uno.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_6" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/uno.png') }}" alt="Title" />
+					<h2>Logo UNO Production</h2>
+					<p>Design Logo UNO Production</p>
+					<a href="#" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
+
+			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item uix">
+				<a href="#portfolio_7" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">UI/X Design</span>
+							<h4 class="title">Redesign UI MediaBerbagi ver.2</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/mediaberbagi.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_7" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/mediaberbagi.png') }}" alt="Title" />
+					<h2>Redesign UI MediaBerbagi ver.2</h2>
+					<p>Redesign UI MediaBerbagi build with Figma</p>
 					<a href="#" class="btn btn-default">visit</a>
 				</div>
 			</div>

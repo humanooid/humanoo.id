@@ -51,16 +51,18 @@
 
 			<!-- social icons -->
 			<ul class="social-icons light list-inline mb-0 mt-4">
-				<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+				<li class="list-inline-item"><a href="https://www.instagram.com/gilang_aryadi/"><i class="fab fa-instagram"></i></a></li>
+				<li class="list-inline-item"><a href="https://web.facebook.com/gilang.aryadi.10/"><i class="fab fa-facebook"></i></a></li>
+				<li class="list-inline-item"><a href="https://www.linkedin.com/in/gilang-aryadi-mahardika-5952a910b/"><i class="fab fa-linkedin"></i></a></li>
+				<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+				<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li> -->
+				<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li> -->
+				<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li> -->
 			</ul>
 
 			<!-- buttons -->
 			<div class="mt-4">
-				<a href="#contact" class="btn btn-default">Hire me</a>
+				<a href="https://api.whatsapp.com/send/?phone=089628274162&text&type=phone_number&app_absent=0" class="btn btn-default">Hire me</a>
 			</div>
 		</div>
 
@@ -181,7 +183,7 @@
 								building web-based application systems on Front-end Developement side. I'm a Designer UIX enthusiast too.
 							</p>
 							<div class="mt-3">
-								<a href="#" class="btn btn-default">Download CV</a>
+								<a href="https://www.canva.com/design/DAFHsBYObSQ/TfSVO2RdUvDyD_Hl9mAQAQ/view?utm_content=DAFHsBYObSQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-default">Download CV</a>
 							</div>
 							<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 						</div>
@@ -285,7 +287,7 @@
 		</div>
 
 		<div class="mt-5 text-center">
-			<p class="mb-0">Looking for a custom job? <a href="https://wa.me/089628274162">Click here</a> to contact me! 👋</p>
+			<p class="mb-0">Looking for a custom job? <a href="https://api.whatsapp.com/send/?phone=089628274162&text&type=phone_number&app_absent=0">Click here</a> to contact me! 👋</p>
 		</div>
 
 	</div>
@@ -593,17 +595,40 @@
 				</div>
 			</div>
 
+			<!-- portfolio item -->
+			<div class="col-md-4 col-sm-6 grid-item uix">
+				<a href="#portfolio_8" class="work-content">
+					<div class="portfolio-item rounded shadow-dark">
+						<div class="details">
+							<span class="term">UI/X Design</span>
+							<h4 class="title">Redesign Dashboard Mediaberbagi ver.2</h4>
+							<span class="more-button"><i class="icon-options"></i></span>
+						</div>
+						<div class="thumb">
+							<img src="{{ asset('f/images/marchites/dash-mediaberbagi.png') }}" alt="Portfolio-title" />
+							<div class="mask"></div>
+						</div>
+					</div>
+				</a>
+				<div id="portfolio_8" class="white-popup zoom-anim-dialog mfp-hide">
+					<img src="{{ asset('f/images/marchites/dash-mediaberbagi.png') }}" alt="Title" />
+					<h2>Redesign Dashboard Mediaberbagi ver2</h2>
+					<p>Redesign dashboard Mediaberbagi build with Figma</p>
+					<a href="#" class="btn btn-default">visit</a>
+				</div>
+			</div>
+
 		</div>
 
 		<!-- more button -->
-		<div class="load-more text-center mt-4">
-			<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>
+		<!-- <div class="load-more text-center mt-4">
+			<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a> -->
 			<!-- numbered pagination (hidden for infinite scroll) -->
-			<ul class="portfolio-pagination list-inline d-none">
+			<!-- <ul class="portfolio-pagination list-inline d-none">
 				<li class="list-inline-item">1</li>
 				<li class="list-inline-item"><a href="works-2.html">2</a></li>
 			</ul>
-		</div>
+		</div> -->
 
 	</div>
 
@@ -801,85 +826,5 @@
 	</div>
 
 </section>
-
-<!-- section contact -->
-<section id="contact">
-
-	<div class="container">
-
-		<!-- section title -->
-		<h2 class="section-title wow fadeInUp">Get In Touch</h2>
-
-		<div class="spacer" data-height="60"></div>
-
-		<div class="row">
-
-			<div class="col-md-4">
-				<!-- contact info -->
-				<div class="contact-info">
-					<h3 class="wow fadeInUp">Let's talk about everything!</h3>
-					<p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:name@example.com">email</a>.
-						👋</p>
-				</div>
-			</div>
-
-			<div class="col-md-8">
-				<!-- Contact Form -->
-				<form id="contact-form" class="contact-form mt-6" method="post" action="form/contact.php">
-
-					<div class="messages"></div>
-
-					<div class="row">
-						<div class="column col-md-6">
-							<!-- Name input -->
-							<div class="form-group">
-								<input type="text" class="form-control" name="InputName" id="InputName"
-									placeholder="Your name" required="required" data-error="Name is required.">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="column col-md-6">
-							<!-- Email input -->
-							<div class="form-group">
-								<input type="email" class="form-control" id="InputEmail" name="InputEmail"
-									placeholder="Email address" required="required" data-error="Email is required.">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="column col-md-12">
-							<!-- Email input -->
-							<div class="form-group">
-								<input type="text" class="form-control" id="InputSubject" name="InputSubject"
-									placeholder="Subject" required="required" data-error="Subject is required.">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="column col-md-12">
-							<!-- Message textarea -->
-							<div class="form-group">
-								<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5"
-									placeholder="Message" required="required"
-									data-error="Message is required."></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-					</div>
-
-					<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Send
-						Message</button><!-- Send Button -->
-
-				</form>
-				<!-- Contact Form end -->
-			</div>
-
-		</div>
-
-	</div>
-
-</section>
-
 <div class="spacer" data-height="96"></div>
 @endsection

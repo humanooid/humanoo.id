@@ -3,11 +3,9 @@
     <!-- HTML Meta Tags -->
     <title>{{ $title }} - Human∞.id</title>
     <meta name="description" content="< let's talk about code! >">
-
-    {{-- <meta name="keywords"
-        content="HTML, CSS, JavaScript, PHP, MySQL, Laravel, Codeigniter, Ubuntu, Linux, jQuery, Bootstrap, NodeJS">
-    <meta name="author" content="Yayan Maulana"> --}}
-
+    <meta name="viewport" content="user-scalable=0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP, MySQL, Laravel, Codeigniter, Ubuntu, Linux, jQuery, Bootstrap, NodeJS">
+    <meta name="author" content="Yayan Maulana">
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="{{ $title }} - Human∞.id">
@@ -24,8 +22,7 @@
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $title }} - Human∞.id">
-    <meta name="twitter:description"
-        content="< let's talk about code! >">
+    <meta name="twitter:description" content="< let's talk about code! >">
     <meta name="twitter:image" content="{{ asset('humanooid-fav-head.svg') }}">
 
     <!-- Meta Tags Generated via http://heymeta.com -->

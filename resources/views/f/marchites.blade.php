@@ -5,7 +5,7 @@
     <meta name="description" content="< let's talk about code! >">
     <meta name="keywords" content="HTML, CSS, JavaScript, PHP, MySQL, Laravel, Codeigniter, Ubuntu, Linux, jQuery, Bootstrap, NodeJS">
     <meta name="author" content="Gilang Aryadi Mahardika">
-	<meta name="viewport" content="width=device-width, initial-scale=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="{{ $title }} - Human∞.id">

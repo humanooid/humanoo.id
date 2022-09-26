@@ -79,6 +79,17 @@ class HomeController extends Controller
 
     public function yama()
     {
+        $user = User::where('email', 'maulana24@live.com')->firstOrFail();
+        $posts = Post::with(['author', 'category', 'post_tag'])->where('published_at', '!=', NULL)->where('user_id', $user->id)->orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(3)->get();
+        return view('f.yama', [
+            'title' => 'Yama',
+            'posts' => $posts,
+            'bar' => getBar('Yama'),
+        ]);
+    }
+
+    public function notifYama()
+    {
         if (!Cookie::get('visited')) {
             $ip = request()->ip();
             $browser = Browser::browserFamily();
@@ -90,8 +101,8 @@ class HomeController extends Controller
             $device_brand = Browser::deviceModel();
 
             $locations = Location::get($ip);
-            $location = "$locations->cityName $locations->regionName $locations->countryName";
-            $coordinate = "$locations->latitude,$locations->longitude";
+            $location = $locations ? "$locations->cityName $locations->regionName $locations->countryName" : '-';
+            $coordinate = $locations ? "$locations->latitude,$locations->longitude" : '-';
 
             $message = <<<message
             *New Visitor Yama*
@@ -110,13 +121,6 @@ class HomeController extends Controller
             $wa->sendMessage('628986182128', $message);
             Cookie::queue('visited', true, 60 * 24); // 24 hours
         }
-        $user = User::where('email', 'maulana24@live.com')->firstOrFail();
-        $posts = Post::with(['author', 'category', 'post_tag'])->where('published_at', '!=', NULL)->where('user_id', $user->id)->orderBy('published_at', 'desc')->orderBy('id', 'desc')->take(3)->get();
-        return view('f.yama', [
-            'title' => 'Yama',
-            'posts' => $posts,
-            'bar' => getBar('Yama'),
-        ]);
     }
 
     public function marchites()

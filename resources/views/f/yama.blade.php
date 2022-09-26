@@ -55,8 +55,8 @@
                                 class="fab fa-instagram"></i></a></li>
                     <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/abuyama24"><i
                                 class="fab fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank"
-                            href="https://www.linkedin.com/in/abuyama/"><i class="fab fa-linkedin"></i></a>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/abuyama/"><i
+                                class="fab fa-linkedin"></i></a>
                     </li>
                     <li class="list-inline-item"><a target="_blank" href="https://github.com/yama24"><i
                                 class="fab fa-github"></i></a></li>
@@ -177,8 +177,8 @@
                 <div class="col-md-3">
                     <div class="text-center text-md-left">
                         <!-- avatar image -->
-                        <img class="img-fluid rounded-circle" src="{{ asset('f/images/yama/yama2.jpg') }}"
-                            alt="Yama" width="150px">
+                        <img class="img-fluid rounded-circle" src="{{ asset('f/images/yama/yama2.jpg') }}" alt="Yama"
+                            width="150px">
                     </div>
                     <div class="spacer d-md-none d-lg-none" data-height="30"></div>
                 </div>
@@ -1280,4 +1280,25 @@
     </section> --}}
 
     <div class="spacer" data-height="96"></div>
+@endsection
+
+@section('script')
+    <script>
+        $(document).ready(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                }
+            });
+            $.ajax({
+                url: "{{ route('notifYama') }}",
+                data: {},
+                type: 'POST',
+                success: function(data) {},
+                error: function(data) {
+                    console.log("error: ", data);
+                },
+            });
+        })
+    </script>
 @endsection

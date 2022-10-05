@@ -384,7 +384,7 @@
                         <!-- timeline item -->
                         <div class="timeline-container wow fadeInUp">
                             <div class="content">
-                                <span class="time">May 2021 - Present</span>
+                                <span class="time">May 2021 - Aug 2022</span>
                                 <h3 class="title">Full Stack Developer</h3>
                                 <p>PT. VAN AROMA</p>
                                 <ul>
@@ -669,6 +669,31 @@
                     </div>
                 </div>
 
+                <!-- portfolio item -->
+                <div class="col-md-4 col-sm-6 grid-item">
+                    <a href="#pointapp" class="work-content">
+                        <div class="portfolio-item rounded shadow-dark">
+                            <div class="details">
+                                <span class="term">Laravel</span>
+                                <h4 class="title">Pointapp.my.id</h4>
+                                <span class="more-button"><i class="icon-options"></i></span>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{ asset('f/images/yama/pointapp.png') }}" alt="Portfolio-title" />
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="pointapp" class="white-popup zoom-anim-dialog mfp-hide">
+                        <img src="{{ asset('f/images/yama/pointapp.png') }}" alt="pointapp.my.id" />
+                        <h2>pointapp.my.id</h2>
+                        <p>This is a point of sales and inventory app built on laravel and mysql database</p>
+                        <p>With cart system and realtime stock make the point of sales more powerfull</p>
+                        <p>And you can use thermal printer with any size</p>
+                        <a href="https://pointapp.my.id/" target="_blank" class="btn btn-default">Pointapp.my.id</a>
+                    </div>
+                </div>
+
 
                 {{-- <!-- portfolio item -->
                 <div class="col-md-4 col-sm-6 grid-item branding">
@@ -915,6 +940,15 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="nginx"
+                                src="{{ asset('f/images/yama/nginx.svg') }}" width="50px" alt="nginx" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
                             <img data-bs-toggle="tooltip" data-bs-placement="top" title="NodeJS"
                                 src="{{ asset('f/images/yama/node-js.svg') }}" width="50px" alt="NodeJS" />
                         </div>
@@ -926,6 +960,15 @@
                         <div class="inner">
                             <img data-bs-toggle="tooltip" data-bs-placement="top" title="npm"
                                 src="{{ asset('f/images/yama/npm.svg') }}" width="50px" alt="npm" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="yarn"
+                                src="{{ asset('f/images/yama/yarn.svg') }}" width="50px" alt="yarn" />
                         </div>
                     </div>
                 </div>
@@ -987,6 +1030,15 @@
                     <!-- client item -->
                     <div class="client-item">
                         <div class="inner">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Docker"
+                                src="{{ asset('f/images/yama/docker.svg') }}" width="60px" alt="Docker" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
                             <img data-bs-toggle="tooltip" data-bs-placement="top" title="Git"
                                 src="{{ asset('f/images/yama/git.svg') }}" width="50px" alt="Git" />
                         </div>
@@ -998,6 +1050,15 @@
                         <div class="inner">
                             <img data-bs-toggle="tooltip" data-bs-placement="top" title="Github"
                                 src="{{ asset('f/images/yama/github.svg') }}" width="60px" alt="Github" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <!-- client item -->
+                    <div class="client-item">
+                        <div class="inner">
+                            <img data-bs-toggle="tooltip" data-bs-placement="top" title="Bitbucket"
+                                src="{{ asset('f/images/yama/bitbucket.svg') }}" width="50px" alt="Bitbucket" />
                         </div>
                     </div>
                 </div>

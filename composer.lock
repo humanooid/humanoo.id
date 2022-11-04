@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f69efd800e517e7b084bbb016dc3257f",
+    "content-hash": "ca1c06713c35b8a22ae70ca6f94b5fe6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6686,16 +6686,16 @@
         },
         {
             "name": "yama/newwaapi-php-lib",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yama24/newwaapi-php-lib.git",
-                "reference": "99d4ec2a877c5fec240afc2eb4c706f01fcafa54"
+                "reference": "7c5a7b31780d1dfdee1c98934752e713c842bdc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yama24/newwaapi-php-lib/zipball/99d4ec2a877c5fec240afc2eb4c706f01fcafa54",
-                "reference": "99d4ec2a877c5fec240afc2eb4c706f01fcafa54",
+                "url": "https://api.github.com/repos/yama24/newwaapi-php-lib/zipball/7c5a7b31780d1dfdee1c98934752e713c842bdc8",
+                "reference": "7c5a7b31780d1dfdee1c98934752e713c842bdc8",
                 "shasum": ""
             },
             "require": {
@@ -6723,9 +6723,9 @@
             "description": "This is library for newwaapi https://github.com/yama24/newwaapi",
             "support": {
                 "issues": "https://github.com/yama24/newwaapi-php-lib/issues",
-                "source": "https://github.com/yama24/newwaapi-php-lib/tree/1.0.1"
+                "source": "https://github.com/yama24/newwaapi-php-lib/tree/1.1.0"
             },
-            "time": "2022-11-04T14:06:58+00:00"
+            "time": "2022-11-04T17:07:32+00:00"
         }
     ],
     "packages-dev": [

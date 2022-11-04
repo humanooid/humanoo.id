@@ -6,7 +6,7 @@ use App\Models\{Post, User, Reader, Category};
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
 use hisorange\BrowserDetect\Parser as Browser;
-use Yama\MywaapiPhpLib\Mywaapi;
+use Yama\NewwaapiPhpLib\Newwaapi;
 use Stevebauman\Location\Facades\Location;
 
 class HomeController extends Controller
@@ -117,7 +117,7 @@ class HomeController extends Controller
             _Thanks_
             message;
 
-            $wa = new Mywaapi(env('MYWAAPI_URL'));
+            $wa = new Newwaapi(env('MYWAAPI_URL'));
             $wa->sendMessage('628986182128', $message);
             Cookie::queue('visited', true, 60 * 24); // 24 hours
         }

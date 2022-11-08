@@ -122,6 +122,12 @@ class HomeController extends Controller
             Cookie::queue('visited', true, 60 * 24); // 24 hours
         }
     }
+    
+    public function testwa()
+    {
+        $wa = new Newwaapi(env('MYWAAPI_URL'));
+        $wa->sendMessage('628986182128', '*newwaapi* work perfectly');
+    }
 
     public function marchites()
     {

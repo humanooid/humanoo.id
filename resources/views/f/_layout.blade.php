@@ -11,6 +11,7 @@
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="{{ mix('/f/css/fstyle.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="../f/css/home.css" type="text/css" media="all">
 
     @yield('css')
 

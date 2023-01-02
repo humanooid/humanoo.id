@@ -215,6 +215,16 @@
 
     </section>
 
+    <!-- portfolio content -->
+    <section id="portfolio">
+        <div class="container">
+            <!-- section title -->
+            <h2 class="section-title wow fadeInUp">Our Partners</h2>
+            <div class="spacer" data-height="60"></div>
+            <img src="../f/images/our-partners/alifaqiqah logo.png" alt="">
+        </div>
+    </section>
+
     <!-- section contact -->
     <section id="contact">
 

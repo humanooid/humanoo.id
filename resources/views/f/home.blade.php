@@ -11,6 +11,7 @@
     <meta itemprop="name" content="{{ $title }} - Human∞.id">
     <meta itemprop="description" content="< let's talk about code! >">
     <meta itemprop="image" content="{{ asset('humanooid-fav-head.svg') }}">
+    <meta name="google-site-verification" content="uU6ZH6_au7msgVQr4s2T9FfCga8NFQL6Hyc8opdZSR0" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="{{ url()->current() }}">

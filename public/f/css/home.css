@@ -7,6 +7,16 @@
     --trans-tertiary-color: rgb(37, 46, 62);
 }
 
+#preloader {
+    background: var(--primary-color) !important;
+}
+
+#preloader.light {
+    background: #fff !important;
+}
+
+/* web-view */
+
 .desktop-header-3 {
     background: transparent !important;
     border-radius: 10px;
@@ -45,4 +55,14 @@ body.dark .bg-white {
 #portfolio .container img {
     width: 300px;
     height: auto;
+}
+
+/* mobile-view */
+
+header.mobile-header-1 {
+    background: none !important;
+}
+
+header.desktop-header-1 {
+    background: none !important;
 }

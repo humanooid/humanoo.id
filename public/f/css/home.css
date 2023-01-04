@@ -1,3 +1,47 @@
+:root {
+    --primary-color: rgb(8, 10, 24);
+    --secondary-color: rgb(78, 89, 113);
+    --tertiary-color: rgb(37, 46, 62);
+    --quaternary-color: rgb(129, 141, 167);
+    --quinary-color: rgb(202, 214, 231);
+    --trans-tertiary-color: rgb(37, 46, 62);
+}
+
+.desktop-header-3 {
+    background: transparent !important;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0 !important;
+}
+
+@media only screen and (max-width:400px) {
+    .parallax img {
+        display: none;
+    }    
+}
+
+section.home {
+    background: transparent !important; 
+}
+
+.blog-page-section {
+    background-color: transparent !important;
+}
+
+body.dark .blog-page-section, body.dark .content-blog {
+    background: transparent !important;
+}
+
+body.dark {
+    background: linear-gradient(var(--primary-color), var(--trans-tertiary-color)60%, var(--primary-color)) !important; 
+}
+
+body.dark .bg-white {
+    background: var(--quaternary-color) !important;
+}
+
 #portfolio .container img {
     width: 300px;
     height: auto;

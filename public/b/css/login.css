@@ -1,0 +1,18 @@
+:root {
+    --primary-color: rgb(8, 10, 24);
+    --secondary-color: rgb(78, 89, 113);
+    --tertiary-color: rgb(37, 46, 62);
+    --quaternary-color: rgb(129, 141, 167);
+    --quinary-color: rgb(202, 214, 231);
+    --trans-tertiary-color: rgb(37, 46, 62);
+}
+
+body {
+    background: linear-gradient(var(--primary-color), var(--trans-tertiary-color)60%, var(--primary-color)) !important;
+}
+
+.app-auth-sign-in .app-auth-background {
+    background: url(../images/castle.svg) no-repeat !important;
+    background-size: 60% !important;
+    background-position: center !important;
+}

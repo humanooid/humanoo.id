@@ -126,7 +126,7 @@
         </header>
     @else
         <!-- desktop header -->
-        <header class="desktop-header-3 fixed-top light">
+        <header class="desktop-header-3 fixed-top light" id="navbar">
 
             <div class="container-fluid px-4">
                 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -185,6 +185,7 @@
     <script src="{{ mix('f/js/fscript.js') }}"></script>
     @yield('js')
     <script src="{{ mix('f/js/fcustomscript.js') }}"></script>
+    <script src="../f/js/home.js"></script>
     @yield('script')
 
 </body>

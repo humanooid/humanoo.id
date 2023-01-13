@@ -66,7 +66,7 @@
                 <!-- parallax layers -->
                 <div class="parallax" data-relative-input="true">
 
-                    <img src="../f/images/castle.svg"></svg>
+                    <img src="../f/images/castle.svg" class="castle"></svg>
 
                     <svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg">
                         <path

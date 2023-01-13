@@ -31,6 +31,10 @@
         display: none;
     }    
 }
+.castle {
+    width: 690px;
+    margin-left: 20px;
+}
 
 section.home {
     background: transparent !important; 

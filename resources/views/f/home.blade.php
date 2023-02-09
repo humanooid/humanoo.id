@@ -203,7 +203,8 @@
             <!-- section title -->
             <h2 class="section-title wow fadeInUp">Our Partners</h2>
             <div class="spacer" data-height="60"></div>
-            <img src="../f/images/our-partners/alifaqiqah logo.png" alt="">
+            <img src="../f/images/our-partners/alifaqiqah_logo.png" alt="">
+            <img src="../f/images/our-partners/skyxproperti_logo.svg" alt="">
         </div>
     </section>
 

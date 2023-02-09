@@ -7,6 +7,10 @@
     --trans-tertiary-color: rgb(37, 46, 62);
 }
 
+a {
+    text-decoration: none !important;
+}
+
 #preloader {
     background: var(--primary-color) !important;
 }
@@ -56,6 +60,10 @@ body.dark .bg-white {
     background: var(--quaternary-color) !important;
 }
 
+.form-control {
+    height: 47px !important;
+}
+
 #portfolio .container img {
     width: 300px;
     height: auto;
@@ -69,4 +77,17 @@ header.mobile-header-1 {
 
 header.desktop-header-1 {
     background: none !important;
+}
+
+#footer .box {
+    background: var(--primary-color);
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 20px solid var(--primary-color);
+    padding: 30px;
+}
+
+#footer #logoLightFooter {
+    width: 250px;
 }

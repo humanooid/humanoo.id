@@ -21,7 +21,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/read/{post:slug}', [HomeController::class, 'read']);
 Route::get('/changelayout/{any}', [HomeController::class, 'changeLayout']);
 Route::get('/yama', [HomeController::class, 'yama']);
-Route::post('/notifYama', [HomeController::class, 'notifYama'])->name('notifYama');\
+Route::post('/notifYama', [HomeController::class, 'notifYama'])->name('notifYama');
 Route::get('/testwa', [HomeController::class, 'testwa'])->name('testwa');
 Route::get('/marchites', [HomeController::class, 'marchites']);
 Route::get('/razor', [HomeController::class, 'razor']);

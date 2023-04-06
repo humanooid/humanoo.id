@@ -27,6 +27,32 @@
 <meta name="twitter:image" content="{{ asset('humanooid-fav-head.svg') }}">
 
 <!-- Meta Tags Generated via http://heymeta.com -->
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+</style>
+
 @endsection
 @section('content')
 <!-- section home -->
@@ -55,7 +81,7 @@
 
 
             <div class="mt-4">
-                <a href="#contact" class="btn btn-default">Mulai Belajar</a>
+                <a href="#contact" class="btn btn-default">Jadwalkan Pertemuan</a>
                 <!-- <a href="#contact" class="btn btn-default">Join Us</a> -->
             </div>
 
@@ -203,8 +229,21 @@
             <!-- section title -->
             <h2 class="section-title wow fadeInUp">Our Partners</h2>
             <div class="spacer" data-height="60"></div>
-            <img src="../f/images/our-partners/alifaqiqah_logo.png" alt="">
-            <img src="../f/images/our-partners/skyxproperti_logo.svg" alt="">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../f/images/our-partners/partner-logo-1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../f/images/our-partners/partner-logo-2.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../f/images/our-partners/partner-logo-3.svg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
 
@@ -345,33 +384,33 @@
         <div class="container">
             <div class="box">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <img id="logoLightFooter" src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" class="mb-4" />
-                        <div class="description">Humanoo.id merupakan halaman website yang dibuat untuk berkumpulnya anggota komunitas khususnya di bidang IT dalam berbagi ilmu.</div>
+                        <div class="description"><p>Humanoo.id merupakan wadah untuk berkumpulnya praktisi khususnya di bidang IT dalam berbagi ilmu. </p> <p>Humanoo.id bergerak di bidang jasa pembuatan website (Software House)</p></div>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-lg-2">
                         <h5>Komunitas</h5>
                         <p><a href="#">Bandung</a></p>
                         <p><a href="#">Jakarta</a></p>
                         <p><a href="#">Surabaya</a></p>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-lg-2">
                         <h5>Belajar</h5>
                         <p><a href="#">HTML</a></p>
                         <p><a href="#">CSS</a></p>
                         <p><a href="#">JavaScript</a></p>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-lg-2">
                         <h5>Artikel</h5>
                         <p><a href="#">HTML</a></p>
                         <p><a href="#">CSS</a></p>
                         <p><a href="#">JavaScript</a></p>
                     </div>
 
-                    <div class="col-2">
+                    <div class="col-lg-2">
                         <h5>Contact Us</h5>
                         <p><a href="#">Email</a></p>
                         <p><a href="#">Phone</a></p>
@@ -394,4 +433,38 @@
     </section>
 
     <div class="spacer" data-height="96"></div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            freeMode: true,
+            breakpoints: {
+                220: {
+                slidesPerView: 1,
+                spaceBetween: 10,},  
+                320: {
+                slidesPerView: 1.4,
+                spaceBetween: 10,},  
+                480: {
+                slidesPerView: 1.3,
+                spaceBetween: 10,},
+                640: {
+                slidesPerView: 1.8,
+                spaceBetween: 50, },
+                1280: {
+                slidesPerView: 3.5,
+                spaceBetween: 50, },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
     @endsection

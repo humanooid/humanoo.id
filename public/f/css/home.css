@@ -64,11 +64,6 @@ body.dark .bg-white {
     height: 47px !important;
 }
 
-#portfolio .container img {
-    width: 300px;
-    height: auto;
-}
-
 /* mobile-view */
 
 header.mobile-header-1 {

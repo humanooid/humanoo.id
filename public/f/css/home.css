@@ -11,6 +11,27 @@ a {
     text-decoration: none !important;
 }
 
+.timeline .content .time{
+    color: #fff !important;
+}
+
+.timeline.exp .timeline-container::after{
+    color: #fff !important;
+}
+
+.timeline span.line{
+    background-color: #fff !important;
+}
+
+.timeline.edu .timeline-container::after{
+    background-color: #fff !important;
+    color: #fff !important;
+}
+
+body.dark .timeline.edu .timeline-container::after, body.dark .timeline.exp .timeline-container::after{
+    background: transparent !important;
+}
+
 #preloader {
     background: var(--primary-color) !important;
 }

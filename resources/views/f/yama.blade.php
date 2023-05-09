@@ -33,6 +33,29 @@
 
     <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
+
+@section('css')
+    <style>
+        body.dark {
+            background: var(--primary-color) !important;
+        }
+
+        .desktop-header-3 {
+            background: #f9f9ff !important;
+            width: 100%;
+            margin-top: 0;
+        }
+
+        body.dark .desktop-header-3 {
+            background: #0B0E1C !important;
+        }
+
+        .desktop-header-3 .container-fluid {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+@endsection
 @section('content')
     <!-- section home -->
     <section id="home" class="home d-flex align-items-center light">
@@ -391,7 +414,8 @@
                                     <li>Make report cards according to school needs</li>
                                     <li>Adjust the calculation of grades according to school needs</li>
                                     <li>Track and fix bugs in the school management app</li>
-                                    <li>Integrate third party applications with applications (klikpajak) with financial applications</li>
+                                    <li>Integrate third party applications with applications (klikpajak) with financial
+                                        applications</li>
                                     <li>Design and manufacture the features required by the school</li>
                                 </ul>
                             </div>

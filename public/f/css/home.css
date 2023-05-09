@@ -86,3 +86,7 @@ header.desktop-header-1 {
 #footer #logoLightFooter {
     width: 250px;
 }
+
+body.dark .timeline.edu .timeline-container::after, body.dark .timeline.exp .timeline-container::after {
+    background: #818DA7 !important;
+}

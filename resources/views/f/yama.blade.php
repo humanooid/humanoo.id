@@ -384,6 +384,20 @@
                         <!-- timeline item -->
                         <div class="timeline-container wow fadeInUp">
                             <div class="content">
+                                <span class="time">Sep 2021 - Now</span>
+                                <h3 class="title">Software Engineer</h3>
+                                <p>Aimsis (PT. TER SOLUSINDO)</p>
+                                <ul>
+                                    <li>Make report cards according to school needs</li>
+                                    <li>Adjust the calculation of grades according to school needs</li>
+                                    <li>Track and fix bugs in the school management app</li>
+                                    <li>Integrate third party applications with applications (klikpajak) with financial applications</li>
+                                    <li>Design and manufacture the features required by the school</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-container wow fadeInUp">
+                            <div class="content">
                                 <span class="time">May 2021 - Aug 2022</span>
                                 <h3 class="title">Full Stack Developer</h3>
                                 <p>PT. VAN AROMA</p>

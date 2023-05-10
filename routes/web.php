@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
@@ -42,3 +43,8 @@ Route::post('/updatepost/{post:id}', [DashboardController::class, 'updatepost'])
 Route::get('/deletepost/{post:id}', [DashboardController::class, 'deletepost'])->middleware('auth');
 Route::get('/publishpost/{post:id}', [DashboardController::class, 'publishpost'])->middleware('auth');
 Route::get('/unpublishpost/{post:id}', [DashboardController::class, 'unpublishpost'])->middleware('auth');
+
+
+if(env('APP_ENV') === 'production') {
+    URL::forceScheme('https');
+}

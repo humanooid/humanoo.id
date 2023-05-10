@@ -91,7 +91,8 @@ class HomeController extends Controller
     public function notifYama()
     {
         if (!Cookie::get('visited')) {
-            $ip = request()->ip();
+            // $ip = request()->ip();
+            $ip = request()->server('HTTP_X_FORWARDED_FOR');
             $browser = Browser::browserFamily();
             $browser_version = Browser::browserVersion();
             $os = Browser::platformFamily();

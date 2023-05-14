@@ -30,16 +30,6 @@ a {
     padding: 10px 0 !important;
 }
 
-@media only screen and (max-width:400px) {
-    .parallax img {
-        display: none;
-    }    
-}
-.castle {
-    width: 690px;
-    margin-left: 20px;
-}
-
 section.home {
     background: transparent !important; 
 }

@@ -43,7 +43,7 @@ body.dark .blog-page-section, body.dark .content-blog {
 }
 
 body.dark {
-    background: linear-gradient(var(--primary-color), var(--trans-tertiary-color)60%, var(--primary-color)) !important; 
+    background: var(--primary-color)!important; 
 }
 
 body.dark .bg-white {
@@ -79,4 +79,9 @@ header.desktop-header-1 {
 
 body.dark .timeline.edu .timeline-container::after, body.dark .timeline.exp .timeline-container::after {
     background: #818DA7 !important;
+}
+
+/* mobile display */
+.about-area .services-info .single-item:nth-child(1) .item i, .about-area .services-info .single-item:nth-child(4) .item i{
+    color: var(--secondary-color);
 }

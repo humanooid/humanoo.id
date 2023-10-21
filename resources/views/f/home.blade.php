@@ -239,6 +239,9 @@
                     <div class="swiper-slide">
                         <img src="../f/images/our-partners/partner-logo-3.svg" alt="">
                     </div>
+                    <div class="swiper-slide">
+                        <img src="../f/images/our-partners/partner-logo-4.svg" alt="">
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>

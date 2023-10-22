@@ -24,7 +24,7 @@ a {
 .desktop-header-3 {
     background: transparent !important;
     border-radius: 10px;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 20px;
     padding: 15px 0 !important;
@@ -92,10 +92,14 @@ body.dark .timeline.edu .timeline-container::after, body.dark .timeline.exp .tim
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 20px;
+    border: 0px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .navbar-collapse {
     margin-top: 0px !important;
+}
+
+header.desktop-header-1 .form-check-input, header.desktop-header-3 .form-check-input {
+    background-color: var(--primary-color) !important;
 }

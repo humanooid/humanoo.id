@@ -63,7 +63,7 @@
     <section id="home" class="home d-flex align-items-center light">
         <div class="container">
 
-            <div class="row">
+            <div class="row glassmorpishm p-5">
                 <div class="col-md-5">
                     <!-- intro -->
                     <div class="intro">
@@ -102,7 +102,7 @@
                             <div class="messages"></div>
 
                             <div class="row">
-                                <div class="column col-md-8">
+                                <div class="column col-md-7">
                                     <!-- Name input -->
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
@@ -110,10 +110,10 @@
                                     </div>
                                 </div>
 
-                                <div class="column col-md-4">
+                                <div class="column col-md-5">
                                     <!-- Name input -->
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
+                                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="dd/mm/yyyy" required="required" data-error="Name is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>

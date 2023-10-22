@@ -24,10 +24,10 @@ a {
 .desktop-header-3 {
     background: transparent !important;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 20px;
-    padding: 10px 0 !important;
+    padding: 15px 0 !important;
 }
 
 section.home {
@@ -84,4 +84,18 @@ body.dark .timeline.edu .timeline-container::after, body.dark .timeline.exp .tim
 /* mobile display */
 .about-area .services-info .single-item:nth-child(1) .item i, .about-area .services-info .single-item:nth-child(4) .item i{
     color: var(--secondary-color);
+}
+
+/* Marchite's custom css */
+.glassmorpishm {
+    background: rgba( 8, 10, 24, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.navbar-collapse {
+    margin-top: 0px !important;
 }

@@ -62,113 +62,93 @@
         </div>
     </div>
     @if (Cookie::get('layout') == 'vertical')
-        <!-- mobile header -->
-        <header class="mobile-header-1 fixed-top light">
-            <div class="container">
-                <!-- menu icon -->
-                <div class="menu-icon d-inline-flex me-4">
-                    <button>
-                        <span></span>
-                    </button>
-                </div>
-                <!-- logo image -->
-                <div class="site-logo">
-                    <a href="/">
-                        <img id="logoDark" style="display: none" src="{{ asset('humanooid-dark-text.svg') }}"
-                            alt="Main Logo" />
-                        <img id="logoLight" style="display: none" src="{{ asset('humanooid-light-text.svg') }}"
-                            alt="Main Logo" />
-                    </a>
-                </div>
+    <!-- mobile header -->
+    <header class="mobile-header-1 fixed-top light">
+        <div class="container">
+            <!-- menu icon -->
+            <div class="menu-icon d-inline-flex me-4">
+                <button>
+                    <span></span>
+                </button>
             </div>
-        </header>
-
-        <!-- desktop header -->
-        <header class="desktop-header-1 d-flex align-items-start flex-column light">
-
             <!-- logo image -->
             <div class="site-logo">
                 <a href="/">
-                    <img id="logoDarkDesktop" style="display: none" src="{{ asset('humanooid-dark-text.svg') }}"
-                        alt="Main Logo" />
-                    <img id="logoLightDesktop" style="display: none" src="{{ asset('humanooid-light-text.svg') }}"
-                        alt="Main Logo" />
+                    <img id="logoDark" style="display: none" src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
+                    <img id="logoLight" style="display: none" src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" />
                 </a>
             </div>
+        </div>
+    </header>
 
-            <!-- main menu -->
-            <nav>
-                <ul class="vertical-menu scrollspy">
-                    @foreach ($bar as $k => $v)
-                        <li class="{{ $v['active'] ? 'active' : '' }}"><a href="{{ $v['url'] }}"><i
-                                    class="{{ $v['icon'] }}"></i>{{ $k }}</a></li>
-                    @endforeach
-                </ul>
+    <!-- desktop header -->
+    <header class="desktop-header-1 d-flex align-items-start flex-column light">
+
+        <!-- logo image -->
+        <div class="site-logo">
+            <a href="/">
+                <img id="logoDarkDesktop" style="display: none" src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
+                <img id="logoLightDesktop" style="display: none" src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" />
+            </a>
+        </div>
+
+        <!-- main menu -->
+        <nav>
+            <ul class="vertical-menu scrollspy">
+                @foreach ($bar as $k => $v)
+                <li class="{{ $v['active'] ? 'active' : '' }}"><a href="{{ $v['url'] }}"><i class="{{ $v['icon'] }}"></i>{{ $k }}</a></li>
+                @endforeach
+            </ul>
+        </nav>
+
+        <!-- site footer -->
+        <div class="footer mb-5">
+            <!-- copyright text -->
+            <div class="form-check form-switch colorChanger">
+                <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
+                <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon" style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun" style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
+            </div>
+            <!-- <div class="form-check form-switch" title="Switch to horizontal layout">
+                <input class="form-check-input" type="checkbox" id="layoutChanger" onchange="changeLayout('horizontal')" checked>
+                <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon" class="fa-solid fa-left-right"></i></label>
+            </div> -->
+        </div>
+
+    </header>
+    @else
+    <!-- desktop header -->
+    <header class="desktop-header-3 fixed-top light glassmorpishm" id="navbar">
+
+        <div class="container-fluid px-4">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="/">
+                    <img id="horizontalLogoDark" style="display: none" width="200px" src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
+                    <img id="horizontalLogoLight" style="display: none" width="200px" src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" />
+                </a> <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto scrollspy">
+                        @foreach ($bar as $k => $v)
+                        <li class="nav-item {{ $v['active'] ? 'active' : '' }}"><a class="nav-link" href="{{ $v['url'] }}">{{ $k }}</a></li>
+                        @endforeach
+                        <li class="nav-item pe-2">
+                            <div class="form-check form-switch colorChanger">
+                                <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
+                                <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon" style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun" style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <div class="form-check form-switch" title="Switch to horizontal layout">
+                                <input class="form-check-input" type="checkbox" id="layoutChanger" onchange="changeLayout('vertical')">
+                                <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon" class="fa-solid fa-up-down"></i></label>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
             </nav>
 
-            <!-- site footer -->
-            <div class="footer mb-5">
-                <!-- copyright text -->
-                <div class="form-check form-switch colorChanger">
-                    <input class="form-check-input" type="checkbox" id="colorChanger" onchange="changeColor($(this))">
-                    <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"
-                            style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i id="colorChangerSun"
-                            style="display: none; color: #FF4C60;" class="fa-solid fa-sun"></i></label>
-                </div>
-                <div class="form-check form-switch" title="Switch to horizontal layout">
-                    <input class="form-check-input" type="checkbox" id="layoutChanger"
-                        onchange="changeLayout('horizontal')" checked>
-                    <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon"
-                            class="fa-solid fa-left-right"></i></label>
-                </div>
-            </div>
+        </div>
 
-        </header>
-    @else
-        <!-- desktop header -->
-        <header class="desktop-header-3 fixed-top light" id="navbar">
-
-            <div class="container-fluid px-4">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="/">
-                        <img id="horizontalLogoDark" style="display: none" width="200px"
-                            src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
-                        <img id="horizontalLogoLight" style="display: none" width="200px"
-                            src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" />
-                    </a> <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse"
-                        type="button"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto scrollspy">
-                            @foreach ($bar as $k => $v)
-                                <li class="nav-item {{ $v['active'] ? 'active' : '' }}"><a class="nav-link"
-                                        href="{{ $v['url'] }}">{{ $k }}</a></li>
-                            @endforeach
-                            <li class="nav-item pe-2">
-                                <div class="form-check form-switch colorChanger">
-                                    <input class="form-check-input" type="checkbox" id="colorChanger"
-                                        onchange="changeColor($(this))">
-                                    <label class="form-check-label" for="colorChanger"><i id="colorChangerMoon"
-                                            style="display: none; color: #FFD15C;" class="fa-solid fa-moon"></i><i
-                                            id="colorChangerSun" style="display: none; color: #FF4C60;"
-                                            class="fa-solid fa-sun"></i></label>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="form-check form-switch" title="Switch to horizontal layout">
-                                    <input class="form-check-input" type="checkbox" id="layoutChanger"
-                                        onchange="changeLayout('vertical')">
-                                    <label class="form-check-label" for="layoutChanger"><i id="changeLayoutIcon"
-                                            class="fa-solid fa-up-down"></i></label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-            </div>
-
-        </header>
+    </header>
     @endif
 
     <!-- main layout -->

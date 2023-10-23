@@ -66,16 +66,13 @@
             <img src="../../f/images/marchites/picture_1.png" alt="">
         </div>
         <div class="swiper-slide">
-            <img src="../../f/images/marchites/picture_1.png" alt="">
+            <img src="../../f/images/marchites/picture_2.png" alt="">
         </div>
         <div class="swiper-slide">
             <img src="../../f/images/marchites/picture_1.png" alt="">
         </div>
         <div class="swiper-slide">
-            <img src="../../f/images/marchites/picture_1.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="../../f/images/marchites/picture_1.png" alt="">
+            <img src="../../f/images/marchites/picture_2.png" alt="">
         </div>
     </div>
     <div class="swiper-pagination"></div>

@@ -82,6 +82,10 @@
                             </li>
                         </ul>
                     </li>
+                    <li {!! $title == 'Meeting' ? 'class="active-page"' : '' !!}>
+                        <a href="/meeting" {!! $title == 'Meeting' ? 'class="active"' : '' !!}><i
+                                class="material-icons-two-tone">groups</i>Meeting</a>
+                    </li>
                 </ul>
             </div>
         </div>

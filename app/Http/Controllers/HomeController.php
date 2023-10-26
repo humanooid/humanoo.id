@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{Post, User, Reader, Category};
+use App\Models\{Post, User, Reader, Category, Meeting};
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cookie;
 use hisorange\BrowserDetect\Parser as Browser;
 use Yama\NewwaapiPhpLib\Newwaapi;
 use Stevebauman\Location\Facades\Location;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -21,6 +22,28 @@ class HomeController extends Controller
                 return $query->orderBy('published_at', 'desc')->limit(9);
             }])->get(),
         ]);
+    }
+
+    public function create() 
+    {
+        return view('f.home');
+    }
+
+    public function store(Request $request)
+    {   
+        $request->validate([
+            'InputName' => 'required',
+            'InputDate' => 'required',
+            'InputEmail' => 'required',
+        ]);
+
+        Meeting::create([
+            'InputName' => $request->InputName,
+            'InputDate' => $request->InputDate,
+            'InputEmail' => $request->InputEmail,
+        ]);
+
+        return back()->with('success', 'Schedule a meeting created successfully.');
     }
 
     public function read($slug)

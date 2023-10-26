@@ -12,6 +12,7 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="{{ mix('/f/css/fstyle.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="../f/css/home.css?v=1" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     @yield('css')
 
@@ -162,12 +163,15 @@
     <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+
     <script src="{{ mix('f/js/fscript.js') }}"></script>
     @yield('js')
     <script src="{{ mix('f/js/fcustomscript.js') }}"></script>
     <script src="../f/js/home.js"></script>
     @yield('script')
-
 </body>
 
 </html>

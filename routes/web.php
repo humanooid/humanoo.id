@@ -18,7 +18,10 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::post('/', [HomeController::class, 'store'])->name('home.store');
+Route::post('/create', [HomeController::class, 'create'])->name('home.create');
+
 Route::get('/read/{post:slug}', [HomeController::class, 'read']);
 Route::get('/changelayout/{any}', [HomeController::class, 'changeLayout']);
 Route::get('/yama', [HomeController::class, 'yama']);
@@ -43,6 +46,7 @@ Route::post('/updatepost/{post:id}', [DashboardController::class, 'updatepost'])
 Route::get('/deletepost/{post:id}', [DashboardController::class, 'deletepost'])->middleware('auth');
 Route::get('/publishpost/{post:id}', [DashboardController::class, 'publishpost'])->middleware('auth');
 Route::get('/unpublishpost/{post:id}', [DashboardController::class, 'unpublishpost'])->middleware('auth');
+Route::get('/meeting', [DashboardController::class, 'meeting'])->middleware('auth');
 
 
 if(env('APP_ENV') === 'production') {

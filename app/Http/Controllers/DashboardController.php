@@ -9,6 +9,7 @@ use App\Models\Post_tag;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Meeting;
 use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
@@ -218,5 +219,13 @@ class DashboardController extends Controller
         $post->save();
         Session::flash('success', 'Post Published!');
         return redirect('/posts');
+    }
+
+    public function meeting()
+    {   
+        $meetings = Meeting::all();
+        return view('b.meeting', compact('meetings'), [
+            'title' => 'Meeting',
+        ]);
     }
 }

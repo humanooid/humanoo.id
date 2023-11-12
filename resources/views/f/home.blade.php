@@ -327,6 +327,9 @@
                     <div class="swiper-slide">
                         <img src="../f/images/our-partners/partner-logo-4.svg" alt="">
                     </div>
+                    <div class="swiper-slide">
+                        <img src="../f/images/our-partners/partner-logo-5.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>

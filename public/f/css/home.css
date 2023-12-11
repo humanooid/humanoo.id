@@ -112,3 +112,31 @@ header.desktop-header-1 .form-check-input, header.desktop-header-3 .form-check-i
     margin-top: 120px;
     object-fit: cover;
 }
+
+@media (max-width: 480px) {
+    .mySlider img {
+        display: none;
+    }
+
+    .glassmorpishm {
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+    }
+
+    section.home .intro {
+        padding-top: 443px;
+    }
+
+    section {
+        padding-top: 100px !important;
+    }
+
+    #portfolio {
+        margin-top: 100px;
+    }
+}
+
+.form-control {
+    color: #b4b2ce !important;
+}

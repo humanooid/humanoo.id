@@ -402,7 +402,13 @@
             <div class="box">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img id="logoLightFooter" src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" class="mb-4" />
+                        <div class="site-logo">
+                            <a href="/">
+                                <img id="logoDark" style="display: none" src="{{ asset('humanooid-dark-text.svg') }}" alt="Main Logo" />
+                                <img id="logoLight" style="display: none" src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" />
+                            </a>
+                        </div>
+                        <!-- <img id="logoLightFooter" src="{{ asset('humanooid-light-text.svg') }}" alt="Main Logo" class="mb-4" /> -->
                         <div class="description">
                             <p>Humanoo.id merupakan wadah untuk berkumpulnya praktisi khususnya di bidang IT dalam berbagi ilmu. </p>
                             <p>Humanoo.id bergerak di bidang jasa pembuatan website (Software House)</p>

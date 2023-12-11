@@ -65,11 +65,11 @@ header.desktop-header-1 {
 }
 
 #footer .box {
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
     width: 100%;
     height: auto;
     border-radius: 25px;
-    box-shadow: 20px solid var(--primary-color);
+    /* box-shadow: 20px solid var(--primary-color); */
     padding: 30px;
 }
 
@@ -88,7 +88,7 @@ body.dark .timeline.edu .timeline-container::after, body.dark .timeline.exp .tim
 
 /* Marchite's custom css */
 .glassmorpishm {
-    background: rgba( 8, 10, 24, 0.5 );
+    /* background: rgba( 8, 10, 24, 0.5 ); */
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -101,7 +101,7 @@ body.dark .timeline.edu .timeline-container::after, body.dark .timeline.exp .tim
 }
 
 header.desktop-header-1 .form-check-input, header.desktop-header-3 .form-check-input {
-    background-color: var(--primary-color) !important;
+    background-color: none !important;
 }
 
 .mySlider img {
@@ -139,4 +139,13 @@ header.desktop-header-1 .form-check-input, header.desktop-header-3 .form-check-i
 
 .form-control {
     color: #b4b2ce !important;
+}
+
+#logoDark, #logoLight {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+header.desktop-header-1 .form-check-input, header.desktop-header-3 .form-check-input {
+    background-color: none !important;
 }

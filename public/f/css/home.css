@@ -149,3 +149,7 @@ header.desktop-header-1 .form-check-input, header.desktop-header-3 .form-check-i
 header.desktop-header-1 .form-check-input, header.desktop-header-3 .form-check-input {
     background-color: none !important;
 }
+
+.blog-page-section {
+    padding: 120px !important;
+}

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProfileController;
 
 
 /*
@@ -21,6 +22,8 @@ use App\Http\Controllers\DashboardController;
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::post('/', [HomeController::class, 'store'])->name('home.store');
 Route::post('/create', [HomeController::class, 'create'])->name('home.create');
+
+Route::get('/my-profile', [ProfileController::class, 'index'])->name('profile.index')->middleware('auth');
 
 Route::get('/read/{post:slug}', [HomeController::class, 'read']);
 Route::get('/changelayout/{any}', [HomeController::class, 'changeLayout']);
